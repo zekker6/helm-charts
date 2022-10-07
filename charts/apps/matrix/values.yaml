@@ -59,22 +59,43 @@ matrix:
     # Whitelist of domains to federate with (comment for all domains except blacklisted)
     # whitelist: []
 
-    # IP addresses to blacklist federation requests to
-    blacklist:
-      - '127.0.0.0/8'
-      - '10.0.0.0/8'
-      - '172.16.0.0/12'
-      - '192.168.0.0/16'
-      - '100.64.0.0/10'
-      - '169.254.0.0/16'
-      - '::1/128'
-      - 'fe80::/64'
-      - 'fc00::/7'
+  # This option prevents outgoing requests from being sent to the specified blacklisted
+  # IP address CIDR ranges. If this option is not specified then it defaults
+  # to private IP address ranges (see the example below).
+  #
+  # The blacklist applies to the outbound requests for federation, identity servers,
+  # push servers, and for checking key validity for third-party invite events.
+  ip_blacklist:
+    - '127.0.0.0/8'
+    - '10.0.0.0/8'
+    - '172.16.0.0/12'
+    - '192.168.0.0/16'
+    - '100.64.0.0/10'
+    - '192.0.0.0/24'
+    - '169.254.0.0/16'
+    - '192.88.99.0/24'
+    - '198.18.0.0/15'
+    - '192.0.2.0/24'
+    - '198.51.100.0/24'
+    - '203.0.113.0/24'
+    - '224.0.0.0/4'
+    - '::1/128'
+    - 'fe80::/10'
+    - 'fc00::/7'
+    - '2001:db8::/32'
+    - 'ff00::/8'
+    - 'fec0::/10'
 
   # User registration settings
   registration:
     # Allow new users to register an account
     enabled: false
+
+    # Allow users to register an account without an 3PID (email or phone number)
+    disable_verification: false
+
+    # Enable 3PIDs lookup requests to identity servers from this server
+    enable_3pid_lookup: true
 
     # If set, allows registration of standard or admin accounts by anyone who
     # has the shared secret, even if registration is otherwise disabled.
@@ -211,6 +232,38 @@ matrix:
     sqlLogLevel: WARNING
     # The log level for the synapse server
     synapseLogLevel: WARNING
+
+  # List of OpenID Connect (OIDC) / OAuth 2.0 identity providers, for registration
+  # and login.
+  # for information on how to configure these options.
+  # See https://github.com/matrix-org/synapse/blob/develop/docs/usage/configuration/config_documentation.md#oidc_providers
+  #
+  # Example:
+  # oidc_providers:
+  #   - idp_id: my_idp
+  #     idp_name: "My OpenID provider"
+  #     idp_icon: "mxc://example.com/mediaid"
+  #     discover: false
+  #     issuer: "https://accounts.example.com/"
+  #     client_id: "provided-by-your-issuer"
+  #     client_secret: "provided-by-your-issuer"
+  #     client_auth_method: client_secret_post
+  #     scopes: ["openid", "profile"]
+  #     authorization_endpoint: "https://accounts.example.com/oauth2/auth"
+  #     token_endpoint: "https://accounts.example.com/oauth2/token"
+  #     userinfo_endpoint: "https://accounts.example.com/userinfo"
+  #     jwks_uri: "https://accounts.example.com/.well-known/jwks.json"
+  #     skip_verification: true
+  #     user_mapping_provider:
+  #         config:
+  #             subject_claim: "id"
+  #             localpart_template: "{{ user.login }}"
+  #             display_name_template: "{{ user.name }}"
+  #             email_template: "{{ user.email }}"
+  #             attribute_requirements:
+  #                 - attribute: userGroup
+  #                 value: "synapseUsers"
+  oidc_providers: []
 
 # Persistent volumes configuration
 volumes:
