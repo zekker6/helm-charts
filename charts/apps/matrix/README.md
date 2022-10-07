@@ -39,7 +39,7 @@ This chart is published to my Helm chart repository at https://zekker6.github.io
     ```yaml
     dependencies:
       - name: matrix
-        version: 2.8.x
+        version: 2.9.x
         repository: https://zekker6.github.io/helm-charts
     ```
 
