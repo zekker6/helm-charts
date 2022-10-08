@@ -43,6 +43,7 @@ ingress:
 initContainers:
   # -- Init container to set up ngram files.
   # For other languages check for archives [here](https://languagetool.org/download/ngram-data/)
+  # Archive download disabled by default, please enable it when deploying
   # @default -- See values.yaml
   download-ngrams:
     image: alpine:3
@@ -55,10 +56,10 @@ initContainers:
         ls -lah /ngrams
         cd /ngrams
 
-        if [ ! -d /ngrams/en ]; then
-          wget https://languagetool.org/download/ngram-data/ngrams-en-20150817.zip -O en.zip
-          unzip -d /ngrams en.zip
-          rm en.zip
+        #if [ ! -d /ngrams/en ]; then
+        #  wget https://languagetool.org/download/ngram-data/ngrams-en-20150817.zip -O en.zip
+        #  unzip -d /ngrams en.zip
+        #  rm en.zip
         fi
 
         chown -R 100:101 /ngrams
@@ -74,8 +75,8 @@ initContainers:
 # Also, it will take some time to download archive depending on download speed available
 # @default -- See values.yaml
 persistence:
-   config:
-     enabled: true
-     type: emptyDir
-     mountPath: /ngrams
-     size: 30Gi
+  config:
+    enabled: true
+    type: emptyDir
+    mountPath: /ngrams
+    size: 30Gi
