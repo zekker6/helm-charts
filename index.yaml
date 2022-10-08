@@ -1,9 +1,63 @@
 apiVersion: v1
 entries:
+  language-tool:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: "5.8"
+    created: "2022-10-08T10:32:12.848241336Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: language-tool helm package
+    digest: 8110b107c81ebfcc53dd603e2e81451d27a8ed821946e0fd94dd9c28cdab787b
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/language-tool
+    icon: https://language-tool.org/icon
+    keywords:
+    - language-tool
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: language-tool
+    sources:
+    - https://github.com/language-tool/language-tool-docker
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
+    version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.68.0
+    created: "2022-10-08T10:32:12.89859198Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 21b16ec702b31747b37986237a6918c4be7c65aec1d79b7b3ad5bd58c10378ba
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/matrix-2.9.2.tgz
+    version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T08:08:06.035966018Z"
+    created: "2022-10-08T10:32:12.88919566Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -24,7 +78,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T08:08:06.023489702Z"
+    created: "2022-10-08T10:32:12.879294333Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -45,7 +99,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T08:08:06.010302033Z"
+    created: "2022-10-08T10:32:12.869230404Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -67,7 +121,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T08:08:06.000017777Z"
+    created: "2022-10-08T10:32:12.860131888Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -87,4 +141,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
-generated: "2022-10-08T08:08:05.990671391Z"
+generated: "2022-10-08T10:32:12.844139984Z"
