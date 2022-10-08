@@ -32,3 +32,8 @@ dependencies:
   - name: postgresql
     version: "11.x.x"
     repository: "https://charts.bitnami.com/bitnami"
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
