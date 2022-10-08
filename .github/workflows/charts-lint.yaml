@@ -47,13 +47,6 @@ jobs:
         with:
           chart: "charts/${{ matrix.chart }}"
 
-      - name: Verify chart changelog
-        uses: bjw-s/helm-charts-actions/verify-chart-changelog@main
-        if: inputs.isRenovatePR != 'true'
-        id: verify-chart-changelog
-        with:
-          chart: "charts/${{ matrix.chart }}"
-
       - name: Install Kubernetes tools
         uses: yokawasa/action-setup-kube-tools@v0.8.2
         with:
