@@ -3,7 +3,28 @@ entries:
   matrix:
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T07:57:02.826087181Z"
+    created: "2022-10-08T08:08:06.035966018Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 3dc22a84a88d4332e56e38150f99a88987a7f7b626116d8f710cd4ba7c13f738
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    maintainers:
+    - email: zekker6@gmail.com
+      name: Zakhar Bessarab
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/matrix-2.9.1.tgz
+    version: 2.9.1
+  - apiVersion: v2
+    appVersion: 1.68.0
+    created: "2022-10-08T08:08:06.023489702Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -20,11 +41,11 @@ entries:
     - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
     type: application
     urls:
-    - apps/matrix-2.9.0.tgz
+    - https://zekker6.github.io/helm-charts/apps/matrix-2.9.0.tgz
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T07:57:02.817391947Z"
+    created: "2022-10-08T08:08:06.010302033Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -42,11 +63,11 @@ entries:
     - https://github.com/zekker6/matrix-chart
     type: application
     urls:
-    - apps/matrix-2.8.14.tgz
+    - https://zekker6.github.io/helm-charts/apps/matrix-2.8.14.tgz
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-08T07:57:02.80855591Z"
+    created: "2022-10-08T08:08:06.000017777Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -64,6 +85,6 @@ entries:
     - https://github.com/zekker6/matrix-chart
     type: application
     urls:
-    - apps/matrix-2.8.13.tgz
+    - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
-generated: "2022-10-08T07:57:02.800355283Z"
+generated: "2022-10-08T08:08:05.990671391Z"
