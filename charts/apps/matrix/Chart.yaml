@@ -17,14 +17,14 @@ type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
-version: 2.9.1
+version: 2.9.2
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
 appVersion: 1.68.0
 
 maintainers:
-  - name: "Zakhar Bessarab"
+  - name: "zekker6"
     email: "zekker6@gmail.com"
     url: "https://github.com/zekker6/"
 
@@ -32,3 +32,8 @@ dependencies:
   - name: postgresql
     version: "11.x.x"
     repository: "https://charts.bitnami.com/bitnami"
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version

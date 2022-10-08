@@ -241,7 +241,7 @@ database:
         user: "{{ .Values.postgresql.username }}"
         password: "{{ .Values.postgresql.password }}"
         database: "{{ .Values.postgresql.database }}"
-        
+
         {{- if .Values.postgresql.enabled }}
         host: "{{ include "matrix.fullname" . }}-postgresql"
         port: "5432"

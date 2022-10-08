@@ -348,7 +348,7 @@ synapse:
   # Labels to be appended to all Synapse resources
   labels:
     component: synapse
-  
+
   # Prometheus metrics for Synapse
   # https://github.com/matrix-org/synapse/blob/master/docs/metrics-howto.md
   metrics:
@@ -521,7 +521,7 @@ mail:
     labels:
       component: mail
 
-  
+
   # External mail server
   external:
     host: ""
