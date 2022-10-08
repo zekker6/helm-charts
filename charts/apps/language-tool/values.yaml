@@ -74,7 +74,8 @@ initContainers:
 # Also, it will take some time to download archive depending on download speed available
 # @default -- See values.yaml
 persistence:
-#   config:
-#     enabled: true
-#     mountPath: /ngrams
-#     size: 30Gi
+   config:
+     enabled: true
+     type: emptyDir
+     mountPath: /ngrams
+     size: 30Gi
