@@ -3,16 +3,16 @@ entries:
   matrix:
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-07T22:00:58.773126974Z"
+    created: "2022-10-08T07:57:02.826087181Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.x.x
     description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
-    digest: 6c5907714e121eb1c5affae128e8f93343e84749a4e22c80dcceab5f9b878511
+    digest: 4a37d451fae25d54582e417f17857855309a5fb3f32bb8faad9f6a88d0dc073b
     home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
     maintainers:
-    - email: zekker6Ggmail.com
+    - email: zekker6@gmail.com
       name: Zakhar Bessarab
       url: https://github.com/zekker6/
     name: matrix
@@ -24,7 +24,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-07T22:00:58.766040175Z"
+    created: "2022-10-08T07:57:02.817391947Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -46,7 +46,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-07T22:00:58.757112449Z"
+    created: "2022-10-08T07:57:02.80855591Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -66,4 +66,4 @@ entries:
     urls:
     - apps/matrix-2.8.13.tgz
     version: 2.8.13
-generated: "2022-10-07T22:00:58.749101336Z"
+generated: "2022-10-08T07:57:02.800355283Z"
