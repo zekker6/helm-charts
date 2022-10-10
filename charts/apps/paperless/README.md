@@ -23,7 +23,7 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add zekker6 https://zekker6.com/charts/
+helm repo add zekker6 https://zekker6.github.io/helm-charts
 helm repo update
 helm install paperless zekker6/paperless
 ```
