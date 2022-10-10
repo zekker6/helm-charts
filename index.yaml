@@ -7,7 +7,7 @@ entries:
           description: updated readme refs to k8s-at-home repo
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-10-10T18:43:45.766436164Z"
+    created: "2022-10-10T19:09:57.470283632Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -34,7 +34,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-10-10T18:43:45.763749127Z"
+    created: "2022-10-10T19:09:57.467350318Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -62,7 +62,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: "5.8"
-    created: "2022-10-10T18:43:45.771186929Z"
+    created: "2022-10-10T19:09:57.473655449Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -91,7 +91,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:43:45.809267952Z"
+    created: "2022-10-10T19:09:57.514360349Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -112,7 +112,7 @@ entries:
     version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:43:45.800912537Z"
+    created: "2022-10-10T19:09:57.505712806Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -133,7 +133,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:43:45.794366747Z"
+    created: "2022-10-10T19:09:57.498514671Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -154,7 +154,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:43:45.786440239Z"
+    created: "2022-10-10T19:09:57.490580532Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -176,7 +176,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:43:45.778288327Z"
+    created: "2022-10-10T19:09:57.482380592Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -199,11 +199,47 @@ entries:
   paperless:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: fix links in readme
+    apiVersion: v2
+    appVersion: 1.9.2
+    created: "2022-10-10T19:09:57.542777588Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 6c2aca62082df575a2cd217730bbba7d04688488ae8a661b8fde8bf7e56728da
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/paperless-9.2.1.tgz
+    version: 9.2.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Initial version
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-10-10T18:43:45.821845625Z"
+    created: "2022-10-10T19:09:57.528344917Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -233,4 +269,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2022-10-10T18:43:45.760828387Z"
+generated: "2022-10-10T19:09:57.463840101Z"
