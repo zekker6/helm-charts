@@ -23,9 +23,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://zekker6.github.io/helm-charts
 helm repo update
-helm install homer k8s-at-home/homer
+helm install homer zekker6/homer
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install homer k8s-at-home/homer
 To install the chart with the release name `homer`
 
 ```console
-helm install homer k8s-at-home/homer
+helm install homer zekker6/homer
 ```
 
 ## Uninstalling the Chart
@@ -56,13 +56,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install homer \
   --set env.TZ="America/New York" \
-    k8s-at-home/homer
+    zekker6/homer
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install homer k8s-at-home/homer -f values.yaml
+helm install homer zekker6/homer -f values.yaml
 ```
 
 ## Custom configuration
