@@ -1,0 +1,23 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial version
+apiVersion: v2
+appVersion: v22.10.1
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+description: A dead simple static HOMepage for your servER to keep your services on
+  hand, from a simple yaml configuration file.
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
+icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: homer
+version: 8.0.2
