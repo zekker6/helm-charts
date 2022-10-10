@@ -3,11 +3,38 @@ entries:
   homer:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: updated readme refs to k8s-at-home repo
+    apiVersion: v2
+    appVersion: v22.10.1
+    created: "2022-10-10T18:31:50.831758673Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: b5d146e3d2e97e2b10b0a4d5e374f4aa9e8ea100318630377adb59890bc6fd18
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/homer-8.1.1.tgz
+    version: 8.1.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Initial version
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-10-10T18:02:01.820686607Z"
+    created: "2022-10-10T18:31:50.828860156Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -35,7 +62,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: "5.8"
-    created: "2022-10-10T18:02:01.824111129Z"
+    created: "2022-10-10T18:31:50.834988492Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -64,7 +91,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:02:01.872936385Z"
+    created: "2022-10-10T18:31:50.876276635Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -85,7 +112,7 @@ entries:
     version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:02:01.863448072Z"
+    created: "2022-10-10T18:31:50.868408789Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -106,7 +133,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:02:01.855467456Z"
+    created: "2022-10-10T18:31:50.861253747Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -127,7 +154,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:02:01.845435607Z"
+    created: "2022-10-10T18:31:50.852607396Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -149,7 +176,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-10-10T18:02:01.836675141Z"
+    created: "2022-10-10T18:31:50.84486875Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -169,4 +196,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
-generated: "2022-10-10T18:02:01.816129313Z"
+generated: "2022-10-10T18:31:50.825402735Z"
