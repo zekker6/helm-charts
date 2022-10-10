@@ -1,0 +1,32 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial version
+apiVersion: v2
+appVersion: 1.9.2
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.6.12
+- condition: redis.enabled
+  name: redis
+  repository: https://charts.bitnami.com/bitnami
+  version: 16.13.1
+description: Paperless - Index and archive all of your scanned paper documents
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless"
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless"
+icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+keywords:
+- paperless
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: paperless
+version: 9.2.0
