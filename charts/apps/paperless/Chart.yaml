@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update redis to 16.13.2
+      description: update postgresql to 11.9.13
 apiVersion: v2
 appVersion: 1.9.2
 dependencies:
@@ -29,4 +29,4 @@ maintainers:
     email: "zekker6@gmail.com"
     url: "https://github.com/zekker6/"
 name: paperless
-version: 9.3.0
+version: 9.4.0
