@@ -46,7 +46,7 @@ initContainers:
   # Archive download disabled by default, please enable it when deploying
   # @default -- See values.yaml
   download-ngrams:
-    image: alpine:3
+    image: alpine:20221110
     command:
       - sh
       - -c
