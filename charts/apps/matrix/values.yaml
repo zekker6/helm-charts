@@ -322,7 +322,7 @@ postgresql:
 synapse:
   image:
     repository: "matrixdotorg/synapse"
-    tag: v1.70.1
+    tag: v1.71.0
     pullPolicy: IfNotPresent
   service:
     type: ClusterIP
