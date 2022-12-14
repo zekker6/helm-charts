@@ -7,7 +7,7 @@ entries:
           description: chart upload
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2022-12-14T06:51:32.218950812Z"
+    created: "2022-12-14T06:57:46.652382198Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -37,7 +37,7 @@ entries:
           description: updated readme refs to k8s-at-home repo
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-14T06:51:32.226371414Z"
+    created: "2022-12-14T06:57:46.659885427Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -64,7 +64,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-14T06:51:32.222231057Z"
+    created: "2022-12-14T06:57:46.656585214Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -92,7 +92,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: "5.8"
-    created: "2022-12-14T06:51:32.234378924Z"
+    created: "2022-12-14T06:57:46.663280341Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -121,7 +121,7 @@ entries:
           description: update synapse to 1.72.0
     apiVersion: v2
     appVersion: 1.72.0
-    created: "2022-12-14T06:51:32.277516817Z"
+    created: "2022-12-14T06:57:46.715831448Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -146,7 +146,7 @@ entries:
           description: update synapse to 1.71.0
     apiVersion: v2
     appVersion: 1.71.0
-    created: "2022-12-14T06:51:32.269597208Z"
+    created: "2022-12-14T06:57:46.707682116Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -171,7 +171,7 @@ entries:
           description: update synapse to 1.70.1
     apiVersion: v2
     appVersion: 1.70.1
-    created: "2022-12-14T06:51:32.261523597Z"
+    created: "2022-12-14T06:57:46.697428875Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -196,7 +196,7 @@ entries:
           description: update synapse to 1.70.0
     apiVersion: v2
     appVersion: 1.70.0
-    created: "2022-12-14T06:51:32.253609089Z"
+    created: "2022-12-14T06:57:46.688908742Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -221,7 +221,7 @@ entries:
           description: update synapse to 1.69.0
     apiVersion: v2
     appVersion: 1.69.0
-    created: "2022-12-14T06:51:32.242484936Z"
+    created: "2022-12-14T06:57:46.6784579Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -246,7 +246,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-14T06:51:32.32066721Z"
+    created: "2022-12-14T06:57:46.763901237Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -267,7 +267,7 @@ entries:
     version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-14T06:51:32.312977604Z"
+    created: "2022-12-14T06:57:46.755240103Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -288,7 +288,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-14T06:51:32.303648776Z"
+    created: "2022-12-14T06:57:46.744905362Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -309,7 +309,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-14T06:51:32.295765168Z"
+    created: "2022-12-14T06:57:46.736870731Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -331,7 +331,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-14T06:51:32.286826845Z"
+    created: "2022-12-14T06:57:46.726376089Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -355,10 +355,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update redis and pg to use latest patch versions
+    apiVersion: v2
+    appVersion: 1.9.2
+    created: "2022-12-14T06:57:46.89907987Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.3.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: b9127fb003a01b1ca855f6aea8cb96e7c5b4b3bc357a3f15e6fdfab4729227e3
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/paperless-9.5.3.tgz
+    version: 9.5.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update redis to 17.3.9
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.424534138Z"
+    created: "2022-12-14T06:57:46.879485493Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -394,7 +430,7 @@ entries:
           description: update redis to 17.3.8
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.410448944Z"
+    created: "2022-12-14T06:57:46.863147929Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -430,7 +466,7 @@ entries:
           description: update redos to 17.3.7
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.395424438Z"
+    created: "2022-12-14T06:57:46.845909461Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -466,7 +502,7 @@ entries:
           description: update postgresql to 11.9.13
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.381127641Z"
+    created: "2022-12-14T06:57:46.828533092Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -502,7 +538,7 @@ entries:
           description: update redis to 16.13.2
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.367148749Z"
+    created: "2022-12-14T06:57:46.812496629Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -538,7 +574,7 @@ entries:
           description: fix links in readme
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.352534248Z"
+    created: "2022-12-14T06:57:46.795903664Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -574,7 +610,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-14T06:51:32.337637343Z"
+    created: "2022-12-14T06:57:46.779979101Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -604,4 +640,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2022-12-14T06:51:32.214786355Z"
+generated: "2022-12-14T06:57:46.647704379Z"
