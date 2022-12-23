@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update homer to v22.11.2
+      description: update library chart to 0.4.1
 apiVersion: v2
 appVersion: v22.11.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.0
+    version: 0.4.1
 description: A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
@@ -19,4 +19,4 @@ maintainers:
 name: homer
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
-version: 8.3.0
+version: 8.3.1

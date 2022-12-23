@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: updated docs
+      description: update library chart to 0.4.1
 apiVersion: v2
 appVersion: 0.100.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.0
+    version: 0.4.1
   - name: postgresql
     version: "12.x.x"
     repository: "https://charts.bitnami.com/bitnami"
@@ -25,4 +25,4 @@ maintainers:
 name: nocodb
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb"
-version: 0.1.1
+version: 0.1.2
