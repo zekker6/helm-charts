@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: updated docs
+      description: update homer to v22.11.2
 apiVersion: v2
-appVersion: v22.10.1
+appVersion: v22.11.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -19,4 +19,4 @@ maintainers:
 name: homer
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
-version: 8.2.1
+version: 8.3.0
