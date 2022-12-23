@@ -17,8 +17,7 @@ image:
 # -- See the following files for additional environment variables:
 # https://github.com/nocodb/nocodb#docker
 # @default -- See below
-env:
-  { }
+env: {}
 #  NC_DB: 'pg://{{ include "common.names.fullname" . }}-postgresql:5432?u={{ .Values.postgresql.auth.username }}&p={{ .Values.postgresql.auth.password }}&d={{ .Values.postgresql.auth.database }}'
 
 

@@ -15,3 +15,11 @@ tasks:
     silent: true
     cmds:
       - task -l
+
+  precommit:all:
+   cmds:
+    - task charts:format
+    - task charts:dependency-cleanup
+    - task charts:docs
+    - task precommit:run-all
+    - task charts:lint-all

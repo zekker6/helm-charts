@@ -4,8 +4,7 @@
 
 language-tool helm package
 
-**This chart is not maintained by the upstream project and any issues with the chart should be
-raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**
 
 ## Source Code
 
@@ -17,14 +16,14 @@ Kubernetes: `>=1.16.0-0`
 
 ## Dependencies
 
-| Repository                             | Name   | Version |
-|----------------------------------------|--------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2   |
+| Repository | Name | Version |
+|------------|------|---------|
+| https://zekker6.github.io/helm-charts | common | 0.4.0 |
 
 ## TL;DR
 
 ```console
-helm repo add zekker6 https://zekker6.github.io/helm-charts
+helm repo add zekker6 https://zekker6.com/charts/
 helm repo update
 helm install language-tool zekker6/language-tool
 ```
@@ -45,26 +44,22 @@ To uninstall the `language-tool` deployment
 helm uninstall language-tool
 ```
 
-The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes
-the release.
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
 
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from
-the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from
-the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/zekker6/helm-charts/blob/main/charts/library/common/values.yaml) from the [common library](https://github.com/zekker6/helm-charts/blob/main/charts/library/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install language-tool \
   --set env.TZ="America/New York" \
-    k8s-at-home/language-tool
+    zekker6/language-tool
 ```
 
-Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the
-chart.
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
 helm install language-tool zekker6/language-tool -f values.yaml
@@ -76,32 +71,32 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library
-chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/zekker6/helm-charts/blob/main/charts/library/common)
 
-| Key                                                      | Type   | Default                   | Description                                                                                                                                                                                                                                                                                                                                                                                 |
-|----------------------------------------------------------|--------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| env                                                      | object | See below                 | environment variables. See more environment variables in the [container documentation](https://github.com/Erikvl87/docker-languagetool).                                                                                                                                                                                                                                                    |
-| env.Java_Xms                                             | string | `"1024m"`                 | Make sure this matches values at `.Values.resources.requests.memory`                                                                                                                                                                                                                                                                                                                        |
-| env.Java_Xmx                                             | string | `"1024m"`                 | Make sure this matches values at `.Values.resources.limits.memory`                                                                                                                                                                                                                                                                                                                          |
-| env.TZ                                                   | string | `"UTC"`                   | Set the container timezone                                                                                                                                                                                                                                                                                                                                                                  |
-| env.langtool_languageModel                               | string | `"/ngrams"`               | Make sure this matches `.Values.persistence.config.mountPath`                                                                                                                                                                                                                                                                                                                               |
-| image.pullPolicy                                         | string | `"IfNotPresent"`          | image pull policy                                                                                                                                                                                                                                                                                                                                                                           |
-| image.repository                                         | string | `"erikvl87/languagetool"` | image repository                                                                                                                                                                                                                                                                                                                                                                            |
-| image.tag                                                | string | `nil`                     | image tag                                                                                                                                                                                                                                                                                                                                                                                   |
-| ingress.main                                             | object | See values.yaml           | Enable and configure ingress settings for the chart under this key.                                                                                                                                                                                                                                                                                                                         |
-| initContainers.download-ngrams                           | object | See values.yaml           | Init container to set up ngram files. For other languages check for archives [here](https://languagetool.org/download/ngram-data/)                                                                                                                                                                                                                                                          |
-| initContainers.download-ngrams.volumeMounts[0].mountPath | string | `"/ngrams"`               | Make sure this matches `.Values.persistence.config.mountPath`                                                                                                                                                                                                                                                                                                                               |
-| persistence                                              | string | See values.yaml           | Configure persistence settings for the chart under this key. ngram archive for EN is 9G in size, please ensure your pod have enough disk space to download and unpack files By default init container only installs EN ngram files, that would take approx 14G after unpacking + 9GB for downloading Also, it will take some time to download archive depending on download speed available |
-| service                                                  | object | See values.yaml           | Configures service settings for the chart.                                                                                                                                                                                                                                                                                                                                                  |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| env | object | See below | environment variables. See more environment variables in the [container documentation](https://github.com/Erikvl87/docker-languagetool). |
+| env.Java_Xms | string | `"1024m"` | Make sure this matches values at `.Values.resources.requests.memory` |
+| env.Java_Xmx | string | `"1024m"` | Make sure this matches values at `.Values.resources.limits.memory` |
+| env.TZ | string | `"UTC"` | Set the container timezone |
+| env.langtool_languageModel | string | `"/ngrams"` | Make sure this matches `.Values.persistence.config.mountPath` |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"erikvl87/languagetool"` | image repository |
+| image.tag | string | `nil` | image tag |
+| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| initContainers.download-ngrams | object | See values.yaml | Init container to set up ngram files. For other languages check for archives [here](https://languagetool.org/download/ngram-data/) Archive download disabled by default, please enable it when deploying |
+| initContainers.download-ngrams.volumeMounts[0].mountPath | string | `"/ngrams"` | Make sure this matches `.Values.persistence.config.mountPath` |
+| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. ngram archive for EN is 9G in size, please ensure your pod have enough disk space to download and unpack files By default init container only installs EN ngram files, that would take approx 14G after unpacking + 9GB for downloading Also, it will take some time to download archive depending on download speed available |
+| service | object | See values.yaml | Configures service settings for the chart. |
 
-## Changelog
+### Older versions
 
-### Version 1.0.0
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/zekker6/language-tool?modal=changelog)
 
-#### Added
+## Support
 
-- Initial version
+- See the [Docs](http://zekker6.github.io/helm-charts/docs/)
+- Open an [issue](https://github.com/zekker6/helm-charts/issues/new)
 
 ----------------------------------------------
 Autogenerated from chart metadata using [helm-docs v1.11.0](https://github.com/norwoodj/helm-docs/releases/v1.11.0)

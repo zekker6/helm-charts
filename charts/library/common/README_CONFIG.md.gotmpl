@@ -1,5 +1,4 @@
-{{- define "custom.notes" -}}
-Since a lot of the {{ template "custom.repository.organization" . }} charts follow a similar pattern, this library was built to reduce maintenance cost between the charts that use it and try achieve a goal of being DRY.
+{{- define "custom.custom.notes" -}}
 {{- end -}}
 
 {{- define "custom.custom.configuration.header" -}}
@@ -11,20 +10,3 @@ Since a lot of the {{ template "custom.repository.organization" . }} charts foll
 
 N/A
 {{- end -}}
-
-{{- define "custom.usage" }}
-## Using this library
-
-Include this chart as a dependency in your `Chart.yaml` e.g.
-
-```yaml
-# Chart.yaml
-dependencies:
-- name: common
-  version: {{ template "chart.version" . }}
-  repository: {{ template "custom.helm.url" }}
-```
-
-For more information, take a look at the [Docs](http://zekker6.github.io/helm-charts/docs/common-library/introduction/).
-{{- end -}}
-{{ "" }}

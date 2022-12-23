@@ -1,10 +1,10 @@
 # changedetection-io
 
-![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: 0.39.4](https://img.shields.io/badge/AppVersion-0.39.4-informational?style=flat-square)
+![Version: 1.8.0](https://img.shields.io/badge/Version-1.8.0-informational?style=flat-square) ![AppVersion: 0.40.0](https://img.shields.io/badge/AppVersion-0.40.0-informational?style=flat-square)
 
 changedetection-io helm package
 
-Chart taken from k8s-at-home repo [here](https://github.com/k8s-at-home/charts/tree/master/charts/incubator/homer).
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**
 
 ## Source Code
 
@@ -17,14 +17,14 @@ Kubernetes: `>=1.16.0-0`
 
 ## Dependencies
 
-| Repository                             | Name   | Version |
-|----------------------------------------|--------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2   |
+| Repository | Name | Version |
+|------------|------|---------|
+| https://zekker6.github.io/helm-charts | common | 0.4.0 |
 
 ## TL;DR
 
 ```console
-helm repo add zekker6 https://zekker6.github.io/helm-charts
+helm repo add zekker6 https://zekker6.com/charts/
 helm repo update
 helm install changedetection-io zekker6/changedetection-io
 ```
@@ -45,29 +45,25 @@ To uninstall the `changedetection-io` deployment
 helm uninstall changedetection-io
 ```
 
-The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes
-the release.
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
 
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from
-the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from
-the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/zekker6/helm-charts/blob/main/charts/library/common/values.yaml) from the [common library](https://github.com/zekker6/helm-charts/blob/main/charts/library/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install changedetection-io \
   --set env.TZ="America/New York" \
-    k8s-at-home/changedetection-io
+    zekker6/changedetection-io
 ```
 
-Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the
-chart.
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install changedetection-io k8s-at-home/changedetection-io -f values.yaml
+helm install changedetection-io zekker6/changedetection-io -f values.yaml
 ```
 
 ## Custom configuration
@@ -76,16 +72,27 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library
-chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/zekker6/helm-charts/blob/main/charts/library/common)
 
-| Key              | Type   | Default                                 | Description                                                                                                                           |
-|------------------|--------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| env              | object | See below                               | environment variables. See more environment variables in the [changedetection-io documentation](https://changedetection-io.org/docs). |
-| env.TZ           | string | `"UTC"`                                 | Set the container timezone                                                                                                            |
-| image.pullPolicy | string | `"IfNotPresent"`                        | image pull policy                                                                                                                     |
-| image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository                                                                                                                      |
-| image.tag        | string | `"0.39.4"`                              | image tag                                                                                                                             |
-| ingress.main     | object | See values.yaml                         | Enable and configure ingress settings for the chart under this key.                                                                   |
-| persistence      | object | See values.yaml                         | Configure persistence settings for the chart under this key.                                                                          |
-| service          | object | See values.yaml                         | Configures service settings for the chart.                                                                                            |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| env | object | See below | environment variables. See more environment variables in the [changedetection-io documentation](https://changedetection-io.org/docs). |
+| env.TZ | string | `"UTC"` | Set the container timezone |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
+| image.tag | string | `"0.40.0"` | image tag |
+| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| service | object | See values.yaml | Configures service settings for the chart. |
+
+### Older versions
+
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/zekker6/changedetection-io?modal=changelog)
+
+## Support
+
+- See the [Docs](http://zekker6.github.io/helm-charts/docs/)
+- Open an [issue](https://github.com/zekker6/helm-charts/issues/new)
+
+----------------------------------------------
+Autogenerated from chart metadata using [helm-docs v1.11.0](https://github.com/norwoodj/helm-docs/releases/v1.11.0)

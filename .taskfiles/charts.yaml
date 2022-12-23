@@ -29,3 +29,23 @@ tasks:
     - find {{.PROJECT_DIR}}/charts/ -type f -name 'Chart.lock' -mindepth 1 -print0 | xargs -r -0 rm
     - find {{.PROJECT_DIR}}/charts/ -type d -name 'charts' -mindepth 1 -print0 | xargs -r -0 rm -rf
     silent: true
+
+  format:
+    desc: Format all charts
+    cmds:
+      - |
+        for c in $(ls {{.PROJECT_DIR}}/charts/apps/); do
+          yq eval -i 'sort_keys(.)' {{.PROJECT_DIR}}/charts/apps/$c/Chart.yaml
+        done
+
+  docs:
+    desc: Generate docs
+    cmds:
+      - |
+        for c in $(ls {{.PROJECT_DIR}}/charts/apps/); do
+          if [ ! -f {{.PROJECT_DIR}}/charts/apps/$c/README_CONFIG.md.gotmpl ]; then
+            cp {{.PROJECT_DIR}}/charts/README_CONFIG.md.gotmpl {{.PROJECT_DIR}}/charts/apps/$c/README_CONFIG.md.gotmpl
+          fi
+        done
+      - helm-docs --template-files charts/README.md.gotmpl --template-files=README_CONFIG.md.gotmpl
+    silent: true

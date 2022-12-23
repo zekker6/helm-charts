@@ -1,25 +1,24 @@
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: updated docs
 apiVersion: v2
 appVersion: "5.8"
-description: language-tool helm package
-name: language-tool
-version: 1.0.0
-kubeVersion: ">=1.16.0-0"
-keywords:
-  - language-tool
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/language-tool
-icon: https://language-tool.org/icon
-sources:
-  - https://github.com/language-tool/language-tool-docker
-maintainers:
-  - name: zekker6
-    email: zekker6@gmail.com
-    url: "https://github.com/zekker6/"
-
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
     version: 0.4.0
-annotations:
-  artifacthub.io/changes: |
-    - kind: added
-      description: switch to zekker6/common library chart
+description: language-tool helm package
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/language-tool
+icon: https://languagetool.org/images/logo_color_with_background.svg?8dae54218b449e94603195c91016bc93
+keywords:
+  - language-tool
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - name: zekker6
+    email: zekker6@gmail.com
+    url: "https://github.com/zekker6/"
+name: language-tool
+sources:
+  - https://github.com/language-tool/language-tool-docker
+version: 1.0.1

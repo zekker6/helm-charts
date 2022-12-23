@@ -1,18 +1,15 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: switch to zekker6/common library chart
+      description: updated docs
 apiVersion: v2
 appVersion: v22.10.1
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
     version: 0.4.0
-description: A dead simple static HOMepage for your servER to keep your services on
-  hand, from a simple yaml configuration file.
+description: A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
-sources:
-  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
 kubeVersion: '>=1.16.0-0'
 maintainers:
@@ -20,4 +17,6 @@ maintainers:
     email: "zekker6@gmail.com"
     url: "https://github.com/zekker6/"
 name: homer
-version: 8.2.0
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
+version: 8.2.1
