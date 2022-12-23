@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update default values to include appVersion in tag
+      description: switch to zekker6/common library chart
 apiVersion: v2
 appVersion: v22.10.1
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.4.0
 description: A dead simple static HOMepage for your servER to keep your services on
   hand, from a simple yaml configuration file.
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
@@ -20,4 +20,4 @@ maintainers:
     email: "zekker6@gmail.com"
     url: "https://github.com/zekker6/"
 name: homer
-version: 8.1.2
+version: 8.2.0

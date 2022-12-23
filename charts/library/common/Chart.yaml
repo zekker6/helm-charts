@@ -2,15 +2,16 @@ apiVersion: v2
 name: common
 description: Function library for Helm charts
 type: library
-version: 0.4.0
+version: 0.4.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - common
   - library
 home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
 maintainers:
-  - name: zekker6
-    email: me@zekker6.dev
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
