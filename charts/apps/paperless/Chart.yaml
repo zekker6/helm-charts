@@ -7,7 +7,7 @@ appVersion: 1.9.2
 dependencies:
 - name: common
   repository: https://zekker6.github.io/helm-charts
-  version: 0.4.0
+  version: 0.4.1
 - condition: postgresql.enabled
   name: postgresql
   repository: https://charts.bitnami.com/bitnami
