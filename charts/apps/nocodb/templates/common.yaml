@@ -1,0 +1,8 @@
+{{/* Make sure all variables are set properly */}}
+{{- include "common.values.setup" . }}
+
+{{ include "common.all" . }}
+
+{{ if and .Values.postgresql.enabled  (not .Values.env.NC_DB) }}
+{{ fail "Please, specify .Values.env.NC_DB to connect to enabled postgres"}}
+{{ end }}
