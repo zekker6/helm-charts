@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: updated docs
+      description: update paperless to 1.10.2
 apiVersion: v2
-appVersion: 1.9.2
+appVersion: 1.10.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -29,4 +29,5 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.6.1
+version: 9.7.0
+
