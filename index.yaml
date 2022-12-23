@@ -4,10 +4,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update library chart to 0.4.1
+    apiVersion: v2
+    appVersion: 0.40.0
+    created: "2022-12-23T13:23:12.200420973Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.1
+    description: changedetection-io helm package
+    digest: ca929f1ece772f61783cb247340ecb8d843d48d8c5596e64d658ad0ef9385559
+    home: https://github.com/zekker6/charts/tree/master/charts/apps/changedetection-io
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/changedetection-io-1.8.2.tgz
+    version: 1.8.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: updated docs
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2022-12-23T13:21:30.474446532Z"
+    created: "2022-12-23T13:23:12.197464266Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -37,7 +67,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2022-12-23T13:21:30.470306531Z"
+    created: "2022-12-23T13:23:12.19402914Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -67,7 +97,7 @@ entries:
           description: update image to 0.40.0
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2022-12-23T13:21:30.467189979Z"
+    created: "2022-12-23T13:23:12.190371107Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -96,7 +126,7 @@ entries:
           description: chart upload
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2022-12-23T13:21:30.464270237Z"
+    created: "2022-12-23T13:23:12.187115189Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -125,7 +155,7 @@ entries:
         - kind: changed
           description: images updates
     apiVersion: v2
-    created: "2022-12-23T13:21:30.794526519Z"
+    created: "2022-12-23T13:23:12.581052937Z"
     description: Function library for Helm charts
     digest: 71d091ad69d6039e835e5e696970f3ee2f2ded3dc08ab296a3d4d5e5556484c0
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -147,7 +177,7 @@ entries:
         - kind: changed
           description: images updates
     apiVersion: v2
-    created: "2022-12-23T13:21:30.792230507Z"
+    created: "2022-12-23T13:23:12.578448043Z"
     description: Function library for Helm charts
     digest: 93bfa63949d1ff5ee051093d687821af7524bf8896af9d6595d301947d6b9594
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -167,10 +197,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update library chart to 0.4.1
+    apiVersion: v2
+    appVersion: v22.11.2
+    created: "2022-12-23T13:23:12.225387083Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.1
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: b084a42dc1d8db9f83e601fa65074350afd326d5e3e5bb3cea3841f2e2990132
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/homer-8.3.1.tgz
+    version: 8.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update homer to v22.11.2
     apiVersion: v2
     appVersion: v22.11.2
-    created: "2022-12-23T13:21:30.492813927Z"
+    created: "2022-12-23T13:23:12.222350472Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -197,7 +254,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-23T13:21:30.490066893Z"
+    created: "2022-12-23T13:23:12.218971049Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -224,7 +281,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-23T13:21:30.487322159Z"
+    created: "2022-12-23T13:23:12.215024005Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -251,7 +308,7 @@ entries:
           description: update default values to include appVersion in tag
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-23T13:21:30.48324006Z"
+    created: "2022-12-23T13:23:12.211799688Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -278,7 +335,7 @@ entries:
           description: updated readme refs to k8s-at-home repo
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-23T13:21:30.48035062Z"
+    created: "2022-12-23T13:23:12.207955548Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -305,7 +362,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2022-12-23T13:21:30.477440478Z"
+    created: "2022-12-23T13:23:12.204767832Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -333,7 +390,35 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: "5.8"
-    created: "2022-12-23T13:21:30.499787966Z"
+    created: "2022-12-23T13:23:12.235340645Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.1
+    description: language-tool helm package
+    digest: edcf633b816adf059d90c90c8f2c7735af7e7d9e5033d0f5c5f09a32fe7c1fab
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/language-tool
+    icon: https://languagetool.org/images/logo_color_with_background.svg?8dae54218b449e94603195c91016bc93
+    keywords:
+    - language-tool
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: language-tool
+    sources:
+    - https://github.com/language-tool/language-tool-docker
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: updated docs
+    apiVersion: v2
+    appVersion: "5.8"
+    created: "2022-12-23T13:23:12.23164171Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -361,7 +446,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: "5.8"
-    created: "2022-12-23T13:21:30.49555376Z"
+    created: "2022-12-23T13:23:12.228467495Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -390,13 +475,13 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 1.74.0
-    created: "2022-12-23T13:21:30.56476593Z"
+    created: "2022-12-23T13:23:12.301283147Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.x.x
     description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
-    digest: 146abc7a0fa87624f624b5fd54d47faf99457e341d465d3d9c0761906a5046e8
+    digest: 246b2d1e847d68617dcedf8f49662a4722eaa48dc9dd9ee60586a23e49d6cb75
     home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
     icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
     maintainers:
@@ -416,7 +501,7 @@ entries:
           description: update synapse to 1.74.0
     apiVersion: v2
     appVersion: 1.74.0
-    created: "2022-12-23T13:21:30.556165311Z"
+    created: "2022-12-23T13:23:12.291367486Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -441,7 +526,7 @@ entries:
           description: update synapse to 1.72.0
     apiVersion: v2
     appVersion: 1.72.0
-    created: "2022-12-23T13:21:30.548843855Z"
+    created: "2022-12-23T13:23:12.28297468Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -466,7 +551,7 @@ entries:
           description: update synapse to 1.71.0
     apiVersion: v2
     appVersion: 1.71.0
-    created: "2022-12-23T13:21:30.540189434Z"
+    created: "2022-12-23T13:23:12.272183087Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -491,7 +576,7 @@ entries:
           description: update synapse to 1.70.1
     apiVersion: v2
     appVersion: 1.70.1
-    created: "2022-12-23T13:21:30.532761972Z"
+    created: "2022-12-23T13:23:12.26293265Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -516,7 +601,7 @@ entries:
           description: update synapse to 1.70.0
     apiVersion: v2
     appVersion: 1.70.0
-    created: "2022-12-23T13:21:30.515741943Z"
+    created: "2022-12-23T13:23:12.254262434Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -541,7 +626,7 @@ entries:
           description: update synapse to 1.69.0
     apiVersion: v2
     appVersion: 1.69.0
-    created: "2022-12-23T13:21:30.507105422Z"
+    created: "2022-12-23T13:23:12.2450706Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -566,7 +651,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-23T13:21:30.606461561Z"
+    created: "2022-12-23T13:23:12.348126253Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -587,7 +672,7 @@ entries:
     version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-23T13:21:30.597855742Z"
+    created: "2022-12-23T13:23:12.339718447Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -608,7 +693,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-23T13:21:30.590586388Z"
+    created: "2022-12-23T13:23:12.330094497Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -629,7 +714,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-23T13:21:30.582085874Z"
+    created: "2022-12-23T13:23:12.320649352Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -651,7 +736,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2022-12-23T13:21:30.574339996Z"
+    created: "2022-12-23T13:23:12.310534484Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -675,10 +760,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update library chart to 0.4.1
+    apiVersion: v2
+    appVersion: 0.100.2
+    created: "2022-12-23T13:23:12.375411047Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 7ab009db76ce88a48f4d76948715cc390b6e24c72fe5b0f2202b38e89195f1d0
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://www.nocodb.com/brand/logo.png
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: updated docs
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2022-12-23T13:21:30.622830058Z"
+    created: "2022-12-23T13:23:12.366347517Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -710,7 +827,7 @@ entries:
           description: initial chart release
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2022-12-23T13:21:30.615326892Z"
+    created: "2022-12-23T13:23:12.357110581Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -740,10 +857,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update library chart to 0.4.1
+    apiVersion: v2
+    appVersion: 1.10.2
+    created: "2022-12-23T13:23:12.575833347Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.3.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 944c222817125c1cd25868a067a42cec72ec702a00ea351dd00387b8b31f57e8
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/paperless-9.7.1.tgz
+    version: 9.7.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update paperless to 1.10.2
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2022-12-23T13:21:30.789882592Z"
+    created: "2022-12-23T13:23:12.55862072Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -779,7 +932,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.769379294Z"
+    created: "2022-12-23T13:23:12.542737242Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -815,7 +968,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.754386464Z"
+    created: "2022-12-23T13:23:12.527777597Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -851,7 +1004,7 @@ entries:
           description: update redis and pg to use latest patch versions
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.737855559Z"
+    created: "2022-12-23T13:23:12.511301297Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -887,7 +1040,7 @@ entries:
           description: update redis to 17.3.9
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.72473442Z"
+    created: "2022-12-23T13:23:12.495881935Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -923,7 +1076,7 @@ entries:
           description: update redis to 17.3.8
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.710121208Z"
+    created: "2022-12-23T13:23:12.478685609Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -959,7 +1112,7 @@ entries:
           description: update redos to 17.3.7
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.69536859Z"
+    created: "2022-12-23T13:23:12.46306104Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -995,7 +1148,7 @@ entries:
           description: update postgresql to 11.9.13
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.680492166Z"
+    created: "2022-12-23T13:23:12.445713408Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1031,7 +1184,7 @@ entries:
           description: update redis to 16.13.2
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.665897555Z"
+    created: "2022-12-23T13:23:12.428625385Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1067,7 +1220,7 @@ entries:
           description: fix links in readme
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.651583258Z"
+    created: "2022-12-23T13:23:12.411613766Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1103,7 +1256,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2022-12-23T13:21:30.638038198Z"
+    created: "2022-12-23T13:23:12.391832345Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -1133,4 +1286,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2022-12-23T13:21:30.460961675Z"
+generated: "2022-12-23T13:23:12.18330775Z"
