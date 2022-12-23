@@ -1,0 +1,24 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial chart release
+apiVersion: v2
+appVersion: 0.0.0
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.4.1
+description: NEW_APP
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/NEW_APP"
+icon: NEW_APP_REPLACE_ME
+keywords:
+  - NEW_APP
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: NEW_APP
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/NEW_APP"
+version: 0.0.0
