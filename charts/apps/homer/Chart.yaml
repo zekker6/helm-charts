@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: updated readme refs to k8s-at-home repo
+      description: update default values to include appVersion in tag
 apiVersion: v2
 appVersion: v22.10.1
 dependencies:
@@ -20,4 +20,4 @@ maintainers:
     email: "zekker6@gmail.com"
     url: "https://github.com/zekker6/"
 name: homer
-version: 8.1.1
+version: 8.1.2
