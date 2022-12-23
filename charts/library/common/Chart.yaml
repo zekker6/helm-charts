@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for Helm charts
 type: library
-version: 0.3.0
+version: 0.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - common
@@ -14,4 +14,4 @@ maintainers:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Updated code-server image to v4.8.0
+      description: images updates
