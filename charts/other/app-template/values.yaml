@@ -7,12 +7,12 @@
 
 image:
   # -- image repository
-  repository: noop
+  repository: nginx
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
-  tag: 0.0
+  tag: latest
 
 # -- See the following files for additional environment variables:
 # NEW_APP_REPLACE_ME
