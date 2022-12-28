@@ -1,3 +1,5 @@
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/zekker6)](https://artifacthub.io/packages/search?repo=zekker6)
+
 # helm-charts
 A collection of Helm charts
 
