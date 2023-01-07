@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update redis to 17.4.x
+      description: update paperless to 1.11.3
 apiVersion: v2
-appVersion: 1.10.2
+appVersion: 1.11.3
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -29,4 +29,4 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.8.0
+version: 9.9.0
