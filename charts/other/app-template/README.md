@@ -1,6 +1,6 @@
 # NEW_APP
 
-![Version: 0.0.0](https://img.shields.io/badge/Version-0.0.0-informational?style=flat-square) ![AppVersion: 0.0.0](https://img.shields.io/badge/AppVersion-0.0.0-informational?style=flat-square)
+![Version: 0.0.0](https://img.shields.io/badge/Version-0.0.0-informational?style=flat-square) ![AppVersion: 1](https://img.shields.io/badge/AppVersion-1-informational?style=flat-square)
 
 NEW_APP
 
@@ -77,8 +77,8 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | See the following files for additional environment variables: NEW_APP_REPLACE_ME |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"noop"` | image repository |
-| image.tag | float | chart.appVersion | image tag |
+| image.repository | string | `"nginx"` | image repository |
+| image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence for data to use sqlite backend. |
 | service | object | See values.yaml | Configures service settings for the chart. |
