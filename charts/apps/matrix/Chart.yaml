@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: updated docs
+      description: update readme
 apiVersion: v2
 appVersion: 1.74.0
 dependencies:
@@ -19,4 +19,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.16.1
+version: 2.16.2

@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 9.9.0](https://img.shields.io/badge/Version-9.9.0-informational?style=flat-square) ![AppVersion: 1.11.3](https://img.shields.io/badge/AppVersion-1.11.3-informational?style=flat-square)
+![Version: 9.9.1](https://img.shields.io/badge/Version-9.9.1-informational?style=flat-square) ![AppVersion: 1.11.3](https://img.shields.io/badge/AppVersion-1.11.3-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 

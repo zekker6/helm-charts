@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: initial release
+    - kind: changed
+      description: update readme
 apiVersion: v2
 appVersion: v0.111
 dependencies:
@@ -22,4 +22,4 @@ name: karma
 sources:
   - "https://github.com/prymitive/karma"
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
-version: 0.1.0
+version: 0.1.1
