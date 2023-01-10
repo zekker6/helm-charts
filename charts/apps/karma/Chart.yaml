@@ -1,0 +1,25 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial release
+apiVersion: v2
+appVersion: v0.111
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.4.1
+description: karma - Alert dashboard for Prometheus Alertmanager
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
+icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+keywords:
+  - karma
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: karma
+sources:
+  - "https://github.com/prymitive/karma"
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
+version: 0.1.0
