@@ -36,7 +36,7 @@ Chart source: https://github.com/typokign/matrix-chart
 ## TL;DR
 
 ```console
-helm repo add zekker6 https://zekker6.com/charts/
+helm repo add https://zekker6.github.io/helm-charts/
 helm repo update
 helm install matrix zekker6/matrix
 ```

@@ -34,7 +34,7 @@ https://zekker6.com/charts/
 ## TL;DR
 
 ```console
-helm repo add {{ template "custom.repository.organization" . }} {{ template "custom.helm.url" . }}
+helm repo add https://zekker6.github.io/helm-charts/
 helm repo update
 helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }}
 ```
