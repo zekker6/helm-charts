@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add https://zekker6.github.io/helm-charts/
+helm repo add zekker6 https://zekker6.github.io/helm-charts/
 helm repo update
 helm install common zekker6/common
 ```
