@@ -3,7 +3,7 @@ annotations:
     - kind: changed
       description: update readme
 apiVersion: v2
-appVersion: 1.74.0
+appVersion: 1.75.0
 dependencies:
   - name: postgresql
     version: "11.x.x"
@@ -19,4 +19,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.16.2
+version: 2.17.0
