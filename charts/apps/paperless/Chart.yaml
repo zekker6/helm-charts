@@ -3,7 +3,7 @@ annotations:
     - kind: changed
       description: update readme
 apiVersion: v2
-appVersion: 1.12.1
+appVersion: 1.12.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -29,4 +29,4 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.10.0
+version: 9.11.0
