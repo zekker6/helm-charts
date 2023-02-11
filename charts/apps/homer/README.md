@@ -2,6 +2,7 @@
 
 ![Version: 8.4.0](https://img.shields.io/badge/Version-8.4.0-informational?style=flat-square) ![AppVersion: v23.02.1](https://img.shields.io/badge/AppVersion-v23.02.1-informational?style=flat-square)
 
+
 A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**

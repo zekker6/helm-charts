@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update library chart to 0.4.1
+      description: update to 0.40.2
 apiVersion: v2
-appVersion: "0.40.0"
+appVersion: "0.40.2"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -24,4 +24,4 @@ name: changedetection-io
 sources:
   - https://github.com/dgtlmoon/changedetection.io
   - https://github.com/zekker6/charts/tree/master/charts/apps/changedetection-io
-version: 1.8.4
+version: 1.9.0
