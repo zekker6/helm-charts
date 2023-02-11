@@ -1,6 +1,6 @@
 # nocodb
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![AppVersion: 0.100.2](https://img.shields.io/badge/AppVersion-0.100.2-informational?style=flat-square)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat-square) ![AppVersion: 0.104.3](https://img.shields.io/badge/AppVersion-0.104.3-informational?style=flat-square)
 
 nocodb - Open Source Airtable Alternative
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 12.x.x |
-| https://zekker6.github.io/helm-charts | common | 0.4.1 |
+| https://zekker6.github.io/helm-charts | common | 0.4.2 |
 
 ## TL;DR
 
