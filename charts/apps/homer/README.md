@@ -1,6 +1,7 @@
 # homer
 
-![Version: 8.3.3](https://img.shields.io/badge/Version-8.3.3-informational?style=flat-square) ![AppVersion: v22.11.2](https://img.shields.io/badge/AppVersion-v22.11.2-informational?style=flat-square)
+![Version: 8.4.0](https://img.shields.io/badge/Version-8.4.0-informational?style=flat-square) ![AppVersion: v23.02.1](https://img.shields.io/badge/AppVersion-v23.02.1-informational?style=flat-square)
+
 
 A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 
@@ -83,7 +84,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"b4bz/homer"` | image repository |
-| image.tag | string | `"v22.11.2"` |  |
+| image.tag | string | `"v23.02.1"` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | securityContext.runAsGroup | int | `1000` | Specify the group ID the application will run as |

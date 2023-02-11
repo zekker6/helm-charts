@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update library chart to 0.4.1
+      description: update to v23.02.1
 apiVersion: v2
-appVersion: v22.11.2
+appVersion: v23.02.1
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -19,4 +19,4 @@ maintainers:
 name: homer
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
-version: 8.3.3
+version: 8.4.0
