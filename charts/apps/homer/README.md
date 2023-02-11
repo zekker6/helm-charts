@@ -1,6 +1,6 @@
 # homer
 
-![Version: 8.3.2](https://img.shields.io/badge/Version-8.3.2-informational?style=flat-square) ![AppVersion: v22.11.2](https://img.shields.io/badge/AppVersion-v22.11.2-informational?style=flat-square)
+![Version: 8.3.3](https://img.shields.io/badge/Version-8.3.3-informational?style=flat-square) ![AppVersion: v22.11.2](https://img.shields.io/badge/AppVersion-v22.11.2-informational?style=flat-square)
 
 A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 
@@ -20,7 +20,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.4.1 |
+| https://zekker6.github.io/helm-charts | common | 0.4.2 |
 
 ## TL;DR
 
