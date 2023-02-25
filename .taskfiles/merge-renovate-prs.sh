@@ -15,7 +15,8 @@ for ref in $refs; do
 
   # if contains changes to library charts then skip
   files_diff=$(git diff --name-only origin/main...origin/$ref)
-  if  [[ ! echo $files_diff | wc -l -eq 1]] then
+  files_changed=$(echo $files_diff | wc -l)
+  if [[ ! files_changed -eq 1]]; then
     echo "Skipping $ref as it contains more than one file"
     continue
   fi
