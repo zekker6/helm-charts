@@ -26,11 +26,14 @@ for ref in $refs; do
 
   # Update chart version, app version and artifacthub.io/changes
   # get commit message
-  commit_message=$(git log --format=%B -n 1 origin/$ref | awk -F ':' '{print $2}')
+  commit_message=$(git log --format=%B -n 1 origin/$ref | awk -F ': ' '{print $2}')
   app_version=$(echo $commit_message | awk -F ' to ' '{print $2}' | sed 's/v//')
 
   chart_file=$(echo $files_diff | sed 's/values.yaml/Chart.yaml/')
-  yq -i '.appVersion = "v'$app_version'"' $chart_file
+
+  if [[ $commit_message != *redis*]] && [[ $commit_message != *postgres*]]; then
+     yq -i '.appVersion = "v'$app_version'"' $chart_file
+  fi
 
   changes=$(cat << EOF
 - kind: changed
