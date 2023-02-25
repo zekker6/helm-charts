@@ -23,3 +23,7 @@ tasks:
     - task charts:docs
     - task precommit:run-all
     - task charts:lint-all
+
+  renovate:all:
+    cmds:
+      - bash .taskfiles/merge-renovate-prs.sh
