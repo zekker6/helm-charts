@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update helm release redis to 17.8.0
+      description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.13.0
 apiVersion: v2
-appVersion: 1.12.2
+appVersion: v1.13.0
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
