@@ -43,7 +43,7 @@ for ref in $refs; do
 
   changes=$(cat << EOF
 - kind: changed
-  description: \"$commit_message\"
+  description: $commit_message
 EOF
 )
   yq -i ".annotations[\"artifacthub.io/changes\"] = \"$changes\"" $chart_file
