@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update matrix to 1.76.0
+      description: update postgresql chart to 12.x
 apiVersion: v2
 appVersion: 1.76.0
 dependencies:
@@ -19,4 +19,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.18.0
+version: 2.19.0
