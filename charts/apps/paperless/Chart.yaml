@@ -3,7 +3,7 @@ annotations:
     - kind: changed
       description: update postgresql chart to 12.x
 apiVersion: v2
-appVersion: 1.12.2
+appVersion: v1.13.0
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -15,7 +15,7 @@ dependencies:
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 17.7.x
+    version: 17.8.x
 description: Paperless - Index and archive all of your scanned paper documents
 home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
 icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png

@@ -3,7 +3,7 @@ annotations:
     - kind: changed
       description: update postgresql chart to 12.x
 apiVersion: v2
-appVersion: 1.76.0
+appVersion: v1.77.0
 dependencies:
   - name: postgresql
     version: "12.x"
