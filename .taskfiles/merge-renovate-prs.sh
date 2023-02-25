@@ -31,7 +31,7 @@ for ref in $refs; do
 
   chart_file=$(echo $files_diff | sed 's/values.yaml/Chart.yaml/')
 
-  if [[ $commit_message != *redis*]] && [[ $commit_message != *postgres*]]; then
+  if [[ $commit_message != *"redis"* && $commit_message != *"postgres"* ]]; then
      yq -i '.appVersion = "v'$app_version'"' $chart_file
   fi
 
