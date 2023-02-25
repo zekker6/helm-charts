@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.13.0
+      description: update postgresql chart to 12.x
 apiVersion: v2
 appVersion: v1.13.0
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
-    version: 11.9.x
+    version: 12.x
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
