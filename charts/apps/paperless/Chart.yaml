@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update postgresql chart to 12.x
+      description: update library chart to 0.4.3
 apiVersion: v2
 appVersion: v1.13.0
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.2
+    version: 0.4.3
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
@@ -29,4 +29,4 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.13.0
+version: 9.14.0

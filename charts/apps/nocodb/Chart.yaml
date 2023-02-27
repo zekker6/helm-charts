@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update nocodb/nocodb docker tag to v0.105.3
+      description: update library chart to 0.4.3
 apiVersion: v2
 appVersion: v0.105.3
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.2
+    version: 0.4.3
   - name: postgresql
     version: "12.x.x"
     repository: "https://charts.bitnami.com/bitnami"
@@ -25,4 +25,4 @@ maintainers:
 name: nocodb
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb"
-version: 0.5.0
+version: 0.6.0

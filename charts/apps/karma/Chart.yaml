@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/prymitive/karma docker tag to v0.112
+      description: update library chart to 0.4.3
 apiVersion: v2
 appVersion: v0.112
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.2
+    version: 0.4.3
 description: karma - Alert dashboard for Prometheus Alertmanager
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
 icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
@@ -22,4 +22,4 @@ name: karma
 sources:
   - "https://github.com/prymitive/karma"
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
-version: 0.2.2
+version: 0.3.0

@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.4.2 |
+| https://zekker6.github.io/helm-charts | common | 0.4.3 |
 
 ## TL;DR
 

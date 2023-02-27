@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: initial release
+    - kind: changed
+      description: update library chart to 0.4.3
 apiVersion: v2
 appVersion: 0.11.0
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.2
+    version: 0.4.3
 description: memos - An open-source, self-hosted memo hub with knowledge management and social networking.
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
 icon: https://usememos.com/logo.png
@@ -23,4 +23,4 @@ name: memos
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
   - "https://github.com/usememos/memos"
-version: 0.1.0
+version: 0.2.0
