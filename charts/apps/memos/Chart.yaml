@@ -1,0 +1,26 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial release
+apiVersion: v2
+appVersion: 0.11.0
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.4.2
+description: memos - An open-source, self-hosted memo hub with knowledge management and social networking.
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
+icon: https://usememos.com/logo.png
+keywords:
+  - memos
+  - notes
+kubeVersion: '>=1.16.0-0'
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: memos
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
+  - "https://github.com/usememos/memos"
+version: 0.1.0
