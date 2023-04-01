@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: initial release
+    - kind: changed
+      description: fix icon URL for artifacthub
 apiVersion: v2
 appVersion: "2.7"
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     version: 0.4.3
 description: healthchecks helm package
 home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/healthchecks
-icon: view-source:https://healthchecks.io/static/img/favicon.png
+icon: https://healthchecks.io/static/img/favicon.png
 keywords:
   - healthchecks
 kubeVersion: ">=1.16.0-0"
@@ -22,4 +22,4 @@ name: healthchecks
 sources:
   - https://github.com/linuxserver/docker-healthchecks
   - https://github.com/healthchecks/healthchecks
-version: 0.1.0
+version: 0.1.1
