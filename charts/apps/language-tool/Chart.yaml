@@ -1,15 +1,15 @@
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: update library chart to 0.4.3
+      description: update language-tool to 6.0
 apiVersion: v2
-appVersion: "5.8"
+appVersion: "6.0"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
     version: 0.4.3
 description: language-tool helm package
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/language-tool
+home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/language-tool
 icon: https://languagetool.org/images/logo_color_with_background.svg?8dae54218b449e94603195c91016bc93
 keywords:
   - language-tool
@@ -21,4 +21,4 @@ maintainers:
 name: language-tool
 sources:
   - https://github.com/language-tool/language-tool-docker
-version: 1.1.0
+version: 1.2.0
