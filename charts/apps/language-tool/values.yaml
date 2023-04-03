@@ -4,6 +4,13 @@
 # This chart inherits from our common library chart. You can check the default values/options here:
 # https://github.com/zekker6/helm-charts/blob/main/charts/library/common/values.yaml
 #
+image:
+  # -- image repository
+  repository: erikvl87/languagetool
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: "6.0"
 
 # -- environment variables. See more environment variables in the [container documentation](https://github.com/Erikvl87/docker-languagetool).
 # @default -- See below
