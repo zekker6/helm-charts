@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update matrixdotorg/synapse docker tag to v1.81.0
+      description: update matrixdotorg/synapse docker tag to v1.82.0
 apiVersion: v2
-appVersion: v1.81.0
+appVersion: v1.82.0
 dependencies:
   - name: postgresql
     version: "12.x"
@@ -19,4 +19,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.23.0
+version: 2.24.0
