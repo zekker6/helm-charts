@@ -2,5 +2,18 @@
   "extends": [
     "github>zekker6/renovate-config",
     "github>zekker6/renovate-config:automerge-github-actions"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    }
   ]
 }
