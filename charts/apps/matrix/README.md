@@ -302,7 +302,7 @@ N/A
 | riot.welcomeUserId | string | `""` |  |
 | synapse.image.pullPolicy | string | `"IfNotPresent"` |  |
 | synapse.image.repository | string | `"matrixdotorg/synapse"` |  |
-| synapse.image.tag | string | `"v1.82.0"` |  |
+| synapse.image.tag | string | `"v1.83.0"` |  |
 | synapse.labels.component | string | `"synapse"` |  |
 | synapse.metrics.annotations | bool | `true` |  |
 | synapse.metrics.enabled | bool | `true` |  |
