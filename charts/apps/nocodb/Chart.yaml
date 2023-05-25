@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update nocodb/nocodb docker tag to v0.107.1
+      description: update nocodb/nocodb docker tag to v0.107.4
 apiVersion: v2
-appVersion: v0.107.1
+appVersion: v0.107.4
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -25,4 +25,4 @@ maintainers:
 name: nocodb
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb"
-version: 0.9.0
+version: 0.10.0
