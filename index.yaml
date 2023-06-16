@@ -7,7 +7,7 @@ entries:
           description: initial chart release
     apiVersion: v2
     appVersion: "1"
-    created: "2023-06-16T07:15:43.487351115Z"
+    created: "2023-06-16T07:17:13.87971579Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -36,7 +36,7 @@ entries:
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.42
     apiVersion: v2
     appVersion: v0.42
-    created: "2023-06-16T07:15:42.642672415Z"
+    created: "2023-06-16T07:17:13.050473052Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -66,7 +66,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: 0.40.2
-    created: "2023-06-16T07:15:42.639906336Z"
+    created: "2023-06-16T07:17:13.045461744Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -96,7 +96,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.676012354Z"
+    created: "2023-06-16T07:17:13.071584786Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -126,7 +126,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.673076977Z"
+    created: "2023-06-16T07:17:13.068930282Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -156,7 +156,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.662921456Z"
+    created: "2023-06-16T07:17:13.066233878Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -186,7 +186,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.660170178Z"
+    created: "2023-06-16T07:17:13.063506973Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -216,7 +216,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.657167401Z"
+    created: "2023-06-16T07:17:13.059429367Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -246,7 +246,7 @@ entries:
           description: update image to 0.40.0
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.648895666Z"
+    created: "2023-06-16T07:17:13.056720562Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -275,7 +275,7 @@ entries:
           description: chart upload
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2023-06-16T07:15:42.646048888Z"
+    created: "2023-06-16T07:17:13.053770758Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -304,7 +304,7 @@ entries:
         - kind: changed
           description: update dependencies
     apiVersion: v2
-    created: "2023-06-16T07:15:43.484624737Z"
+    created: "2023-06-16T07:17:13.876938508Z"
     description: Function library for Helm charts
     digest: addf5839d188bf1e09a3bb5d594576ede46cdbb9eee9deedc39db44c22a0cb76
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -326,7 +326,7 @@ entries:
         - kind: changed
           description: update readme
     apiVersion: v2
-    created: "2023-06-16T07:15:43.482266055Z"
+    created: "2023-06-16T07:17:13.874670422Z"
     description: Function library for Helm charts
     digest: ad47203cfe6437ddf48bb38588f129e2e51d72e71ec5d3565848dccd2d483cf8
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -348,7 +348,7 @@ entries:
         - kind: changed
           description: images updates
     apiVersion: v2
-    created: "2023-06-16T07:15:43.47911538Z"
+    created: "2023-06-16T07:17:13.872390237Z"
     description: Function library for Helm charts
     digest: 1f0cedfd5efedf45437edee54c3427c50eb53c468b5142d197ca2ee39a863e9a
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -370,7 +370,7 @@ entries:
         - kind: changed
           description: images updates
     apiVersion: v2
-    created: "2023-06-16T07:15:43.476082803Z"
+    created: "2023-06-16T07:17:13.870041752Z"
     description: Function library for Helm charts
     digest: 93bfa63949d1ff5ee051093d687821af7524bf8896af9d6595d301947d6b9594
     home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
@@ -393,7 +393,7 @@ entries:
           description: fix icon URL for artifacthub
     apiVersion: v2
     appVersion: "2.7"
-    created: "2023-06-16T07:15:42.682368805Z"
+    created: "2023-06-16T07:17:13.078623897Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -422,7 +422,7 @@ entries:
           description: initial release
     apiVersion: v2
     appVersion: "2.7"
-    created: "2023-06-16T07:15:42.679540427Z"
+    created: "2023-06-16T07:17:13.075759193Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -452,7 +452,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: v23.02.2
-    created: "2023-06-16T07:15:42.720865704Z"
+    created: "2023-06-16T07:17:13.114789655Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -479,7 +479,7 @@ entries:
           description:  update b4bz/homer docker tag to v23.02.2
     apiVersion: v2
     appVersion: v23.02.2
-    created: "2023-06-16T07:15:42.717997126Z"
+    created: "2023-06-16T07:17:13.11187315Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -506,7 +506,7 @@ entries:
           description: update to v23.02.1
     apiVersion: v2
     appVersion: v23.02.1
-    created: "2023-06-16T07:15:42.713832559Z"
+    created: "2023-06-16T07:17:13.109138746Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -533,7 +533,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: v22.11.2
-    created: "2023-06-16T07:15:42.71113778Z"
+    created: "2023-06-16T07:17:13.106379942Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -560,7 +560,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: v22.11.2
-    created: "2023-06-16T07:15:42.707886505Z"
+    created: "2023-06-16T07:17:13.103560537Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -587,7 +587,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: v22.11.2
-    created: "2023-06-16T07:15:42.705117627Z"
+    created: "2023-06-16T07:17:13.099488131Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -614,7 +614,7 @@ entries:
           description: update homer to v22.11.2
     apiVersion: v2
     appVersion: v22.11.2
-    created: "2023-06-16T07:15:42.701334756Z"
+    created: "2023-06-16T07:17:13.096850627Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -641,7 +641,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2023-06-16T07:15:42.697936483Z"
+    created: "2023-06-16T07:17:13.094167822Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -668,7 +668,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2023-06-16T07:15:42.695175005Z"
+    created: "2023-06-16T07:17:13.091464118Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -695,7 +695,7 @@ entries:
           description: update default values to include appVersion in tag
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2023-06-16T07:15:42.692248327Z"
+    created: "2023-06-16T07:17:13.088736114Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -722,7 +722,7 @@ entries:
           description: updated readme refs to k8s-at-home repo
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2023-06-16T07:15:42.68931615Z"
+    created: "2023-06-16T07:17:13.084591707Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -749,7 +749,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v22.10.1
-    created: "2023-06-16T07:15:42.685405381Z"
+    created: "2023-06-16T07:17:13.081587102Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -777,7 +777,7 @@ entries:
           description: update ghcr.io/prymitive/karma docker tag to v0.114
     apiVersion: v2
     appVersion: v0.114
-    created: "2023-06-16T07:15:42.738364967Z"
+    created: "2023-06-16T07:17:13.132153183Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -806,7 +806,7 @@ entries:
           description: update ghcr.io/prymitive/karma docker tag to v0.113
     apiVersion: v2
     appVersion: v0.113
-    created: "2023-06-16T07:15:42.735653888Z"
+    created: "2023-06-16T07:17:13.128898378Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -835,7 +835,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: v0.112
-    created: "2023-06-16T07:15:42.732977709Z"
+    created: "2023-06-16T07:17:13.126049873Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -864,7 +864,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: v0.111
-    created: "2023-06-16T07:15:42.729634735Z"
+    created: "2023-06-16T07:17:13.123389269Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -893,7 +893,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: v0.111
-    created: "2023-06-16T07:15:42.72650656Z"
+    created: "2023-06-16T07:17:13.120731065Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -922,7 +922,7 @@ entries:
           description: initial release
     apiVersion: v2
     appVersion: v0.111
-    created: "2023-06-16T07:15:42.723765881Z"
+    created: "2023-06-16T07:17:13.11806476Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -952,7 +952,7 @@ entries:
           description: update erikvl87/languagetool docker tag to v6.1
     apiVersion: v2
     appVersion: v6.1
-    created: "2023-06-16T07:15:42.766453848Z"
+    created: "2023-06-16T07:17:13.159215126Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -980,7 +980,7 @@ entries:
           description: fix image spec
     apiVersion: v2
     appVersion: "6.0"
-    created: "2023-06-16T07:15:42.76363827Z"
+    created: "2023-06-16T07:17:13.155913621Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1008,7 +1008,7 @@ entries:
           description: update language-tool to 6.0
     apiVersion: v2
     appVersion: "6.0"
-    created: "2023-06-16T07:15:42.760838291Z"
+    created: "2023-06-16T07:17:13.152896916Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1036,7 +1036,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.757655116Z"
+    created: "2023-06-16T07:17:13.150180412Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1064,7 +1064,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.754032645Z"
+    created: "2023-06-16T07:17:13.147441307Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1092,7 +1092,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.751236667Z"
+    created: "2023-06-16T07:17:13.144587703Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1120,7 +1120,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.748412989Z"
+    created: "2023-06-16T07:17:13.140535596Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1148,7 +1148,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.745532511Z"
+    created: "2023-06-16T07:17:13.137773592Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1176,7 +1176,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: "5.8"
-    created: "2023-06-16T07:15:42.741487843Z"
+    created: "2023-06-16T07:17:13.135017287Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1205,7 +1205,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.85.2
     apiVersion: v2
     appVersion: v1.85.2
-    created: "2023-06-16T07:15:42.919249754Z"
+    created: "2023-06-16T07:17:13.310723368Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1231,7 +1231,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.84.1
     apiVersion: v2
     appVersion: v1.84.1
-    created: "2023-06-16T07:15:42.91080122Z"
+    created: "2023-06-16T07:17:13.303544557Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1257,7 +1257,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.84.0
     apiVersion: v2
     appVersion: v1.84.0
-    created: "2023-06-16T07:15:42.903399778Z"
+    created: "2023-06-16T07:17:13.295564944Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1283,7 +1283,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.82.0
     apiVersion: v2
     appVersion: v1.82.0
-    created: "2023-06-16T07:15:42.894524547Z"
+    created: "2023-06-16T07:17:13.288453532Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1309,7 +1309,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.81.0
     apiVersion: v2
     appVersion: v1.81.0
-    created: "2023-06-16T07:15:42.886789507Z"
+    created: "2023-06-16T07:17:13.28046272Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1335,7 +1335,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.80.0
     apiVersion: v2
     appVersion: v1.80.0
-    created: "2023-06-16T07:15:42.878173175Z"
+    created: "2023-06-16T07:17:13.273219308Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1361,7 +1361,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.79.0
     apiVersion: v2
     appVersion: v1.79.0
-    created: "2023-06-16T07:15:42.870176437Z"
+    created: "2023-06-16T07:17:13.264548194Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1387,7 +1387,7 @@ entries:
           description: update matrixdotorg/synapse docker tag to v1.78.0
     apiVersion: v2
     appVersion: v1.78.0
-    created: "2023-06-16T07:15:42.862885794Z"
+    created: "2023-06-16T07:17:13.256866882Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1413,7 +1413,7 @@ entries:
           description: update postgresql chart to 12.x
     apiVersion: v2
     appVersion: v1.77.0
-    created: "2023-06-16T07:15:42.854874957Z"
+    created: "2023-06-16T07:17:13.248863869Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1439,7 +1439,7 @@ entries:
           description: update matrix to 1.76.0
     apiVersion: v2
     appVersion: 1.76.0
-    created: "2023-06-16T07:15:42.847476215Z"
+    created: "2023-06-16T07:17:13.240233855Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1465,7 +1465,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 1.75.0
-    created: "2023-06-16T07:15:42.83906808Z"
+    created: "2023-06-16T07:17:13.232901544Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1491,7 +1491,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 1.74.0
-    created: "2023-06-16T07:15:42.831670238Z"
+    created: "2023-06-16T07:17:13.223048628Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1517,7 +1517,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 1.74.0
-    created: "2023-06-16T07:15:42.822717408Z"
+    created: "2023-06-16T07:17:13.215506516Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1543,7 +1543,7 @@ entries:
           description: update synapse to 1.74.0
     apiVersion: v2
     appVersion: 1.74.0
-    created: "2023-06-16T07:15:42.814437873Z"
+    created: "2023-06-16T07:17:13.207186803Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1568,7 +1568,7 @@ entries:
           description: update synapse to 1.72.0
     apiVersion: v2
     appVersion: 1.72.0
-    created: "2023-06-16T07:15:42.806945331Z"
+    created: "2023-06-16T07:17:13.199926891Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1593,7 +1593,7 @@ entries:
           description: update synapse to 1.71.0
     apiVersion: v2
     appVersion: 1.71.0
-    created: "2023-06-16T07:15:42.798819495Z"
+    created: "2023-06-16T07:17:13.191153777Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1618,7 +1618,7 @@ entries:
           description: update synapse to 1.70.1
     apiVersion: v2
     appVersion: 1.70.1
-    created: "2023-06-16T07:15:42.791267054Z"
+    created: "2023-06-16T07:17:13.182385863Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1643,7 +1643,7 @@ entries:
           description: update synapse to 1.70.0
     apiVersion: v2
     appVersion: 1.70.0
-    created: "2023-06-16T07:15:42.782884219Z"
+    created: "2023-06-16T07:17:13.175075251Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1668,7 +1668,7 @@ entries:
           description: update synapse to 1.69.0
     apiVersion: v2
     appVersion: 1.69.0
-    created: "2023-06-16T07:15:42.775329378Z"
+    created: "2023-06-16T07:17:13.166653738Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1693,7 +1693,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.68.0
-    created: "2023-06-16T07:15:42.961883921Z"
+    created: "2023-06-16T07:17:13.351027032Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1714,7 +1714,7 @@ entries:
     version: 2.9.2
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2023-06-16T07:15:42.953193189Z"
+    created: "2023-06-16T07:17:13.343765421Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1735,7 +1735,7 @@ entries:
     version: 2.9.1
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2023-06-16T07:15:42.945730747Z"
+    created: "2023-06-16T07:17:13.335229807Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1756,7 +1756,7 @@ entries:
     version: 2.9.0
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2023-06-16T07:15:42.936882416Z"
+    created: "2023-06-16T07:17:13.327605595Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1778,7 +1778,7 @@ entries:
     version: 2.8.14
   - apiVersion: v2
     appVersion: 1.68.0
-    created: "2023-06-16T07:15:42.928382883Z"
+    created: "2023-06-16T07:17:13.319033781Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -1805,7 +1805,7 @@ entries:
           description: update neosmemo/memos docker tag to v0.12.1
     apiVersion: v2
     appVersion: v0.12.1
-    created: "2023-06-16T07:15:42.98251716Z"
+    created: "2023-06-16T07:17:13.372241366Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1836,7 +1836,7 @@ entries:
           description: update neosmemo/memos docker tag to v0.12.0
     apiVersion: v2
     appVersion: v0.12.0
-    created: "2023-06-16T07:15:42.979817081Z"
+    created: "2023-06-16T07:17:13.36852486Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1867,7 +1867,7 @@ entries:
           description: update neosmemo/memos docker tag to v0.12.0
     apiVersion: v2
     appVersion: v0.12.0
-    created: "2023-06-16T07:15:42.977069202Z"
+    created: "2023-06-16T07:17:13.365853756Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1898,7 +1898,7 @@ entries:
           description: update neosmemo/memos docker tag to v0.11.2
     apiVersion: v2
     appVersion: v0.11.2
-    created: "2023-06-16T07:15:42.974109125Z"
+    created: "2023-06-16T07:17:13.363043652Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1929,7 +1929,7 @@ entries:
           description: update neosmemo/memos docker tag to v0.11.1
     apiVersion: v2
     appVersion: v0.11.1
-    created: "2023-06-16T07:15:42.970054357Z"
+    created: "2023-06-16T07:17:13.360358947Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1960,7 +1960,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: 0.11.0
-    created: "2023-06-16T07:15:42.967361978Z"
+    created: "2023-06-16T07:17:13.357638543Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -1991,7 +1991,7 @@ entries:
           description: initial release
     apiVersion: v2
     appVersion: 0.11.0
-    created: "2023-06-16T07:15:42.964617299Z"
+    created: "2023-06-16T07:17:13.353668837Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2023,7 +2023,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.109.0
     apiVersion: v2
     appVersion: v0.109.0
-    created: "2023-06-16T07:15:43.047338253Z"
+    created: "2023-06-16T07:17:13.435847868Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2055,7 +2055,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.108.1
     apiVersion: v2
     appVersion: v0.108.1
-    created: "2023-06-16T07:15:43.039093718Z"
+    created: "2023-06-16T07:17:13.428639856Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2087,7 +2087,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.107.5
     apiVersion: v2
     appVersion: v0.107.5
-    created: "2023-06-16T07:15:43.031675176Z"
+    created: "2023-06-16T07:17:13.420189043Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2119,7 +2119,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.107.4
     apiVersion: v2
     appVersion: v0.107.4
-    created: "2023-06-16T07:15:43.023340041Z"
+    created: "2023-06-16T07:17:13.412977731Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2151,7 +2151,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.107.1
     apiVersion: v2
     appVersion: v0.107.1
-    created: "2023-06-16T07:15:43.104378207Z"
+    created: "2023-06-16T07:17:13.491096785Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2183,7 +2183,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.106.1
     apiVersion: v2
     appVersion: v0.106.1
-    created: "2023-06-16T07:15:43.09636807Z"
+    created: "2023-06-16T07:17:13.483956831Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2215,7 +2215,7 @@ entries:
           description: update nocodb/nocodb docker tag to v0.106.0
     apiVersion: v2
     appVersion: v0.106.0
-    created: "2023-06-16T07:15:43.089041127Z"
+    created: "2023-06-16T07:17:13.476014282Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2247,7 +2247,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: v0.105.3
-    created: "2023-06-16T07:15:43.079902699Z"
+    created: "2023-06-16T07:17:13.46877492Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2279,7 +2279,7 @@ entries:
           description: update nocodb to 0.104.3
     apiVersion: v2
     appVersion: 0.104.3
-    created: "2023-06-16T07:15:43.072530656Z"
+    created: "2023-06-16T07:17:13.460218207Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2311,7 +2311,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 0.104.2
-    created: "2023-06-16T07:15:43.063249329Z"
+    created: "2023-06-16T07:17:13.452139494Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2343,7 +2343,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 0.104.1
-    created: "2023-06-16T07:15:43.054705496Z"
+    created: "2023-06-16T07:17:13.443948681Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2375,7 +2375,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2023-06-16T07:15:43.015824499Z"
+    created: "2023-06-16T07:17:13.404463418Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2407,7 +2407,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2023-06-16T07:15:43.007003468Z"
+    created: "2023-06-16T07:17:13.395466203Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2439,7 +2439,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2023-06-16T07:15:42.998656833Z"
+    created: "2023-06-16T07:17:13.388325792Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2471,7 +2471,7 @@ entries:
           description: initial chart release
     apiVersion: v2
     appVersion: 0.100.2
-    created: "2023-06-16T07:15:42.991116192Z"
+    created: "2023-06-16T07:17:13.379486378Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2501,10 +2501,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.16.0
+    apiVersion: v2
+    appVersion: v1.16.0
+    created: "2023-06-16T07:17:13.682229558Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.11.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: cdcb4f18c4da43083780f9a6dbcc836c514123cd69795abb21203336e8d67513
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://zekker6.github.io/helm-charts/apps/paperless-9.22.0.tgz
+    version: 9.22.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update helm release redis to 17.11.3
     apiVersion: v2
     appVersion: v1.14.5
-    created: "2023-06-16T07:15:43.285052796Z"
+    created: "2023-06-16T07:17:13.668683645Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2540,7 +2576,7 @@ entries:
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.14.5
     apiVersion: v2
     appVersion: v1.14.5
-    created: "2023-06-16T07:15:43.240540844Z"
+    created: "2023-06-16T07:17:13.626276017Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2576,7 +2612,7 @@ entries:
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.14.4
     apiVersion: v2
     appVersion: v1.14.4
-    created: "2023-06-16T07:15:43.226081157Z"
+    created: "2023-06-16T07:17:13.61176611Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2612,7 +2648,7 @@ entries:
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.14.2
     apiVersion: v2
     appVersion: v1.14.2
-    created: "2023-06-16T07:15:43.209522386Z"
+    created: "2023-06-16T07:17:13.597405002Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2648,7 +2684,7 @@ entries:
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v1.14.0
     apiVersion: v2
     appVersion: v1.14.0
-    created: "2023-06-16T07:15:43.195223498Z"
+    created: "2023-06-16T07:17:13.583162394Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2684,7 +2720,7 @@ entries:
           description: update helm release redis to 17.9.0
     apiVersion: v2
     appVersion: v1.13.0
-    created: "2023-06-16T07:15:43.179210923Z"
+    created: "2023-06-16T07:17:13.568547188Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2720,7 +2756,7 @@ entries:
           description: update library chart to 0.4.3
     apiVersion: v2
     appVersion: v1.13.0
-    created: "2023-06-16T07:15:43.165201032Z"
+    created: "2023-06-16T07:17:13.548411517Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2756,7 +2792,7 @@ entries:
           description: update postgresql chart to 12.x
     apiVersion: v2
     appVersion: v1.13.0
-    created: "2023-06-16T07:15:43.149641454Z"
+    created: "2023-06-16T07:17:13.53394491Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2792,7 +2828,7 @@ entries:
           description: update redis chart to 17.7.x
     apiVersion: v2
     appVersion: 1.12.2
-    created: "2023-06-16T07:15:43.134015276Z"
+    created: "2023-06-16T07:17:13.518865507Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2828,7 +2864,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 1.12.1
-    created: "2023-06-16T07:15:43.119045493Z"
+    created: "2023-06-16T07:17:13.505081495Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2864,7 +2900,7 @@ entries:
           description: update readme
     apiVersion: v2
     appVersion: 1.11.3
-    created: "2023-06-16T07:15:43.473702622Z"
+    created: "2023-06-16T07:17:13.866331676Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2900,7 +2936,7 @@ entries:
           description: update paperless to 1.11.3
     apiVersion: v2
     appVersion: 1.11.3
-    created: "2023-06-16T07:15:43.457602748Z"
+    created: "2023-06-16T07:17:13.852641064Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2936,7 +2972,7 @@ entries:
           description: update redis to 17.4.x
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2023-06-16T07:15:43.443509158Z"
+    created: "2023-06-16T07:17:13.838271956Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -2972,7 +3008,7 @@ entries:
           description: update library chart to 0.4.1
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2023-06-16T07:15:43.429333169Z"
+    created: "2023-06-16T07:17:13.824456145Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -3008,7 +3044,7 @@ entries:
           description: update paperless to 1.10.2
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2023-06-16T07:15:43.415638876Z"
+    created: "2023-06-16T07:17:13.808767345Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -3044,7 +3080,7 @@ entries:
           description: updated docs
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.401341187Z"
+    created: "2023-06-16T07:17:13.795130433Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -3080,7 +3116,7 @@ entries:
           description: switch to zekker6/common library chart
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.386590503Z"
+    created: "2023-06-16T07:17:13.779598533Z"
     dependencies:
     - name: common
       repository: https://zekker6.github.io/helm-charts
@@ -3116,7 +3152,7 @@ entries:
           description: update redis and pg to use latest patch versions
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.370138131Z"
+    created: "2023-06-16T07:17:13.766767215Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3152,7 +3188,7 @@ entries:
           description: update redis to 17.3.9
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.355590345Z"
+    created: "2023-06-16T07:17:13.752503007Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3188,7 +3224,7 @@ entries:
           description: update redis to 17.3.8
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.341691653Z"
+    created: "2023-06-16T07:17:13.738173999Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3224,7 +3260,7 @@ entries:
           description: update redos to 17.3.7
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.327448165Z"
+    created: "2023-06-16T07:17:13.723835691Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3260,7 +3296,7 @@ entries:
           description: update postgresql to 11.9.13
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.313211976Z"
+    created: "2023-06-16T07:17:13.70988778Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3296,7 +3332,7 @@ entries:
           description: update redis to 16.13.2
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.299330284Z"
+    created: "2023-06-16T07:17:13.696066469Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3332,7 +3368,7 @@ entries:
           description: fix links in readme
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.270130512Z"
+    created: "2023-06-16T07:17:13.654778634Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3368,7 +3404,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.9.2
-    created: "2023-06-16T07:15:43.255192929Z"
+    created: "2023-06-16T07:17:13.640512526Z"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -3398,4 +3434,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2023-06-16T07:15:42.63683116Z"
+generated: "2023-06-16T07:17:13.041980139Z"
