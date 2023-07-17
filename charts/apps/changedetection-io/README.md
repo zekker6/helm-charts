@@ -1,6 +1,6 @@
 # changedetection-io
 
-![Version: 1.13.0](https://img.shields.io/badge/Version-1.13.0-informational?style=flat-square) ![AppVersion: v0.43](https://img.shields.io/badge/AppVersion-v0.43-informational?style=flat-square)
+![Version: 1.14.0](https://img.shields.io/badge/Version-1.14.0-informational?style=flat-square) ![AppVersion: v0.43](https://img.shields.io/badge/AppVersion-v0.43-informational?style=flat-square)
 
 changedetection-io helm package
 
