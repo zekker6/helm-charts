@@ -1,6 +1,6 @@
 # memos
 
-![Version: 0.10.1](https://img.shields.io/badge/Version-0.10.1-informational?style=flat-square) ![AppVersion: v0.13.2](https://img.shields.io/badge/AppVersion-v0.13.2-informational?style=flat-square)
+![Version: 0.11.1](https://img.shields.io/badge/Version-0.11.1-informational?style=flat-square) ![AppVersion: v0.14.0](https://img.shields.io/badge/AppVersion-v0.14.0-informational?style=flat-square)
 
 memos - An open-source, self-hosted memo hub with knowledge management and social networking.
 
