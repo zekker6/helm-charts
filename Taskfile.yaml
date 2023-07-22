@@ -17,12 +17,12 @@ tasks:
       - task -l
 
   precommit:all:
-   cmds:
-    - task charts:format
-    - task charts:dependency-cleanup
-    - task charts:docs
-    - task precommit:run-all
-    - task charts:lint-all
+    cmds:
+      - task charts:format
+      - task charts:dependency-cleanup
+      - task docs:charts
+      - task precommit:run-all
+      - task charts:lint-all
 
   renovate:all:
     cmds:
