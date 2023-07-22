@@ -20,6 +20,7 @@ tasks:
     cmds:
       - task charts:format
       - task charts:dependency-cleanup
+      - task charts:docs
       - task docs:charts
       - task precommit:run-all
       - task charts:lint-all

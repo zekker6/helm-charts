@@ -16,7 +16,6 @@ tasks:
     desc: >
       Sync docs from charts to docs
     cmds:
-      - task charts:docs
       - mkdir -p docs/charts
       - for chart in $(ls charts/apps); do
           cp charts/apps/$chart/README.md docs/charts/$chart.md;
