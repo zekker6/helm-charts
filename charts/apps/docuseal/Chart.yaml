@@ -1,0 +1,27 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial release
+apiVersion: v2
+appVersion: "v1.0.2"
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.4.3
+description: docuseal helm package
+home: https://github.com/zekker6/charts/tree/master/charts/apps/docuseal
+icon: https://www.docuseal.co/favicon-32x32.png
+keywords:
+  - pdf-signature
+  - pdf-sign
+  - document-signing
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - name: "zekker6"
+    email: "zekker6@gmail.com"
+    url: "https://github.com/zekker6/"
+name: docuseal
+sources:
+  - https://github.com/docusealco/docuseal
+  - https://github.com/zekker6/charts/tree/master/charts/apps/docuseal
+version: 1.0.0

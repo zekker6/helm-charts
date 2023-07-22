@@ -1,0 +1,31 @@
+image:
+  # -- image repository
+  repository: docuseal/docuseal
+  # -- image tag
+  tag: "1.0.2"
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. See more environment variables in the [docuseal documentation](https://github.com/docusealco/docuseal).
+# @default -- See below
+env: {}
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 3000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  data:
+    enabled: false
+    mountPath: /data
