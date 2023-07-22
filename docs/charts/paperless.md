@@ -2,7 +2,7 @@
 
 ![Version: 9.26.0](https://img.shields.io/badge/Version-9.26.0-informational?style=flat-square) ![AppVersion: v1.16.5](https://img.shields.io/badge/AppVersion-v1.16.5-informational?style=flat-square)
 
-Paperless - Index and archive all of your scanned paper documents
+Paperless -  Index and archive all of your scanned paper documents
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**
 
