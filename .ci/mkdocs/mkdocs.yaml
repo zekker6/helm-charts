@@ -48,6 +48,7 @@ site_dir: ../../_site
 # Plugins
 plugins:
   - search
+  - awesome-pages
   - minify:
       minify_html: true
 
@@ -56,8 +57,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/zekker6
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/sTMX7Vh
 
 # Extensions
 markdown_extensions:
@@ -74,13 +73,3 @@ markdown_extensions:
   - pymdownx.superfences
   - toc:
       permalink: true
-
-# Page tree
-nav:
-  - Home: index.md
-  - Common Library:
-      - Introduction: common-library/introduction.md
-      - Common Storage: common-library/common-library-storage.md
-      - Common Add-ons: common-library/common-library-add-ons.md
-  - App Template:
-      - Introduction: app-template/introduction.md
