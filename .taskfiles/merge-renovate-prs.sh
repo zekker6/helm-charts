@@ -51,6 +51,7 @@ EOF
   version=$(yq -r .version $chart_file | awk -F '.' '{ a = $1; b = $2; c = $3; printf "%d.%d.%d", a,++b,c }')
   yq -i '.version = "'$version'"' $chart_file
   task charts:docs
+  task docs:charts
 
   git diff
   git commit -am "chore: bump chart version"
