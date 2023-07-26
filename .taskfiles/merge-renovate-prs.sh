@@ -57,3 +57,5 @@ EOF
   git commit -am "chore: bump chart version"
   git push
 done
+
+git checkout main

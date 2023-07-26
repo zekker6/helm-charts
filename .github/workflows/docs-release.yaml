@@ -1,5 +1,7 @@
 name: "Docs: Release to GitHub pages"
 
+concurrency: gh-pages
+
 on:
   workflow_dispatch:
   push:

@@ -1,6 +1,6 @@
 name: "Charts: Release"
 
-concurrency: helm-release
+concurrency: gh-pages
 
 on:
   workflow_dispatch:
