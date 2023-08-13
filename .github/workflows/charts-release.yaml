@@ -1,6 +1,8 @@
 name: "Charts: Release"
 
-concurrency: gh-pages
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
 
 on:
   workflow_dispatch:

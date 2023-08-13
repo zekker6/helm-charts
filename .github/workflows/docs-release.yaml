@@ -1,6 +1,8 @@
 name: "Docs: Release to GitHub pages"
 
-concurrency: gh-pages
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
 
 on:
   workflow_dispatch:
