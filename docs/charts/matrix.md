@@ -1,6 +1,6 @@
 # matrix
 
-![Version: 2.33.0](https://img.shields.io/badge/Version-2.33.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.91.0](https://img.shields.io/badge/AppVersion-v1.91.0-informational?style=flat-square)
+![Version: 2.34.0](https://img.shields.io/badge/Version-2.34.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.91.2](https://img.shields.io/badge/AppVersion-v1.91.2-informational?style=flat-square)
 
 A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 
@@ -302,7 +302,7 @@ N/A
 | riot.welcomeUserId | string | `""` |  |
 | synapse.image.pullPolicy | string | `"IfNotPresent"` |  |
 | synapse.image.repository | string | `"matrixdotorg/synapse"` |  |
-| synapse.image.tag | string | `"v1.91.0@sha256:b3de567afb549d0957632c2a9322551e5d5986ba6fdd535b52c95989f1873f01"` |  |
+| synapse.image.tag | string | `"v1.91.2"` |  |
 | synapse.labels.component | string | `"synapse"` |  |
 | synapse.metrics.annotations | bool | `true` |  |
 | synapse.metrics.enabled | bool | `true` |  |
