@@ -31,7 +31,7 @@ Chart source: https://github.com/typokign/matrix-chart
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 12.x |
+| https://charts.bitnami.com/bitnami | postgresql | 13.x |
 
 ## TL;DR
 
