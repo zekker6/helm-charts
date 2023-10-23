@@ -20,7 +20,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 12.x |
+| https://charts.bitnami.com/bitnami | postgresql | 13.x |
 | https://charts.bitnami.com/bitnami | redis | 18.1.x |
 | https://zekker6.github.io/helm-charts | common | 0.4.3 |
 
