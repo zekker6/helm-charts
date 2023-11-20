@@ -82,7 +82,7 @@ N/A
 | addons.codeserver.git.deployKeySecret | string | `""` | Existing secret containing SSH private key The chart expects it to be present under the `id_rsa` key. |
 | addons.codeserver.image.pullPolicy | string | `"IfNotPresent"` | Specify the code-server image pull policy |
 | addons.codeserver.image.repository | string | `"ghcr.io/coder/code-server"` | Specify the code-server image |
-| addons.codeserver.image.tag | string | `"4.18.0"` | Specify the code-server image tag |
+| addons.codeserver.image.tag | string | `"4.19.0"` | Specify the code-server image tag |
 | addons.codeserver.ingress.enabled | bool | `false` | Enable an ingress for the code-server add-on. |
 | addons.codeserver.ingress.ingressClassName | string | `nil` | Set the ingressClass that is used for this ingress. Requires Kubernetes >=1.19 |
 | addons.codeserver.service.enabled | bool | `true` | Enable a service for the code-server add-on. |
@@ -113,7 +113,7 @@ N/A
 | addons.vpn.gluetun | object | See below | Make sure to read the [documentation](https://github.com/qdm12/gluetun/wiki) to see how to configure this addon! |
 | addons.vpn.gluetun.image.pullPolicy | string | `"IfNotPresent"` | Specify the Gluetun image pull policy |
 | addons.vpn.gluetun.image.repository | string | `"docker.io/qmcgaw/gluetun"` | Specify the Gluetun image |
-| addons.vpn.gluetun.image.tag | string | `"v3.35.0"` | Specify the Gluetun image tag |
+| addons.vpn.gluetun.image.tag | string | `"v3.36.0"` | Specify the Gluetun image tag |
 | addons.vpn.livenessProbe | object | `{}` | Optionally specify a livenessProbe, e.g. to check if the connection is still being protected by the VPN |
 | addons.vpn.networkPolicy.annotations | object | `{}` | Provide additional annotations which may be required. |
 | addons.vpn.networkPolicy.egress | string | `nil` | The egress configuration for your network policy, All outbound traffic from the pod will be blocked unless specified here. [[ref]](https://kubernetes.io/docs/concepts/services-networking/network-policies/) [[recipes]](https://github.com/ahmetb/kubernetes-network-policy-recipes) |
