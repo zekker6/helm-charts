@@ -13,7 +13,7 @@ dependencies:
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 18.2.x
+    version: 18.4.x
 description: Paperless - Index and archive all of your scanned paper documents
 home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
 icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
