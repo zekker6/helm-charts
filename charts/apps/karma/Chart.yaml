@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/prymitive/karma docker tag to v0.116
+      description: update ghcr.io/prymitive/karma docker tag to v0.117
 apiVersion: v2
-appVersion: v0.116
+appVersion: v0.117
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -22,4 +22,4 @@ name: karma
 sources:
   - "https://github.com/prymitive/karma"
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma"
-version: 0.7.0
+version: 0.8.0

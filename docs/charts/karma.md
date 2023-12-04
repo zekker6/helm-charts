@@ -1,6 +1,6 @@
 # karma
 
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat-square) ![AppVersion: v0.116](https://img.shields.io/badge/AppVersion-v0.116-informational?style=flat-square)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat-square) ![AppVersion: v0.117](https://img.shields.io/badge/AppVersion-v0.117-informational?style=flat-square)
 
 karma - Alert dashboard for Prometheus Alertmanager
 
