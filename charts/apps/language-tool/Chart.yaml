@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update erikvl87/languagetool docker tag to v6.2
+      description: update erikvl87/languagetool docker tag to v6.3
 apiVersion: v2
-appVersion: "v6.2"
+appVersion: "v6.3"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -21,4 +21,4 @@ maintainers:
 name: language-tool
 sources:
   - https://github.com/language-tool/language-tool-docker
-version: 1.5.0
+version: 1.6.0
