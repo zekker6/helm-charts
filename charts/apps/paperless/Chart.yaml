@@ -1,5 +1,5 @@
 annotations:
-  artifacthub.io/changes: "- kind: changed\n  description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.1.1"
+  artifacthub.io/changes: "- kind: changed\n  description: update redis chart from 18.4.x to 18.5.x"
 apiVersion: v2
 appVersion: v2.1.1
 dependencies:
@@ -27,4 +27,4 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.35.0
+version: 9.36.0
