@@ -37,11 +37,18 @@ jobs:
           fetch-depth: 0
 
       - name: Collect charts to release
-        uses: bjw-s/helm-charts-actions/collect-charts@main
         id: collect-charts
-        with:
-          repoConfigFile: ./.ci/repo-config.yaml
-          overrideCharts: "[${{ inputs.charts }}]"
+        run: |
+          cd charts
+          
+          libraryCharts=($(find library -maxdepth 1 -type d))
+          applicationCharts=($(find apps -maxdepth 1 -type d))
+          
+          libraryToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${libraryCharts[@]}")
+          appsToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${applicationCharts[@]}")
+          
+          echo "libraryChartsToRelease=${libraryToRelease}"
+          echo "applicationChartsToRelease=${appsToRelease}"
 
   release-library-charts:
     name: Release Library charts to GitHub pages
