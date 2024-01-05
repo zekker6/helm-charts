@@ -29,8 +29,8 @@ jobs:
     name: Prepare data required for release
     runs-on: ubuntu-22.04
     outputs:
-      libraryChartsToRelease: ${{ steps.collect-charts.outputs.chartsLibrary }}
-      applicationChartsToRelease: ${{ steps.collect-charts.outputs.chartsApplication }}
+      libraryChartsToRelease: ${{ steps.collect-charts.outputs.libraryChartsToRelease }}
+      applicationChartsToRelease: ${{ steps.collect-charts.outputs.applicationChartsToRelease }}
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
