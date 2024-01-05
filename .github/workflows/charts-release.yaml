@@ -48,8 +48,8 @@ jobs:
           libraryToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${libraryCharts[@]}")
           appsToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${applicationCharts[@]}")
           
-          echo "libraryChartsToRelease='${libraryToRelease}'" >> "$GITHUB_OUTPUT"
-          echo "applicationChartsToRelease='${appsToRelease}'" >> "$GITHUB_OUTPUT"
+          echo "libraryChartsToRelease=${libraryToRelease}" >> "$GITHUB_OUTPUT"
+          echo "applicationChartsToRelease=${appsToRelease}" >> "$GITHUB_OUTPUT"
 
   release-library-charts:
     name: Release Library charts to GitHub pages
