@@ -9,7 +9,7 @@ changedetection-io helm package
 ## Source Code
 
 * <https://github.com/dgtlmoon/changedetection.io>
-* <https://github.com/zekker6/charts/tree/master/charts/apps/changedetection-io>
+* <https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io>
 
 ## Requirements
 
