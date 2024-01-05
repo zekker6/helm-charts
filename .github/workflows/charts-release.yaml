@@ -19,6 +19,7 @@ on:
       - main
     paths:
       - "charts/**"
+      - ".github/workflows/**"
 
 env:
   HELM_VERSION: 3.9.2
@@ -41,14 +42,14 @@ jobs:
         run: |
           cd charts
           
-          libraryCharts=($(find library -maxdepth 1 -type d))
-          applicationCharts=($(find apps -maxdepth 1 -type d))
+          libraryCharts=($(find library -maxdepth 1 -mindepth 1 -type d))
+          applicationCharts=($(find apps -maxdepth 1 -mindepth 1 -type d))
           
           libraryToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${libraryCharts[@]}")
           appsToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${applicationCharts[@]}")
           
-          echo "libraryChartsToRelease=${libraryToRelease}" >> "$GITHUB_OUTPUT"
-          echo "applicationChartsToRelease=${appsToRelease}" >> "$GITHUB_OUTPUT"
+          echo "libraryChartsToRelease='${libraryToRelease}'" >> "$GITHUB_OUTPUT"
+          echo "applicationChartsToRelease='${appsToRelease}'" >> "$GITHUB_OUTPUT"
 
   release-library-charts:
     name: Release Library charts to GitHub pages
