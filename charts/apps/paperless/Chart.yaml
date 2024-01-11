@@ -1,7 +1,7 @@
 annotations:
-  artifacthub.io/changes: "- kind: changed\n  description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.3.2"
+  artifacthub.io/changes: "- kind: changed\n  description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.3.3"
 apiVersion: v2
-appVersion: v2.3.2
+appVersion: v2.3.3
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -27,4 +27,4 @@ maintainers:
 name: paperless
 sources:
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.39.0
+version: 9.40.0
