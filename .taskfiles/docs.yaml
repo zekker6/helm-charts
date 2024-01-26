@@ -21,6 +21,13 @@ tasks:
           cp charts/apps/$chart/README.md docs/charts/$chart.md;
         done
 
+  sync:
+    decs: >
+      Generate and sync docs
+    cmds:
+      - task charts:docs
+      - task docs:charts
+
   serve:
     desc: >
       Start development server on http://localhost:{{ .PORT }} using mkdocs
