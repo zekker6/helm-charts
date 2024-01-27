@@ -12,7 +12,7 @@ on:
         type: string
 
 env:
-  HELM_VERSION: 3.9.2
+  HELM_VERSION: 3.12.3
 
 permissions:
   contents: write
@@ -28,15 +28,6 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: "src"
-          fetch-depth: 0
-
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: "dest"
-          ref: "gh-pages"
           fetch-depth: 0
 
       - name: Install Kubernetes tools
