@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 9.41.0](https://img.shields.io/badge/Version-9.41.0-informational?style=flat-square) ![AppVersion: v2.4.2](https://img.shields.io/badge/AppVersion-v2.4.2-informational?style=flat-square)
+![Version: 9.41.1](https://img.shields.io/badge/Version-9.41.1-informational?style=flat-square) ![AppVersion: v2.4.2](https://img.shields.io/badge/AppVersion-v2.4.2-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -10,6 +10,7 @@ Chart taken from k8s-at-home repo [here](https://github.com/k8s-at-home/charts/t
 
 ## Source Code
 
+* <https://github.com/paperless-ngx/paperless-ngx>
 * <https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless>
 
 ## Requirements
@@ -21,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 13.x |
-| https://charts.bitnami.com/bitnami | redis | 18.8.x |
+| https://charts.bitnami.com/bitnami | redis | 18.9.x |
 | https://zekker6.github.io/helm-charts | common | 0.4.3 |
 
 ## TL;DR
