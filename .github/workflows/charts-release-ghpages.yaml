@@ -3,11 +3,10 @@ name: "Charts: Release to GitHub pages"
 on:
   workflow_call:
     inputs:
-      charts:
+      charts_dir:
         description: >
-          Json encoded list of Helm charts to release.
-          Defaults to releasing everything.
-        default: "[]"
+          Dir to release charts from. Defaults to "charts/apps".
+        default: "charts/apps"
         required: false
         type: string
 
@@ -43,3 +42,4 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
           skip_existing: true
+          charts_dir: "${{ inputs.charts_dir }}"

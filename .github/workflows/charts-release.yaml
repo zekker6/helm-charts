@@ -25,39 +25,13 @@ env:
   HELM_VERSION: 3.9.2
 
 jobs:
-  prepare:
-    name: Prepare data required for release
-    runs-on: ubuntu-22.04
-    outputs:
-      libraryChartsToRelease: ${{ steps.collect-charts.outputs.libraryChartsToRelease }}
-      applicationChartsToRelease: ${{ steps.collect-charts.outputs.applicationChartsToRelease }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-        with:
-          fetch-depth: 0
-
-      - name: Collect charts to release
-        id: collect-charts
-        run: |
-          cd charts
-          
-          libraryCharts=($(find library -maxdepth 1 -mindepth 1 -type d))
-          applicationCharts=($(find apps -maxdepth 1 -mindepth 1 -type d))
-          
-          libraryToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${libraryCharts[@]}")
-          appsToRelease=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${applicationCharts[@]}")
-          
-          echo "libraryChartsToRelease=${libraryToRelease}" >> "$GITHUB_OUTPUT"
-          echo "applicationChartsToRelease=${appsToRelease}" >> "$GITHUB_OUTPUT"
-
   release-library-charts:
     name: Release Library charts to GitHub pages
     uses: ./.github/workflows/charts-release-ghpages.yaml
     needs:
       - prepare
     with:
-      charts: "${{ needs.prepare.outputs.libraryChartsToRelease }}"
+      charts_dir: "charts/library"
     secrets: inherit
 
   release-application-charts:
@@ -67,5 +41,5 @@ jobs:
       - prepare
       - release-library-charts
     with:
-      charts: "${{ needs.prepare.outputs.applicationChartsToRelease }}"
+      charts_dir: "charts/apps"
     secrets: inherit
