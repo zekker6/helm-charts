@@ -28,8 +28,6 @@ jobs:
   release-library-charts:
     name: Release Library charts to GitHub pages
     uses: ./.github/workflows/charts-release-ghpages.yaml
-    needs:
-      - prepare
     with:
       charts_dir: "charts/library"
     secrets: inherit
@@ -38,7 +36,6 @@ jobs:
     name: Release Application charts to GitHub pages
     uses: ./.github/workflows/charts-release-ghpages.yaml
     needs:
-      - prepare
       - release-library-charts
     with:
       charts_dir: "charts/apps"
