@@ -37,22 +37,6 @@ jobs:
             helmv3
           helm: "${{ env.HELM_VERSION }}"
 
-      - name: Package Helm Charts
-        shell: bash
-        env:
-          SRC_DIR: "src/charts"
-          DEST_DIR: "dest"
-        run: |
-          CHARTS=( $(yq --null-input e '${{ inputs.charts }}[]' ) )
-
-          for CHART in "${CHARTS[@]}" ; do
-            mapfile -t CHART_PATH_PARTS < <(echo "$CHART" | tr '/' '\n')
-            CHART_TYPE=${CHART_PATH_PARTS[0]}
-
-            helm dep up "${SRC_DIR}/${CHART}"
-            helm package "${SRC_DIR}/${CHART}" -u -d "${DEST_DIR}/${CHART_TYPE}"
-          done
-
       - name: Release charts
         uses: helm/chart-releaser-action@v1.6.0
         env:
