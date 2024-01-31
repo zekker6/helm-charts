@@ -4961,6 +4961,43 @@ entries:
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.4.3
     apiVersion: v2
     appVersion: v2.4.3
+    created: "2024-01-31T07:15:43.581083349Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.11.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: f5ab566b1659c419ae141290135aa6c91f9b28b790999ce0f7af316eaaef420e
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.42.1/paperless-9.42.1.tgz
+    version: 9.42.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.4.3
+    apiVersion: v2
+    appVersion: v2.4.3
     created: "2024-01-31T07:03:37.798501362Z"
     dependencies:
     - name: common
@@ -6650,4 +6687,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2024-01-31T07:03:37.799483957Z"
+generated: "2024-01-31T07:15:43.581615643Z"
