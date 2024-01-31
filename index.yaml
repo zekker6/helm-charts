@@ -450,6 +450,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.4.1
+    apiVersion: v2
+    appVersion: v1.4.1
+    created: "2024-01-31T07:00:25.184211027Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.4.3
+    description: docuseal helm package
+    digest: 1a49d6db5aea0461d3d3769d82bd4ab8931b08e76322f4615789e708737ce4ec
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.24.0/docuseal-1.24.0.tgz
+    version: 1.24.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update docuseal/docuseal docker tag to v1.4.0
     apiVersion: v2
     appVersion: v1.4.0
@@ -2201,6 +2232,32 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.100.0
+    apiVersion: v2
+    appVersion: v1.100.0
+    created: "2024-01-31T07:00:25.307360069Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 1ca08e4a84eeb0cf4c5d993ecd1b06e51aff72a425e632f88364e7391e5a8206
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.44.0/matrix-2.44.0.tgz
+    version: 2.44.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -6556,4 +6613,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2024-01-31T06:55:08.291047805Z"
+generated: "2024-01-31T07:00:25.307924157Z"
