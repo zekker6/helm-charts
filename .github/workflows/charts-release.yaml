@@ -15,7 +15,7 @@ on:
       - ".github/workflows/**"
 
 env:
-  HELM_VERSION: 3.9.2
+  HELM_VERSION: 3.12.3
 
 jobs:
   release-library-charts:
