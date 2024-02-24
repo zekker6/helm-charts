@@ -503,6 +503,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.4.4
+    apiVersion: v2
+    appVersion: v1.4.4
+    created: "2024-02-24T13:55:02.546195938Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.0
+    description: docuseal helm package
+    digest: 8711cdb8f02298d11233f37cdeb56d1070129de4b32b719ba7a3077aa35dd6a7
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.27.0/docuseal-1.27.0.tgz
+    version: 1.27.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
     apiVersion: v2
     appVersion: v1.4.3
@@ -4281,6 +4312,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update nocodb/nocodb docker tag to v0.204.1
+    apiVersion: v2
+    appVersion: v0.204.1
+    created: "2024-02-24T13:55:02.677558319Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 7393b869b0d52ab242a90e1076c505fca629680f5d571fe57f1cb393da2fbca7
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.31.0/nocodb-0.31.0.tgz
+    version: 0.31.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
     apiVersion: v2
     appVersion: v0.204.0
@@ -7109,4 +7172,4 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/paperless-9.2.0.tgz
     version: 9.2.0
-generated: "2024-02-24T13:41:41.671488166Z"
+generated: "2024-02-24T13:55:02.678081945Z"
