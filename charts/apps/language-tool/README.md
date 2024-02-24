@@ -1,6 +1,6 @@
 # language-tool
 
-![Version: 1.6.0](https://img.shields.io/badge/Version-1.6.0-informational?style=flat-square) ![AppVersion: v6.3](https://img.shields.io/badge/AppVersion-v6.3-informational?style=flat-square)
+![Version: 1.7.0](https://img.shields.io/badge/Version-1.7.0-informational?style=flat-square) ![AppVersion: v6.3](https://img.shields.io/badge/AppVersion-v6.3-informational?style=flat-square)
 
 language-tool helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.4.3 |
+| https://zekker6.github.io/helm-charts | common | 0.5.0 |
 
 ## TL;DR
 

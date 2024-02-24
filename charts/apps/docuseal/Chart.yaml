@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update docuseal/docuseal docker tag to v1.4.3
+      description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
 apiVersion: v2
 appVersion: "v1.4.3"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.4.3
+    version: 0.5.0
 description: docuseal helm package
 home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
 icon: https://www.docuseal.co/favicon-32x32.png
@@ -24,4 +24,4 @@ name: docuseal
 sources:
   - https://github.com/docusealco/docuseal
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
-version: 1.25.0
+version: 1.26.0
