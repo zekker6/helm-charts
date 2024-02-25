@@ -5,9 +5,9 @@ disableAuth: false
 # -- Disables registration of new users, keep your admin credentials handy ;)
 disableRegistration: false
 # -- The hosting url of the server, used for URL generation. In production systems, this should be your ingress host.
-baseURL:
+baseURL: "http://example.com"
 # -- Secret key to be used for encryption. IF no value is provided random string will be generated during release.
-secretKey:
+secretKey: ""
 
 
 adminUser:
@@ -18,18 +18,15 @@ adminUser:
   # -- Admin user password
   password: ""
 
-# -- If empty set to randAlphaNum 90
-SECRET_KEY_BASE: ""
-
 # -- Postgres Database
 postgresql:
   enabled: true
   # -- Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql
   # The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
-  # Replace POSTGRES_PW with the auth.postgresPassword below !
-  # url: "postgress://postgres:POSTGRES_PW@plausible-postgresql:5432/plausible"
+  # Replace the default values with your own
+  url: "postgress://postgres:b8f1ad468e00b344b2c6bf495c4ffc28@plausible-postgresql:5432/plausible"
   auth:
-    postgresPassword:
+    postgresPassword: "b8f1ad468e00b344b2c6bf495c4ffc28"
 
 # -- Clickhouse Database
 clickhouse:

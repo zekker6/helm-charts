@@ -80,7 +80,6 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| SECRET_KEY_BASE | string | `""` | If empty set to randAlphaNum 90 |
 | adminUser.email | string | `""` | Admin user's email |
 | adminUser.name | string | `""` | Display name admin user |
 | adminUser.password | string | `""` | Admin user password |
@@ -89,7 +88,7 @@ N/A
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
-| baseURL | string | `nil` | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
+| baseURL | string | `"http://example.com"` | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
 | clickhouse | object | `{"clickhouse":{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1},"enabled":true,"url":"http://plausible-clickhouse:8123/plausible_events_db"}` | Clickhouse Database |
 | clickhouse.clickhouse | object | `{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1}` | Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse |
 | clickhouse.clickhouse.image | string | `"clickhouse/clickhouse-server"` | Latest sentry/clickhouse chart ships 19.14, which doesn't work together with latest plausible https://artifacthub.io/packages/helm/sentry/clickhouse https://hub.docker.com/r/clickhouse/clickhouse-server/tags |
@@ -117,12 +116,12 @@ N/A
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| postgresql | object | `{"auth":{"postgresPassword":null},"enabled":true}` | Postgres Database |
-| postgresql.auth | object | `{"postgresPassword":null}` | Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING Replace POSTGRES_PW with the auth.postgresPassword below ! url: "postgress://postgres:POSTGRES_PW@plausible-postgresql:5432/plausible" |
+| postgresql | object | `{"auth":{"postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"},"enabled":true,"url":"postgress://postgres:b8f1ad468e00b344b2c6bf495c4ffc28@plausible-postgresql:5432/plausible"}` | Postgres Database |
+| postgresql.url | string | `"postgress://postgres:b8f1ad468e00b344b2c6bf495c4ffc28@plausible-postgresql:5432/plausible"` | Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING Replace the default values with your own |
 | postmark | object | `{"apiKey":null}` | Alternatively, you can use Postmark to send transactional emails |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
-| secretKey | string | `nil` | Secret key to be used for encryption. IF no value is provided random string will be generated during release. |
+| secretKey | string | `""` | Secret key to be used for encryption. IF no value is provided random string will be generated during release. |
 | securityContext | object | `{}` |  |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
