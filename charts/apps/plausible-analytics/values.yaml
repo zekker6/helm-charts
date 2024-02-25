@@ -9,15 +9,6 @@ baseURL: "http://example.com"
 # -- Secret key to be used for encryption. IF no value is provided random string will be generated during release.
 secretKey: ""
 
-
-adminUser:
-  # -- Admin user's email
-  email: ""
-  # -- Display name admin user
-  name: ""
-  # -- Admin user password
-  password: ""
-
 # -- Postgres Database
 postgresql:
   enabled: true
@@ -110,7 +101,7 @@ replicaCount: 1
 image:
   repository: plausible/analytics
   pullPolicy: IfNotPresent
-  # -= Overrides the image tag whose default is the chart appVersion.
+  # -- Overrides the image tag whose default is the chart appVersion.
   # See https://hub.docker.com/r/plausible/analytics for tags
   # tag: ""
 

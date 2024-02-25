@@ -80,9 +80,6 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| adminUser.email | string | `""` | Admin user's email |
-| adminUser.name | string | `""` | Display name admin user |
-| adminUser.password | string | `""` | Admin user password |
 | affinity | object | `{}` |  |
 | autoscaling.enabled | bool | `false` |  |
 | autoscaling.maxReplicas | int | `100` |  |

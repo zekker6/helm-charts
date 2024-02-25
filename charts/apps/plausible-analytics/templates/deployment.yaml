@@ -52,27 +52,6 @@ spec:
             - /entrypoint.sh
             - run
           env:
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_EMAIL
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_EMAIL
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_NAME
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_NAME
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_PWD
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_PWD
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- if .Values.google.clientID }}
             - name: GOOGLE_CLIENT_ID
               valueFrom:
@@ -254,29 +233,8 @@ spec:
             - /bin/sh
             - -x
             - -c
-            - /entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh db init-admin
+            - /entrypoint.sh db createdb && /entrypoint.sh db migrate
           env:
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_EMAIL
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_EMAIL
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_NAME
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_NAME
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
-            {{- if .Values.adminUser.email }}
-            - name: ADMIN_USER_PWD
-              valueFrom:
-                secretKeyRef:
-                  key: ADMIN_USER_PWD
-                  name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- if (or .Values.postgresql.enabled .Values.postgresql.url) }}
             {{- if .Values.postgresql.url }}
             - name: DATABASE_URL
