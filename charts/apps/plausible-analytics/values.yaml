@@ -1,0 +1,188 @@
+# Plausible specific values
+
+# -- Disables authentication completely, no registration, login will be shown.
+disableAuth: false
+# -- Disables registration of new users, keep your admin credentials handy ;)
+disableRegistration: false
+# -- The hosting url of the server, used for URL generation. In production systems, this should be your ingress host.
+baseURL:
+# -- Secret key to be used for encryption. IF no value is provided random string will be generated during release.
+secretKey:
+
+
+adminUser:
+  # -- Admin user's email
+  email: ""
+  # -- Display name admin user
+  name: ""
+  # -- Admin user password
+  password: ""
+
+# -- If empty set to randAlphaNum 90
+SECRET_KEY_BASE: ""
+
+# -- Postgres Database
+postgresql:
+  enabled: true
+  # -- Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql
+  # The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
+  # Replace POSTGRES_PW with the auth.postgresPassword below !
+  # url: "postgress://postgres:POSTGRES_PW@plausible-postgresql:5432/plausible"
+  auth:
+    postgresPassword:
+
+# -- Clickhouse Database
+clickhouse:
+  enabled: true
+  # -- The URL Connection String to clickhouse DB see -> https://clickhouse.tech/docs/en/interfaces/http/
+  url: "http://plausible-clickhouse:8123/plausible_events_db"
+  # -- Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse
+  clickhouse:
+    replicas: 1
+    # -- Latest sentry/clickhouse chart ships 19.14, which doesn't work together
+    # with latest plausible
+    # https://artifacthub.io/packages/helm/sentry/clickhouse
+    # https://hub.docker.com/r/clickhouse/clickhouse-server/tags
+    image: clickhouse/clickhouse-server
+    imageVersion: "22.6-alpine"
+
+# -- Plausible uses and SMTP server to send transactional emails e.g. account activation, password reset, weekly reports, etc.
+smtp:
+  # -- Enable/Disable SMTP functionality
+  enabled: false
+  mailer:
+    # -- The email address of the email sender
+    emailAddress:
+    adapter:
+  # -- The host address of your smtp server.
+  host:
+  # -- The port of your smtp server.
+  port:
+  # -- The username/email in case SMTP auth is enabled.
+  username:
+  # -- The password in case SMTP auth is enabled.
+  password:
+  ssl:
+     # -- If SSL is enabled for SMTP connection
+    enabled: false
+   # -- Number of retries to make until mailer gives up.
+  retries: 2
+
+# -- Alternatively, you can use Postmark to send transactional emails
+postmark:
+  apiKey:
+
+ # -- MaxMind geolocation database#
+geolocation:
+   # -- Enable/Disable the automated fetch of
+  enabled: false
+   # -- Account/User ID from maxmind.com
+  account_id:
+   # -- My License Key from maxmind.com
+  license_key:
+  # geoliteCountryDB: # Override default geoip db location (/geoip/GeoLite2-City.mmdb)
+
+# -- Google Search Integration
+# See: https://docs.plausible.io/self-hosting-configuration#google-search-integration
+google:
+  # -- The Client ID from the Google API Console for your Plausible Analytics project
+  clientID:
+  # -- The Client Secret from the Google API Console for your Plausible Analytics project
+  clientSecret:
+# -- Twitter Integration
+# https://docs.plausible.io/self-hosting-configuration#twitter-integration
+twitter:
+  consumer:
+    # -- The API key from the Twitter Developer Portal
+    key:
+    # -- The API key secret from the Twitter Developer Portal
+    secret:
+  access:
+    # -- The access token you generated in the steps above
+    token:
+    # -- The access token secret you generated in the steps above
+    secret:
+
+# -- Extra Labels to apply on your k8s deployment
+labels: {}
+# -- Extra Env Variables that are passed down to plausible 1:1
+extraEnv: []
+
+replicaCount: 1
+
+image:
+  repository: plausible/analytics
+  pullPolicy: IfNotPresent
+  # -= Overrides the image tag whose default is the chart appVersion.
+  # See https://hub.docker.com/r/plausible/analytics for tags
+  # tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # -- Specifies whether a service account should be created
+  create: true
+  # -- Annotations to add to the service account
+  annotations: {}
+  # -- The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  # You can specfy an ingressClassName
+  # className:
+  hosts:
+    - host: chart-example.local
+      paths: []
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
