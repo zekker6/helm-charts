@@ -125,13 +125,11 @@ spec:
                   name: {{ include "plausible-analytics.fullname" . }}
             {{- end }}
             {{- if (or .Values.postgresql.enabled .Values.postgresql.url)  }}
-            {{- if .Values.postgresql.url }}
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
                   key: DATABASE_URL
                   name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- end }}
             - name: SECRET_KEY_BASE
               valueFrom:
@@ -236,13 +234,11 @@ spec:
             - /entrypoint.sh db createdb && /entrypoint.sh db migrate
           env:
             {{- if (or .Values.postgresql.enabled .Values.postgresql.url) }}
-            {{- if .Values.postgresql.url }}
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
                   key: DATABASE_URL
                   name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- end }}
             - name: SECRET_KEY_BASE
               valueFrom:
