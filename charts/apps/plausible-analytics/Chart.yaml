@@ -1,21 +1,21 @@
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: initial release of chart fork
+    - kind: changed
+      description: update clickhouse chart to 3.7.0
 apiVersion: v2
 appVersion: v2.0.0
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
-    version: 3.5.0
+    version: 3.7.0
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
     version: 12.12.10
 description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 home: https://plausible.io/
-icon: https://docs.plausible.io/img/logo.svg
+icon: https://plausible.io/docs/img/favicon.png
 keywords:
   - plausible analytics
   - analytics
@@ -29,4 +29,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.0.1
+version: 0.1.0
