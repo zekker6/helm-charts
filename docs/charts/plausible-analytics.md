@@ -113,8 +113,8 @@ N/A
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| postgresql | object | `{"auth":{"postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"},"enabled":true}` | Postgres Database |
-| postgresql.auth | object | `{"postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"}` | Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING |
+| postgresql | object | `{"auth":{"database":"plausible","postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"},"enabled":true}` | Postgres Database |
+| postgresql.auth | object | `{"database":"plausible","postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"}` | Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING |
 | postmark | object | `{"apiKey":null}` | Alternatively, you can use Postmark to send transactional emails |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
