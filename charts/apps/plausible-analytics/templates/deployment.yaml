@@ -137,13 +137,11 @@ spec:
                   key: SECRET_KEY_BASE
                   name: {{ include "plausible-analytics.fullname" . }}
             {{- if (or .Values.clickhouse.enabled .Values.clickhouse.url) }}
-            {{- if .Values.clickhouse.url }}
             - name: CLICKHOUSE_DATABASE_URL
               valueFrom:
                 secretKeyRef:
                   key: CLICKHOUSE_DATABASE_URL
                   name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- end }}
             {{- if .Values.disableAuth }}
             - name: DISABLE_AUTH
@@ -246,13 +244,11 @@ spec:
                   key: SECRET_KEY_BASE
                   name: {{ include "plausible-analytics.fullname" . }}
             {{- if (or .Values.clickhouse.enabled .Values.clickhouse.url) }}
-            {{- if .Values.clickhouse.url }}
             - name: CLICKHOUSE_DATABASE_URL
               valueFrom:
                 secretKeyRef:
                   key: CLICKHOUSE_DATABASE_URL
                   name: {{ include "plausible-analytics.fullname" . }}
-            {{- end }}
             {{- end }}
             {{- if .Values.disableAuth }}
             - name: DISABLE_AUTH

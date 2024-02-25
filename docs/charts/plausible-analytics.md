@@ -86,10 +86,9 @@ N/A
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | baseURL | string | `"http://example.com"` | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
-| clickhouse | object | `{"clickhouse":{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1},"enabled":true,"url":"http://plausible-clickhouse:8123/plausible_events_db"}` | Clickhouse Database |
+| clickhouse | object | `{"clickhouse":{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1},"enabled":true}` | Clickhouse Database |
 | clickhouse.clickhouse | object | `{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1}` | Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse |
 | clickhouse.clickhouse.image | string | `"clickhouse/clickhouse-server"` | Latest sentry/clickhouse chart ships 19.14, which doesn't work together with latest plausible https://artifacthub.io/packages/helm/sentry/clickhouse https://hub.docker.com/r/clickhouse/clickhouse-server/tags |
-| clickhouse.url | string | `"http://plausible-clickhouse:8123/plausible_events_db"` | The URL Connection String to clickhouse DB see -> https://clickhouse.tech/docs/en/interfaces/http/ |
 | disableAuth | bool | `false` | Disables authentication completely, no registration, login will be shown. |
 | disableRegistration | bool | `false` | Disables registration of new users, keep your admin credentials handy ;) |
 | extraEnv | list | `[]` | Extra Env Variables that are passed down to plausible 1:1 |

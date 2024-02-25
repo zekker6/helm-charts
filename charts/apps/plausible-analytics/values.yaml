@@ -25,7 +25,7 @@ postgresql:
 clickhouse:
   enabled: true
   # -- The URL Connection String to clickhouse DB see -> https://clickhouse.tech/docs/en/interfaces/http/
-  url: "http://plausible-clickhouse:8123/plausible_events_db"
+#  url: "http://plausible-clickhouse:8123/plausible_events_db"
   # -- Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse
   clickhouse:
     replicas: 1
