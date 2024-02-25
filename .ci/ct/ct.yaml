@@ -4,7 +4,7 @@ lint-conf: .ci/ct/lintconf.yaml
 remote: origin
 target-branch: main
 
-helm-extra-args: --timeout 600s
+helm-extra-args: --timeout 180s
 
 chart-dirs:
   - charts/library
