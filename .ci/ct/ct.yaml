@@ -4,7 +4,7 @@ lint-conf: .ci/ct/lintconf.yaml
 remote: origin
 target-branch: main
 
-helm-extra-args: --timeout 600s
+helm-extra-args: --timeout 180s
 
 chart-dirs:
   - charts/library
@@ -14,3 +14,4 @@ chart-repos:
   - bitnami=https://charts.bitnami.com/bitnami
   - zekker6=https://zekker6.github.io/helm-charts
   - k8s-at-home-lib=https://library-charts.k8s-at-home.com
+  - sentry=https://sentry-kubernetes.github.io/charts
