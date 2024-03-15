@@ -3589,6 +3589,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update neosmemo/memos docker tag to v0.20.1
+    apiVersion: v2
+    appVersion: v0.20.1
+    created: "2024-03-15T16:52:25.077204565Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.0
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: ced92f3f6e8c77a146d9f55ec31dbb3bd3b4fb8d75d9ca523e7f576f6caf1d68
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.29.0/memos-0.29.0.tgz
+    version: 0.29.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
     apiVersion: v2
     appVersion: v0.20.0
@@ -4362,6 +4393,38 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/memos-0.1.0.tgz
     version: 0.1.0
   nocodb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update nocodb/nocodb docker tag to v0.204.3
+    apiVersion: v2
+    appVersion: v0.204.3
+    created: "2024-03-15T16:52:25.204800079Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 13ed36b228c199f6785852b6ab28a3cb7f871b753d2fb35870dc328e3a79a585
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.32.0/nocodb-0.32.0.tgz
+    version: 0.32.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -7337,4 +7400,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.0.1/plausible-analytics-0.0.1.tgz
     version: 0.0.1
-generated: "2024-03-15T16:52:01.535161125Z"
+generated: "2024-03-15T16:52:25.205331712Z"
