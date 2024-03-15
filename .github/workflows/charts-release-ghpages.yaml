@@ -51,3 +51,4 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
           charts_dir: "${{ inputs.charts_dir }}"
+          skip_existing: true
