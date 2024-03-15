@@ -1919,6 +1919,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/prymitive/karma docker tag to v0.119
+    apiVersion: v2
+    appVersion: v0.119
+    created: "2024-03-15T17:05:04.257204631Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.0
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: 4786dce25d0fb2fa7f70e9e6c9a149aef2ce4e1410165b1d6a71c40288697e88
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.11.0/karma-0.11.0.tgz
+    version: 0.11.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
     apiVersion: v2
     appVersion: v0.118
@@ -7400,4 +7429,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.0.1/plausible-analytics-0.0.1.tgz
     version: 0.0.1
-generated: "2024-03-15T16:52:25.205331712Z"
+generated: "2024-03-15T17:05:04.257640734Z"
