@@ -393,6 +393,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/coder/code-server to 4.22.1
+    apiVersion: v2
+    created: "2024-03-15T16:52:01.534771208Z"
+    description: Function library for Helm charts
+    digest: dd15ffde1f45bedfba9c985d9e5c117d8946bc632208b12d4501f4a5ae8dc563
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: common
+    type: library
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/common-0.5.1/common-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update dependencies
     apiVersion: v2
     created: "2024-02-20T07:08:12.91610085Z"
@@ -7315,4 +7337,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.0.1/plausible-analytics-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-26T06:29:15.989990327Z"
+generated: "2024-03-15T16:52:01.535161125Z"
