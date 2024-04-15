@@ -1,6 +1,6 @@
 # docuseal
 
-![Version: 1.29.0](https://img.shields.io/badge/Version-1.29.0-informational?style=flat-square) ![AppVersion: v1.4.7](https://img.shields.io/badge/AppVersion-v1.4.7-informational?style=flat-square)
+![Version: 1.30.0](https://img.shields.io/badge/Version-1.30.0-informational?style=flat-square) ![AppVersion: v1.5.2](https://img.shields.io/badge/AppVersion-v1.5.2-informational?style=flat-square)
 
 docuseal helm package
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.5.0 |
+| https://zekker6.github.io/helm-charts | common | 0.5.1 |
 
 ## TL;DR
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. See more environment variables in the [docuseal documentation](https://github.com/docusealco/docuseal). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"docuseal/docuseal"` | image repository |
-| image.tag | string | `"1.4.7@sha256:2f321fe8202bc52714790b70b91c4c1f82f6daa9869361118abccb9c0db678ee"` | image tag |
+| image.tag | string | `"1.5.2@sha256:71014d62260eb2a7f4275263f8abaf70a3d24beec3f5d584aa27b279dd5518a3"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

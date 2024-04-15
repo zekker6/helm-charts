@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: update clickhouse chart to 3.7.0
+      description: update clickhouse chart to 3.7.1
 apiVersion: v2
 appVersion: v2.0.0
 dependencies:
@@ -29,4 +29,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.1.0
+version: 0.1.1
