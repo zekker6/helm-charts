@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.7.2
+      description: Update Helm release redis to 19.1.1
 apiVersion: v2
 appVersion: v2.7.2
 dependencies:
@@ -30,4 +30,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.47.0
+version: 9.48.0
