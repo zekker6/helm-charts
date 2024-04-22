@@ -23,7 +23,7 @@ This chart uses v2.0.0 version of Plausible Analytics. See release notes to lear
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 12.12.10 |
-| https://sentry-kubernetes.github.io/charts | clickhouse | 3.7.1 |
+| https://sentry-kubernetes.github.io/charts | clickhouse | 3.8.0 |
 
 ## TL;DR
 

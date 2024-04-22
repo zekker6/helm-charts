@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 9.47.0](https://img.shields.io/badge/Version-9.47.0-informational?style=flat-square) ![AppVersion: v2.7.2](https://img.shields.io/badge/AppVersion-v2.7.2-informational?style=flat-square)
+![Version: 9.48.0](https://img.shields.io/badge/Version-9.48.0-informational?style=flat-square) ![AppVersion: v2.7.2](https://img.shields.io/badge/AppVersion-v2.7.2-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -22,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 13.x |
-| https://charts.bitnami.com/bitnami | redis | 18.11.x |
+| https://charts.bitnami.com/bitnami | redis | 19.1.x |
 | https://zekker6.github.io/helm-charts | common | 0.5.1 |
 
 ## TL;DR
