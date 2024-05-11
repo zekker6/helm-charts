@@ -1,7 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update Helm release redis to 19.1.1
+      description: Update ghcr.io/paperless-ngx/paperless-ngx to 2.8.3
+    - kind: changed
+      description: Update Helm release redis to 19.3.x
 apiVersion: v2
 appVersion: v2.7.2
 dependencies:
@@ -30,4 +32,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.48.0
+version: 9.49.0
