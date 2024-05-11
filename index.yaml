@@ -5749,6 +5749,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx to 2.8.3
+        - kind: changed
+          description: Update Helm release redis to 19.3.x
+    apiVersion: v2
+    appVersion: v2.7.2
+    created: "2024-05-11T16:46:56.814903992Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 19.3.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 463515a44a885fb456f4667fc055b21fd9d55d8aac46f877aa629068d4707d34
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.49.0/paperless-9.49.0.tgz
+    version: 9.49.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update Helm release redis to 19.1.1
     apiVersion: v2
     appVersion: v2.7.2
@@ -7812,4 +7851,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.0.1/plausible-analytics-0.0.1.tgz
     version: 0.0.1
-generated: "2024-04-22T06:25:51.692592321Z"
+generated: "2024-05-11T16:46:56.81536932Z"
