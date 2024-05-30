@@ -1,14 +1,16 @@
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: update clickhouse chart to 3.7.1
+      description: update plausible to 2.1.0
+    - kind: changed
+      description: update clickhouse chart to 3.9.0
 apiVersion: v2
-appVersion: v2.0.0
+appVersion: v2.1.0
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
-    version: 3.8.0
+    version: 3.9.0
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
@@ -29,4 +31,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.1.1
+version: 0.2.0
