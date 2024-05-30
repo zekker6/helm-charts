@@ -3985,6 +3985,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update neosmemo/memos docker tag to v0.22.1
+    apiVersion: v2
+    appVersion: v0.22.1
+    created: "2024-05-30T16:54:03.282199385Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: 6710d3ca0498909de6d2a4034199d33a81a187ec1ea0ca988e227ba9772a305a
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.32.0/memos-0.32.0.tgz
+    version: 0.32.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update neosmemo/memos docker tag to v0.22.0
     apiVersion: v2
     appVersion: v0.22.0
@@ -8283,4 +8314,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-30T16:53:44.693000044Z"
+generated: "2024-05-30T16:54:03.282737829Z"
