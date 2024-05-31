@@ -1,9 +1,5 @@
 annotations:
-  artifacthub.io/changes: |
-    - kind: changed
-      description: update plausible to 2.1.0
-    - kind: changed
-      description: update clickhouse chart to 3.9.0
+  artifacthub.io/changes: "- kind: changed\n  description: update plausible repository to new location - ghcr.io/plausible/community-edition \n- kind: changed\n  description: update clickhouse to 24.3.3.102-alpine\n"
 apiVersion: v2
 appVersion: v2.1.0
 dependencies:
@@ -31,4 +27,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.2.0
+version: 0.2.1
