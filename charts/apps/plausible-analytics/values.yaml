@@ -20,7 +20,7 @@ postgresql:
   # -- Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql
   # The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
   auth:
-    postgresPassword: "b8f1ad468e00b344b2c6bf495c4ffc28"
+    postgresPassword: ""
     database: "plausible"
 
 # -- Clickhouse Database
