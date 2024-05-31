@@ -2,10 +2,8 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: add new needed values for plausible 2.1.0
-    - kind: changed
-      description: update plausible to 2.1.0
-    - kind: changed
-      description: update clickhouse chart to 3.9.0
+    - kind: fixed
+      description: fix templating of extraEnv
 apiVersion: v2
 appVersion: v2.1.0
 dependencies:
