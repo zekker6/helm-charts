@@ -8133,6 +8133,45 @@ entries:
     version: 9.2.0
   plausible-analytics:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: add new needed values for plausible 2.1.0
+        - kind: fixed
+          description: fix templating of extraEnv
+    apiVersion: v2
+    appVersion: v2.1.0
+    created: "2024-05-31T15:09:06.429552081Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.9.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.10
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: 035588b282c9120fd6974b0ae150d795cd406219ba70b247701855ed3f772aa1
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.2.2/plausible-analytics-0.2.2.tgz
+    version: 0.2.2
+  - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: update plausible repository
         to new location - ghcr.io/plausible/community-edition \n- kind: changed\n
         \ description: update clickhouse to 24.3.3.102-alpine\n"
@@ -8351,4 +8390,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-31T07:04:12.369936391Z"
+generated: "2024-05-31T15:09:06.429949073Z"
