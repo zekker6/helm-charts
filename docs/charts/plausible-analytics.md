@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -86,8 +86,8 @@ N/A
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | baseURL | string | `"http://example.com"` | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
-| clickhouse | object | `{"clickhouse":{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1},"enabled":true}` | Clickhouse Database |
-| clickhouse.clickhouse | object | `{"image":"clickhouse/clickhouse-server","imageVersion":"22.6-alpine","replicas":1}` | Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse |
+| clickhouse | object | `{"clickhouse":{"image":"clickhouse/clickhouse-server","imageVersion":"24.3.3.102-alpine","replicas":1},"enabled":true}` | Clickhouse Database |
+| clickhouse.clickhouse | object | `{"image":"clickhouse/clickhouse-server","imageVersion":"24.3.3.102-alpine","replicas":1}` | Sub-chart values, see https://artifacthub.io/packages/helm/sentry/clickhouse |
 | clickhouse.clickhouse.image | string | `"clickhouse/clickhouse-server"` | Latest sentry/clickhouse chart ships 19.14, which doesn't work together with latest plausible https://artifacthub.io/packages/helm/sentry/clickhouse https://hub.docker.com/r/clickhouse/clickhouse-server/tags |
 | disableAuth | bool | `false` | Disables authentication completely, no registration, login will be shown. |
 | disableRegistration | bool | `false` | Disables registration of new users, keep your admin credentials handy ;) |
@@ -100,7 +100,8 @@ N/A
 | google.clientID | string | `nil` | The Client ID from the Google API Console for your Plausible Analytics project |
 | google.clientSecret | string | `nil` | The Client Secret from the Google API Console for your Plausible Analytics project |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"plausible/analytics"` |  |
+| image.repository | string | `"ghcr.io/plausible/community-edition"` |  |
+| image.tag | string | `"v2.1.0"` | Overrides the image tag whose default is the chart appVersion. See https://hub.docker.com/r/plausible/analytics for tags |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.enabled | bool | `false` |  |
