@@ -375,10 +375,10 @@ spec:
                 secretKeyRef:
                   key: GEOLITE2_COUNTRY_DB
                   name: {{ include "plausible-analytics.fullname" . }}
+            {{- end }}
             {{- if .Values.extraEnv }}
             {{-  .Values.extraEnv | toYaml | nindent 12 }}
             {{- end }}
-          {{- end }}
           volumeMounts:
             - name: app-tmp
               mountPath: /app/tmp
