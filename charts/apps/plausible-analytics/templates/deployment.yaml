@@ -136,6 +136,11 @@ spec:
                 secretKeyRef:
                   key: SECRET_KEY_BASE
                   name: {{ include "plausible-analytics.fullname" . }}
+            - name: TOTP_VAULT_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: TOTP_VAULT_KEY
+                  name: {{ include "plausible-analytics.fullname" . }}
             {{- if (or .Values.clickhouse.enabled .Values.clickhouse.url) }}
             - name: CLICKHOUSE_DATABASE_URL
               valueFrom:
@@ -242,6 +247,11 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: SECRET_KEY_BASE
+                  name: {{ include "plausible-analytics.fullname" . }}
+            - name: TOTP_VAULT_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: TOTP_VAULT_KEY
                   name: {{ include "plausible-analytics.fullname" . }}
             {{- if (or .Values.clickhouse.enabled .Values.clickhouse.url) }}
             - name: CLICKHOUSE_DATABASE_URL
@@ -375,10 +385,10 @@ spec:
                 secretKeyRef:
                   key: GEOLITE2_COUNTRY_DB
                   name: {{ include "plausible-analytics.fullname" . }}
+            {{- end }}
             {{- if .Values.extraEnv }}
             {{-  .Values.extraEnv | toYaml | nindent 12 }}
             {{- end }}
-          {{- end }}
           volumeMounts:
             - name: app-tmp
               mountPath: /app/tmp

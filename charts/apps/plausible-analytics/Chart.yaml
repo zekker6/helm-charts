@@ -1,5 +1,9 @@
 annotations:
-  artifacthub.io/changes: "- kind: changed\n  description: update plausible repository to new location - ghcr.io/plausible/community-edition \n- kind: changed\n  description: update clickhouse to 24.3.3.102-alpine\n"
+  artifacthub.io/changes: |
+    - kind: changed
+      description: add new needed values for plausible 2.1.0
+    - kind: fixed
+      description: fix templating of extraEnv
 apiVersion: v2
 appVersion: v2.1.0
 dependencies:
