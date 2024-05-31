@@ -11,6 +11,11 @@ secretKey: ""
 # -- Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release.
 totpVaultKey: "" #openssl rand -base64 32
 
+# -- Configure an external secret to use for plausible
+externalSecret:
+  # -- Name of the external secret to use
+  name: ""
+
 # -- Postgres Database
 postgresql:
   enabled: true

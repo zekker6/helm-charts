@@ -1,9 +1,5 @@
 annotations:
-  artifacthub.io/changes: |
-    - kind: changed
-      description: add new needed values for plausible 2.1.0
-    - kind: fixed
-      description: fix templating of extraEnv
+  artifacthub.io/changes: "- kind: added \n  description: add an option to use external secret for plausible configuration\n"
 apiVersion: v2
 appVersion: v2.1.0
 dependencies:
@@ -31,4 +27,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.2.2
+version: 0.2.3

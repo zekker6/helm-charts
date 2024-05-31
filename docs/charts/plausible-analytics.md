@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
+![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -91,6 +91,8 @@ N/A
 | clickhouse.clickhouse.image | string | `"clickhouse/clickhouse-server"` | Latest sentry/clickhouse chart ships 19.14, which doesn't work together with latest plausible https://artifacthub.io/packages/helm/sentry/clickhouse https://hub.docker.com/r/clickhouse/clickhouse-server/tags |
 | disableAuth | bool | `false` | Disables authentication completely, no registration, login will be shown. |
 | disableRegistration | bool | `false` | Disables registration of new users, keep your admin credentials handy ;) |
+| externalSecret | object | `{"name":""}` | Configure an external secret to use for plausible |
+| externalSecret.name | string | `""` | Name of the external secret to use |
 | extraEnv | list | `[]` | Extra Env Variables that are passed down to plausible 1:1 |
 | fullnameOverride | string | `""` |  |
 | geolocation.account_id | string | `nil` | Account/User ID from maxmind.com |
@@ -134,6 +136,7 @@ N/A
 | smtp.ssl.enabled | bool | `false` | If SSL is enabled for SMTP connection |
 | smtp.username | string | `nil` | The username/email in case SMTP auth is enabled. |
 | tolerations | list | `[]` |  |
+| totpVaultKey | string | `""` | Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release. |
 | twitter | object | `{"access":{"secret":null,"token":null},"consumer":{"key":null,"secret":null}}` | Twitter Integration https://docs.plausible.io/self-hosting-configuration#twitter-integration |
 | twitter.access.secret | string | `nil` | The access token secret you generated in the steps above |
 | twitter.access.token | string | `nil` | The access token you generated in the steps above |
