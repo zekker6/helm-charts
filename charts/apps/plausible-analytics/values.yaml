@@ -8,6 +8,8 @@ disableRegistration: false
 baseURL: "http://example.com"
 # -- Secret key to be used for encryption. IF no value is provided random string will be generated during release.
 secretKey: ""
+# -- Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release.
+totpVaultKey: "" #openssl rand -base64 32
 
 # -- Postgres Database
 postgresql:
@@ -34,7 +36,7 @@ clickhouse:
     # https://artifacthub.io/packages/helm/sentry/clickhouse
     # https://hub.docker.com/r/clickhouse/clickhouse-server/tags
     image: clickhouse/clickhouse-server
-    imageVersion: "22.6-alpine"
+    imageVersion: "24.3.3.102-alpine"
 
 # -- Plausible uses and SMTP server to send transactional emails e.g. account activation, password reset, weekly reports, etc.
 smtp:
@@ -101,7 +103,7 @@ extraEnv: []
 replicaCount: 1
 
 image:
-  repository: plausible/analytics
+  repository: ghcr.io/plausible/community-edition
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
   # See https://hub.docker.com/r/plausible/analytics for tags
