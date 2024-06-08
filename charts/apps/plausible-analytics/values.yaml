@@ -9,7 +9,8 @@ baseURL: "http://example.com"
 # -- Secret key to be used for encryption. IF no value is provided random string will be generated during release.
 secretKey: ""
 # -- Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release.
-totpVaultKey: "" #openssl rand -base64 32
+# Generate with: openssl rand -base64 32
+totpVaultKey: ""
 
 # -- Configure an external secret to use for plausible
 externalSecret:
@@ -25,7 +26,8 @@ postgresql:
   # -- Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql
   # The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
   auth:
-    postgresPassword: "b8f1ad468e00b344b2c6bf495c4ffc28" # this password is needed in the CI
+    # Change this for real use. Password is left in chart to be used in CI
+    postgresPassword: "b8f1ad468e00b344b2c6bf495c4ffc28"
     database: "plausible"
 
 # -- Clickhouse Database
@@ -112,7 +114,7 @@ image:
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
   # See https://hub.docker.com/r/plausible/analytics for tags
-  tag: "v2.1.0"
+  tag: "v2.1.1"
 
 imagePullSecrets: []
 nameOverride: ""
