@@ -137,7 +137,7 @@ N/A
 | smtp.ssl.enabled | bool | `false` | If SSL is enabled for SMTP connection |
 | smtp.username | string | `nil` | The username/email in case SMTP auth is enabled. |
 | tolerations | list | `[]` |  |
-| totpVaultKey | string | `""` | Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release. |
+| totpVaultKey | string | `""` | Secret TOTP Vault key to be used for encryption. IF no value is provided random string will be generated during release. Generate with: openssl rand -base64 32 |
 | twitter | object | `{"access":{"secret":null,"token":null},"consumer":{"key":null,"secret":null}}` | Twitter Integration https://docs.plausible.io/self-hosting-configuration#twitter-integration |
 | twitter.access.secret | string | `nil` | The access token secret you generated in the steps above |
 | twitter.access.token | string | `nil` | The access token you generated in the steps above |
