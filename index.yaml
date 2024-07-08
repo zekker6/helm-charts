@@ -525,6 +525,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.6.3
+    apiVersion: v2
+    appVersion: v1.6.3
+    created: "2024-07-08T06:17:32.431089496Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: docuseal helm package
+    digest: 74ad600e7b64090b32c709009c0275ae83a8cc52d0c7ce5c80241656d90cc72d
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.37.0/docuseal-1.37.0.tgz
+    version: 1.37.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update docuseal/docuseal docker tag to v1.6.2
     apiVersion: v2
     appVersion: v1.6.2
@@ -2906,6 +2937,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.110.0
+    apiVersion: v2
+    appVersion: v1.110.0
+    created: "2024-07-08T06:17:32.549605014Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 89a8c416418d406487ad0ce1a0427c89ddb81f83e6aac8c2eca0235a907531ba
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.53.0/matrix-2.53.0.tgz
+    version: 2.53.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.109.0
     apiVersion: v2
     appVersion: v1.109.0
@@ -5063,6 +5120,38 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/memos-0.1.0.tgz
     version: 0.1.0
   nocodb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update nocodb/nocodb docker tag to v0.251.1
+    apiVersion: v2
+    appVersion: v0.251.1
+    created: "2024-07-08T06:17:32.685487543Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: e5a6610fb2a136b3dcde7039e1bd2fb040f4a99b803d14fc2114be12b182bd49
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.38.0/nocodb-0.38.0.tgz
+    version: 0.38.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8787,4 +8876,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-06T11:39:51.03201172Z"
+generated: "2024-07-08T06:17:32.686556174Z"
