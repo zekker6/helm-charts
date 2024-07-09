@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
+      description: update ghcr.io/dgtlmoon/changedetection.io to 0.45.25
 apiVersion: v2
-appVersion: "v0.45"
+appVersion: "0.45.25"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -24,4 +24,4 @@ name: changedetection-io
 sources:
   - https://github.com/dgtlmoon/changedetection.io
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
-version: 1.16.0
+version: 1.17.0

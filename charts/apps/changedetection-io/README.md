@@ -1,6 +1,6 @@
 # changedetection-io
 
-![Version: 1.16.0](https://img.shields.io/badge/Version-1.16.0-informational?style=flat-square) ![AppVersion: v0.45](https://img.shields.io/badge/AppVersion-v0.45-informational?style=flat-square)
+![Version: 1.17.0](https://img.shields.io/badge/Version-1.17.0-informational?style=flat-square) ![AppVersion: 0.45.25](https://img.shields.io/badge/AppVersion-0.45.25-informational?style=flat-square)
 
 changedetection-io helm package
 
@@ -80,7 +80,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
-| image.tag | string | `"0.45"` | image tag |
+| image.tag | string | `"0.45.25"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
