@@ -1,12 +1,12 @@
 annotations:
-  artifacthub.io/changes: "- kind: changed\n  description: update ghcr.io/plausible/community-edition docker tag to v2.1.1"
+  artifacthub.io/changes: "- kind: changed\n  description: update helm release clickhouse to 3.10.0"
 apiVersion: v2
 appVersion: v2.1.1
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
-    version: 3.9.0
+    version: 3.10.0
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
@@ -27,4 +27,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.3.0
+version: 0.4.0
