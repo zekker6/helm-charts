@@ -3030,6 +3030,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.111.0
+    apiVersion: v2
+    appVersion: v1.111.0
+    created: "2024-07-18T07:13:51.179335729Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 378346b743c0ad16dda5752f69250a71eb661f8ae672780c7a61380b527e4a3d
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.54.0/matrix-2.54.0.tgz
+    version: 2.54.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.110.0
     apiVersion: v2
     appVersion: v1.110.0
@@ -9014,6 +9040,37 @@ entries:
   readeck:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: update codeberg.org/readeck/readeck docker tag to v0.15.0
+    apiVersion: v2
+    appVersion: v0.15.0
+    created: "2024-07-18T07:13:51.375103079Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: 415989b4c790d13b4260b7c3c101ceecd0e252eba7a028a8859568c0db0516f4
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/favicon.ico
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.2.0/readeck-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: initial chart release
     apiVersion: v2
@@ -9043,4 +9100,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-12T16:31:06.048505372Z"
+generated: "2024-07-18T07:13:51.375721696Z"
