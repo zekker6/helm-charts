@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.46.02
+    apiVersion: v2
+    appVersion: v0.46.02
+    created: "2024-07-29T06:20:43.105907661Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: changedetection-io helm package
+    digest: 9958040bb0918ef3baa64f4e9f11d5d4ac334b5836295039d460873333f9da8d
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.21.0/changedetection-io-1.21.0.tgz
+    version: 1.21.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.46.01
     apiVersion: v2
     appVersion: v0.46.01
@@ -6711,6 +6742,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.11.2
+    apiVersion: v2
+    appVersion: v2.11.2
+    created: "2024-07-29T06:20:43.248586358Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 19.6.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 7844eac3a72d976eb9876492f0eeabc01b83977cf8ba8c27ffae1f084a6e2caf
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.56.0/paperless-9.56.0.tgz
+    version: 9.56.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.11.1
     apiVersion: v2
     appVersion: v2.11.1
@@ -9325,4 +9393,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-26T15:55:13.828096299Z"
+generated: "2024-07-29T06:20:43.249059478Z"
