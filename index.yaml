@@ -9548,6 +9548,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update codeberg.org/readeck/readeck docker tag to v0.15.1
+    apiVersion: v2
+    appVersion: v0.15.1
+    created: "2024-08-24T07:13:20.670784393Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: d012ee33b485ff6f5b7a8f78f0281a2bbc037e411626649972dd6b7a82e6b10c
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/favicon.ico
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.3.0/readeck-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update codeberg.org/readeck/readeck docker tag to v0.15.0
     apiVersion: v2
     appVersion: v0.15.0
@@ -9607,4 +9638,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-24T07:12:59.409419393Z"
+generated: "2024-08-24T07:13:20.671285853Z"
