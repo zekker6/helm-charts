@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.46.03
+    apiVersion: v2
+    appVersion: v0.46.03
+    created: "2024-08-24T07:12:58.645376564Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: changedetection-io helm package
+    digest: a842fe062efaa6caefdac453c0074adbd2ca42d938ee7b7a60594abb68c57efb
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.22.0/changedetection-io-1.22.0.tgz
+    version: 1.22.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.46.02
     apiVersion: v2
     appVersion: v0.46.02
@@ -677,6 +708,37 @@ entries:
     - https://zekker6.github.io/helm-charts/library/common-0.4.0.tgz
     version: 0.4.0
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update docuseal/docuseal docker tag to v1.6.9
+    apiVersion: v2
+    appVersion: v1.6.9
+    created: "2024-08-24T07:12:58.833584335Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: docuseal helm package
+    digest: 855cdeec4efa75eb07f6bdac0dce66ca249ccf349131de6dce6bb5b2d7e16145
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.41.0/docuseal-1.41.0.tgz
+    version: 1.41.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -3185,6 +3247,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.113.0
+    apiVersion: v2
+    appVersion: v1.113.0
+    created: "2024-08-24T07:12:59.025901853Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 22605fe0e77dfcf4a7788bf2a523a7e8baa44623be9849ff89138bac8cd5d701
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.56.0/matrix-2.56.0.tgz
+    version: 2.56.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.112.0
     apiVersion: v2
     appVersion: v1.112.0
@@ -5454,6 +5542,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update nocodb/nocodb docker tag to v0.255.0
+    apiVersion: v2
+    appVersion: v0.255.0
+    created: "2024-08-24T07:12:59.204345984Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: d8985e1498eae40fefee40dbdd8a423ccf19cea4819b7e224e82ff17e136232f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.41.0/nocodb-0.41.0.tgz
+    version: 0.41.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update nocodb/nocodb docker tag to v0.251.3
     apiVersion: v2
     appVersion: v0.251.3
@@ -6796,6 +6916,43 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.11.6
+    apiVersion: v2
+    appVersion: v2.11.6
+    created: "2024-08-24T07:12:59.408473322Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 19.6.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: e4465dcc88cf494b3aedaadbf984a7ee15e1f089ded37702052e36d7a34aac77
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.57.0/paperless-9.57.0.tgz
+    version: 9.57.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -9450,4 +9607,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-31T09:16:33.242737933Z"
+generated: "2024-08-24T07:12:59.409419393Z"
