@@ -6,7 +6,7 @@ apiVersion: v2
 appVersion: v1.113.0
 dependencies:
   - name: postgresql
-    version: "13.x"
+    version: "15.x"
     repository: "https://charts.bitnami.com/bitnami"
 description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
