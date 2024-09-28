@@ -1,6 +1,6 @@
 # matrix
 
-![Version: 2.58.0](https://img.shields.io/badge/Version-2.58.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.115.0](https://img.shields.io/badge/AppVersion-v1.115.0-informational?style=flat-square)
+![Version: 2.59.0](https://img.shields.io/badge/Version-2.59.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.115.0](https://img.shields.io/badge/AppVersion-v1.115.0-informational?style=flat-square)
 
 A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 
@@ -31,7 +31,7 @@ Chart source: https://github.com/typokign/matrix-chart
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 13.x |
+| https://charts.bitnami.com/bitnami | postgresql | 15.x |
 
 ## TL;DR
 

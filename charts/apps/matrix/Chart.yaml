@@ -1,12 +1,12 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update matrixdotorg/synapse docker tag to v1.115.0
+      description: update bitnami/postgresql to 15.x
 apiVersion: v2
 appVersion: v1.115.0
 dependencies:
   - name: postgresql
-    version: "13.x"
+    version: "15.x"
     repository: "https://charts.bitnami.com/bitnami"
 description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
@@ -19,4 +19,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.58.0
+version: 2.59.0
