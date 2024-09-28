@@ -28,7 +28,7 @@ on:
 jobs:
   pr-metadata:
     name: Collect PR metadata
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       isRenovatePR: ${{ startsWith(steps.branch-name.outputs.current_branch, 'renovate/') }}
       isFork: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
@@ -52,7 +52,7 @@ jobs:
 
   pr-changes:
     name: Collect PR changes
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       addedOrModifiedFilesDetected: ${{ steps.changed-files.outputs.allAddedOrModified }}
       addedOrModifiedFiles: ${{ steps.changed-files.outputs.allAddedOrModified_files }}

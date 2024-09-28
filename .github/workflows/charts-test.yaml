@@ -24,7 +24,7 @@ env:
 jobs:
   install-chart:
     name: Install chart
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: ${{ inputs.chartsToTest != '[]' && inputs.chartsToTest != '' }}
     strategy:
       matrix:
@@ -80,7 +80,7 @@ jobs:
     if: |
       always()
     name: Install successful
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Check install matrix status
         if: ${{ (inputs.chartsToTest != '[]' && inputs.chartsToTest != '') && needs.install-chart.result != 'success' }}
@@ -88,7 +88,7 @@ jobs:
 
   unittest-chart:
     name: Unit-test chart
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: ${{ inputs.chartsToTest != '[]' && inputs.chartsToTest != '' }}
     strategy:
       matrix:
@@ -128,7 +128,7 @@ jobs:
     if: |
       always()
     name: Unittest successful
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Check unittest matrix status
         if: ${{ (inputs.chartsToTest != '[]' && inputs.chartsToTest != '') && needs.unittest-chart.result != 'success' }}
