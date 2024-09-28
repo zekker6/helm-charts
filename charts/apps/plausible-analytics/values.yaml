@@ -114,7 +114,7 @@ image:
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
   # See https://hub.docker.com/r/plausible/analytics for tags
-  tag: "v2.1.1"
+  tag: "v2.1.3"
 
 imagePullSecrets: []
 nameOverride: ""

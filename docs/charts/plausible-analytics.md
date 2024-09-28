@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.1](https://img.shields.io/badge/AppVersion-v2.1.1-informational?style=flat-square)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.3](https://img.shields.io/badge/AppVersion-v2.1.3-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -24,7 +24,7 @@ See release notes to learn more about upgrade steps: https://github.com/plausibl
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 12.12.10 |
-| https://sentry-kubernetes.github.io/charts | clickhouse | 3.10.0 |
+| https://sentry-kubernetes.github.io/charts | clickhouse | 3.11.0 |
 
 ## TL;DR
 
@@ -104,7 +104,7 @@ N/A
 | google.clientSecret | string | `nil` | The Client Secret from the Google API Console for your Plausible Analytics project |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"ghcr.io/plausible/community-edition"` |  |
-| image.tag | string | `"v2.1.1"` | Overrides the image tag whose default is the chart appVersion. See https://hub.docker.com/r/plausible/analytics for tags |
+| image.tag | string | `"v2.1.3"` | Overrides the image tag whose default is the chart appVersion. See https://hub.docker.com/r/plausible/analytics for tags |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.enabled | bool | `false` |  |
