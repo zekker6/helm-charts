@@ -3340,6 +3340,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update bitnami/postgresql to 15.x
+    apiVersion: v2
+    appVersion: v1.115.0
+    created: "2024-09-28T21:21:05.856108979Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 7506438cb6fa3a8b4c36bc57e0559917c3c17827c8cff39515f0225d161479c2
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.59.0/matrix-2.59.0.tgz
+    version: 2.59.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.115.0
     apiVersion: v2
     appVersion: v1.115.0
@@ -5718,6 +5744,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update bitnami/postgresql to 15.x
+    apiVersion: v2
+    appVersion: v0.255.2
+    created: "2024-09-28T21:21:05.96137694Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 3b0cba64f87676fb519c4438d3a47dac0af9b855b490ba496ddad69b3320c84c
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.43.0/nocodb-0.43.0.tgz
+    version: 0.43.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update nocodb/nocodb docker tag to v0.255.2
     apiVersion: v2
     appVersion: v0.255.2
@@ -7124,6 +7182,43 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update bitnami/postgresql to 15.x
+    apiVersion: v2
+    appVersion: v2.12.1
+    created: "2024-09-28T21:21:06.073657861Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.1.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: da6622bf394fdefecec1ee7ccd843f19407da0b0a890ad7a6b0749695eda5182
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.60.0/paperless-9.60.0.tgz
+    version: 9.60.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -9495,6 +9590,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: update bitnami/postgresql to 15.x
+    apiVersion: v2
+    appVersion: v2.1.3
+    created: "2024-09-28T21:21:06.173520407Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.11.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: dcffc51402635c1a880b2d910f0361d61b6754489aa3ab30cb2450a67b76c034
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.6.0/plausible-analytics-0.6.0.tgz
+    version: 0.6.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: update helm release clickhouse to 3.11.0
         - kind: changed
           description: update plausible version to 2.1.3
@@ -9992,4 +10124,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-28T15:57:06.144686417Z"
+generated: "2024-09-28T21:21:06.17424502Z"
