@@ -9397,6 +9397,45 @@ entries:
     version: 9.2.0
   plausible-analytics:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: update helm release clickhouse to 3.11.0
+        - kind: changed
+          description: update plausible version to 2.1.3
+    apiVersion: v2
+    appVersion: v2.1.3
+    created: "2024-09-28T15:26:59.235593857Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.11.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.10
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: f4791bb3b8b00ef2170dc337d4e8b18fc663082ed283f796cd66eb5f0de2d3c7
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.5.0/plausible-analytics-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: update helm release clickhouse to 3.10.0
@@ -9826,4 +9865,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-04T15:39:09.726272806Z"
+generated: "2024-09-28T15:26:59.236169973Z"
