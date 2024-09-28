@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update nocodb/nocodb docker tag to v0.255.2
+      description: update bitnami/postgresql to 15.x
 apiVersion: v2
 appVersion: v0.255.2
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     repository: https://zekker6.github.io/helm-charts
     version: 0.5.1
   - name: postgresql
-    version: "13.x"
+    version: "15.x"
     repository: "https://charts.bitnami.com/bitnami"
     condition: postgresql.enabled
 description: nocodb - Open Source Airtable Alternative
@@ -25,4 +25,4 @@ maintainers:
 name: nocodb
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb"
-version: 0.42.0
+version: 0.43.0

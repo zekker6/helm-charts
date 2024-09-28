@@ -1,9 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update paperless to 2.12.1
-    - kind: changed
-      description: update bitnami/redis chart to 20.1.x
+      description: update bitnami/postgresql to 15.x
 apiVersion: v2
 appVersion: v2.12.1
 dependencies:
@@ -13,7 +11,7 @@ dependencies:
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
-    version: 13.x
+    version: "15.x"
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
@@ -32,4 +30,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.59.0
+version: 9.60.0
