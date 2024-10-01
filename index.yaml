@@ -3371,6 +3371,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.116.0
+    apiVersion: v2
+    appVersion: v1.116.0
+    created: "2024-10-01T15:20:26.705098291Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: ec02075c4c483263d468f0fc81298e3cbf3b96b542029374be4b24b8fd4e8573
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.60.0/matrix-2.60.0.tgz
+    version: 2.60.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update bitnami/postgresql to 15.x
     apiVersion: v2
     appVersion: v1.115.0
@@ -10155,4 +10181,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-30T13:21:42.727103526Z"
+generated: "2024-10-01T15:20:26.705578168Z"
