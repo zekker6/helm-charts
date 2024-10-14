@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update bitnami/postgresql to 15.x
+      description: update helm release redis to 20.2.0
 apiVersion: v2
 appVersion: v2.12.1
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 20.1.x
+    version: 20.2.x
 description: Paperless - Index and archive all of your scanned paper documents
 home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
 icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
@@ -30,4 +30,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.60.0
+version: 9.61.0
