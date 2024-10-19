@@ -18,8 +18,8 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.x    |
-| https://zekker6.github.io/helm-charts | common | 0.5.1   |
+| https://charts.bitnami.com/bitnami | postgresql | 16.x |
+| https://zekker6.github.io/helm-charts | common | 0.5.1 |
 
 ## TL;DR
 
