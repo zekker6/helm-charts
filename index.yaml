@@ -7453,6 +7453,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update helm release postgres to 16.x
+    apiVersion: v2
+    appVersion: v2.12.1
+    created: "2024-10-19T17:47:03.341204943Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.2.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: da96fb2c15a625ecbd6d892644e3ceeec17b43ebb21a81126153ece3ee0ba4ef
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.62.0/paperless-9.62.0.tgz
+    version: 9.62.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update helm release redis to 20.2.0
     apiVersion: v2
     appVersion: v2.12.1
@@ -10505,4 +10542,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-19T17:34:38.159345928Z"
+generated: "2024-10-19T17:47:03.426342452Z"
