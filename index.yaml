@@ -5918,6 +5918,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update nocodb/nocodb docker tag to v0.257.2
+        - kind: changed
+          description: update bitnami/postgresql chart tag to 16.x
+    apiVersion: v2
+    appVersion: v0.257.2
+    created: "2024-10-19T17:33:57.915720448Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 9dabdec3238c00d3f9880047a0a574a79f33a9c1a0280dcbfea189f54b55316e
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.45.0/nocodb-0.45.0.tgz
+    version: 0.45.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update nocodb/nocodb docker tag to v0.257.0
     apiVersion: v2
     appVersion: v0.257.0
@@ -10404,4 +10438,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-19T17:30:34.676476468Z"
+generated: "2024-10-19T17:33:57.916474633Z"
