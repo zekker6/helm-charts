@@ -3488,6 +3488,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.117.0
+        - kind: changed
+          description: update bitnami/postgresql chart tag to 16.x
+    apiVersion: v2
+    appVersion: v1.117.0
+    created: "2024-10-19T17:34:38.069208249Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: c45ad03b24b3a66c7e078c257f57edacafc840a8736faf2ebeaccf6c761a57b6
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.61.0/matrix-2.61.0.tgz
+    version: 2.61.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.116.0
     apiVersion: v2
     appVersion: v1.116.0
@@ -9867,6 +9895,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update helm release clickhouse to 3.13.
+        - kind: changed
+          description: update bitnami/postgresql chart tag to 16.x
+    apiVersion: v2
+    appVersion: v2.1.4
+    created: "2024-10-19T17:34:38.158849132Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.13.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: f2c0a014ae23098927e5e12de6afa309f314cd47dfd89a2e4a8b7e5512da6c9f
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.8.0/plausible-analytics-0.8.0.tgz
+    version: 0.8.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/plausible/community-edition docker tag to v2.1.4
     apiVersion: v2
     appVersion: v2.1.4
@@ -10438,4 +10505,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-19T17:33:57.916474633Z"
+generated: "2024-10-19T17:34:38.159345928Z"
