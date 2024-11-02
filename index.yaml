@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.47.05
+    apiVersion: v2
+    appVersion: v0.47.05
+    created: "2024-11-02T14:08:05.255820539Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: changedetection-io helm package
+    digest: cf80b895d36dde29ede5b3a85c876c24f1d8d2dd74700c063da0745f41023174
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.25.0/changedetection-io-1.25.0.tgz
+    version: 1.25.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.47.03
     apiVersion: v2
     appVersion: v0.47.03
@@ -770,6 +801,37 @@ entries:
     - https://zekker6.github.io/helm-charts/library/common-0.4.0.tgz
     version: 0.4.0
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update docuseal/docuseal docker tag to v1.7.7
+    apiVersion: v2
+    appVersion: v1.7.7
+    created: "2024-11-02T14:08:05.350221102Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: docuseal helm package
+    digest: f4d6a3d1787a504a06d877a84bc6d6798aa77632430aaefd4ed2873cf08c0f8b
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.46.0/docuseal-1.46.0.tgz
+    version: 1.46.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2285,6 +2347,33 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/healthchecks-0.1.0.tgz
     version: 0.1.0
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update b4bz/homer docker tag to v24.10.2
+    apiVersion: v2
+    appVersion: v24.10.2
+    created: "2024-11-02T14:08:05.465383957Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 3e382a1381378f2c6ee134b74dd72e113009319b07b334a816c79cda941e1084
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.14.0/homer-8.14.0.tgz
+    version: 8.14.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -10636,4 +10725,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-02T14:07:33.711252189Z"
+generated: "2024-11-02T14:08:05.466281215Z"
