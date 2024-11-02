@@ -3488,6 +3488,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.118.0
+    apiVersion: v2
+    appVersion: v1.118.0
+    created: "2024-11-02T14:07:33.39180967Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 86ff69b0ebe6c86da449b2173e6c7f39f631c200e467d02e51c47034b9ac3042
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.62.0/matrix-2.62.0.tgz
+    version: 2.62.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.117.0
         - kind: changed
           description: update bitnami/postgresql chart tag to 16.x
@@ -7453,6 +7479,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.13.2
+    apiVersion: v2
+    appVersion: v2.13.2
+    created: "2024-11-02T14:07:33.569204686Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.2.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 552f82f01489886791d6ef07d7349372064fd62f396099e0d8c2119658a2d72e
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.63.0/paperless-9.63.0.tgz
+    version: 9.63.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update helm release postgres to 16.x
     apiVersion: v2
     appVersion: v2.12.1
@@ -10421,6 +10484,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update codeberg.org/readeck/readeck docker tag to v0.15.4
+    apiVersion: v2
+    appVersion: v0.15.4
+    created: "2024-11-02T14:07:33.710085017Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.1
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: 6c25913177b3dc0527b6c77fa06f11ab12eef3db6cf8fe141c5bca45a6eb11d4
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/favicon.ico
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.5.0/readeck-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update codeberg.org/readeck/readeck docker tag to v0.15.3
     apiVersion: v2
     appVersion: v0.15.3
@@ -10542,4 +10636,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-19T17:47:03.426342452Z"
+generated: "2024-11-02T14:07:33.711252189Z"
