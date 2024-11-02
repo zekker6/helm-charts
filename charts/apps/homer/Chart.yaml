@@ -1,9 +1,9 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update b4bz/homer docker tag to v24.10.1
+      description: update b4bz/homer docker tag to v24.10.2
 apiVersion: v2
-appVersion: v24.10.1
+appVersion: v24.10.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -19,4 +19,4 @@ maintainers:
 name: homer
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
-version: 8.13.0
+version: 8.14.0
