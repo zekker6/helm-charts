@@ -863,6 +863,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.7.8
+    apiVersion: v2
+    appVersion: v1.7.8
+    created: "2024-11-04T22:23:53.992952348Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 2ce5036097c12d37e18a3262cc518ff1fd67bd56765dd79a5a59fcf7b6272b62
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.48.0/docuseal-1.48.0.tgz
+    version: 1.48.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update zekker6/common chart version to 0.5.27
     apiVersion: v2
     appVersion: v1.7.7
@@ -2466,6 +2497,33 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/healthchecks-0.1.0.tgz
     version: 0.1.0
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update b4bz/homer docker tag to v24.11.1
+    apiVersion: v2
+    appVersion: v24.11.1
+    created: "2024-11-04T22:23:54.157475847Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 9f8389cf767b13a624d87287ca54e8f7ea1783b33cef2ac3b2f5c6dd0cee1a9f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.16.0/homer-8.16.0.tgz
+    version: 8.16.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -11127,4 +11185,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-04T19:33:30.30498922Z"
+generated: "2024-11-04T22:23:54.158323397Z"
