@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update zekker6/common chart version to 0.5.25
+    apiVersion: v2
+    appVersion: v0.47.05
+    created: "2024-11-04T19:33:29.302088811Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 029eef0bae7b4acd8df0cf77cbf4dae082d22f61da4b90caac896855c3870771
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.26.0/changedetection-io-1.26.0.tgz
+    version: 1.26.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.47.05
     apiVersion: v2
     appVersion: v0.47.05
@@ -829,6 +860,37 @@ entries:
     - https://zekker6.github.io/helm-charts/library/common-0.4.0.tgz
     version: 0.4.0
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.27
+    apiVersion: v2
+    appVersion: v1.7.7
+    created: "2024-11-04T19:33:29.412985585Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 4e92f4570836a2966a3d487f288ad1a1b1471a370a52ebbe4ca19d0ebf7d0b1d
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.47.0/docuseal-1.47.0.tgz
+    version: 1.47.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2288,6 +2350,35 @@ entries:
     version: 1.0.0
   healthchecks:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: "2.7"
+    created: "2024-11-04T19:33:29.57114679Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: e37fd89a8b389f317a24be5f848bb34601aa98c3f7d1d1b4b54ea5880c3fa6e5
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-0.3.0/healthchecks-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: update https://github.com/zekker6/helm-charts/tree/main/charts/library/common to 0.5.0
@@ -2375,6 +2466,33 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/healthchecks-0.1.0.tgz
     version: 0.1.0
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v24.10.2
+    created: "2024-11-04T19:33:29.687767725Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 1f5d09a2f147e53efcf121da65eaf19cc635b6509b2f096f50e23c04b239a47f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.15.0/homer-8.15.0.tgz
+    version: 8.15.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2892,6 +3010,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v0.119
+    created: "2024-11-04T19:33:29.812429552Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: b8cc79f4628c6cfea7bef671290b683072aa956c9c7d43da55fe30b37a2aab9c
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.12.0/karma-0.12.0.tgz
+    version: 0.12.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/prymitive/karma docker tag to v0.119
     apiVersion: v2
     appVersion: v0.119
@@ -3209,6 +3356,34 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/karma-0.1.0.tgz
     version: 0.1.0
   language-tool:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v6.5
+    created: "2024-11-04T19:33:29.917978591Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: language-tool helm package
+    digest: 4749051d11e0d22145a92f01c85bfae9f457ec080e2a9f732a78e6db8efaeb7e
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/language-tool
+    icon: https://languagetool.org/images/logo_color_with_background.svg?8dae54218b449e94603195c91016bc93
+    keywords:
+    - language-tool
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: language-tool
+    sources:
+    - https://github.com/language-tool/language-tool-docker
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/language-tool-1.10.0/language-tool-1.10.0.tgz
+    version: 1.10.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -5065,6 +5240,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v0.22.5
+    created: "2024-11-04T19:33:30.006400651Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: 7f0775632d6e700a332cf64f722c256f6641dfbcb223591b227776ad3e5085ba
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.37.0/memos-0.37.0.tgz
+    version: 0.37.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update neosmemo/memos docker tag to v0.22.5
     apiVersion: v2
     appVersion: v0.22.5
@@ -6086,6 +6292,38 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/memos-0.1.0.tgz
     version: 0.1.0
   nocodb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v0.257.2
+    created: "2024-11-04T19:33:30.104056414Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 178cd7e0fee5c55bb9bbaaaec0e20c7e5c2840f23d9005ba29268d9b14af4959
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.46.0/nocodb-0.46.0.tgz
+    version: 0.46.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -7593,6 +7831,43 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v2.13.4
+    created: "2024-11-04T19:33:30.219711819Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.2.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 8710040bafb794c26e4d5376c747094aa021adb15857822f3019edd443b0b840
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.65.0/paperless-9.65.0.tgz
+    version: 9.65.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -10638,6 +10913,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update zekker6/common chart version to 0.5.2
+    apiVersion: v2
+    appVersion: v0.15.6
+    created: "2024-11-04T19:33:30.303604136Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: 1729c8f33e960e59068dc8c13fe2aa684bc54b1268c25c74029a5834762a8795
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/favicon.ico
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.7.0/readeck-0.7.0.tgz
+    version: 0.7.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update codeberg.org/readeck/readeck docker tag to v0.15.6
     apiVersion: v2
     appVersion: v0.15.6
@@ -10821,4 +11127,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-04T19:17:17.387231417Z"
+generated: "2024-11-04T19:33:30.30498922Z"
