@@ -30,10 +30,13 @@ Default NOTES.txt content.
   {{ if .hostTpl -}}
     {{- $host = tpl .hostTpl $ -}}
   {{ end }}
-  {{- $path := (first .paths).path | default "/" -}}
-  {{ if (first .paths).pathTpl -}}
-    {{- $path = tpl (first .paths).pathTpl $ -}}
-  {{ end }}
+  {{- $path := "/"}}
+  {{- if .paths}}
+      {{- $path = (first .paths).path | default "/" -}}
+      {{ if (first .paths).pathTpl -}}
+        {{- $path = tpl (first .paths).pathTpl $ -}}
+      {{ end }}
+  {{- end }}
   - {{ $protocol }}://{{- $host }}{{- $path }}
 {{- end }}
 {{- else if and $primaryService $primaryPort }}
