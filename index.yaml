@@ -672,6 +672,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/coder/code-server to 4.93.1
+        - kind: changed
+          description: update docker.io/grafana/promtail to 3.2.1
+        - kind: changed
+          description: update docker.io/qmcgaw/gluetun to v3.39.1
+        - kind: fixed
+          description: properly handle empty paths in ingress configuration
+    apiVersion: v2
+    created: "2024-11-04T19:17:17.386767672Z"
+    description: Function library for Helm charts
+    digest: 9e71e4d3d4c68ea699759df3ca05a95180568a1e734e7a16b644f1c9b862ef30
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: common
+    type: library
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/common-0.5.2/common-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/coder/code-server to 4.22.1
     apiVersion: v2
     created: "2024-03-15T16:52:01.534771208Z"
@@ -10793,4 +10821,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-04T13:05:35.437609702Z"
+generated: "2024-11-04T19:17:17.387231417Z"
