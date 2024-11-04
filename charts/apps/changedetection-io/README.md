@@ -1,6 +1,6 @@
 # changedetection-io
 
-![Version: 1.25.0](https://img.shields.io/badge/Version-1.25.0-informational?style=flat-square) ![AppVersion: v0.47.05](https://img.shields.io/badge/AppVersion-v0.47.05-informational?style=flat-square)
+![Version: 1.26.0](https://img.shields.io/badge/Version-1.26.0-informational?style=flat-square) ![AppVersion: v0.47.05](https://img.shields.io/badge/AppVersion-v0.47.05-informational?style=flat-square)
 
 changedetection-io helm package
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.5.1 |
+| https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR
 

@@ -1,6 +1,6 @@
 # readeck
 
-![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat-square) ![AppVersion: v0.15.6](https://img.shields.io/badge/AppVersion-v0.15.6-informational?style=flat-square)
+![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat-square) ![AppVersion: v0.15.6](https://img.shields.io/badge/AppVersion-v0.15.6-informational?style=flat-square)
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.5.1 |
+| https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR
 

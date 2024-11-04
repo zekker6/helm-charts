@@ -1,15 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update nocodb/nocodb docker tag to v0.257.2
-    - kind: changed
-      description: update bitnami/postgresql chart tag to 16.x
+      description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
 appVersion: v0.257.2
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.5.1
+    version: 0.5.2
   - name: postgresql
     version: "16.x"
     repository: "https://charts.bitnami.com/bitnami"
@@ -27,4 +25,4 @@ maintainers:
 name: nocodb
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb"
-version: 0.45.0
+version: 0.46.0

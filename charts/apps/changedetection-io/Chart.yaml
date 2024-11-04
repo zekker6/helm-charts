@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.47.05
+      description: update zekker6/common chart version to 0.5.25
 apiVersion: v2
 appVersion: "v0.47.05"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.5.1
+    version: 0.5.2
 description: changedetection-io helm package
 home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
 icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
@@ -24,4 +24,4 @@ name: changedetection-io
 sources:
   - https://github.com/dgtlmoon/changedetection.io
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
-version: 1.25.0
+version: 1.26.0
