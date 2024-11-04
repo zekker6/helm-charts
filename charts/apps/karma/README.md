@@ -1,6 +1,6 @@
 # karma
 
-![Version: 0.11.0](https://img.shields.io/badge/Version-0.11.0-informational?style=flat-square) ![AppVersion: v0.119](https://img.shields.io/badge/AppVersion-v0.119-informational?style=flat-square)
+![Version: 0.12.0](https://img.shields.io/badge/Version-0.12.0-informational?style=flat-square) ![AppVersion: v0.119](https://img.shields.io/badge/AppVersion-v0.119-informational?style=flat-square)
 
 karma - Alert dashboard for Prometheus Alertmanager
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.5.1 |
+| https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR
 

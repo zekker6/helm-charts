@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.13.4
+      description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
 appVersion: v2.13.4
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.5.1
+    version: 0.5.2
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
@@ -30,4 +30,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.64.0
+version: 9.65.0

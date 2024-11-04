@@ -1,6 +1,6 @@
 # healthchecks
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: 2.7](https://img.shields.io/badge/AppVersion-2.7-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![AppVersion: 2.7](https://img.shields.io/badge/AppVersion-2.7-informational?style=flat-square)
 
 healthchecks helm package
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://zekker6.github.io/helm-charts | common | 0.5.1 |
+| https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR
 

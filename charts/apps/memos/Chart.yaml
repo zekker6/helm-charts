@@ -1,13 +1,13 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update neosmemo/memos docker tag to v0.22.5
+      description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
 appVersion: v0.22.5
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
-    version: 0.5.1
+    version: 0.5.2
 description: memos - An open-source, self-hosted memo hub with knowledge management and social networking.
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
 icon: https://www.usememos.com/full-logo-landscape.png
@@ -23,4 +23,4 @@ name: memos
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
   - "https://github.com/usememos/memos"
-version: 0.36.0
+version: 0.37.0
