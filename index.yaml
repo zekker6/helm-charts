@@ -2379,6 +2379,37 @@ entries:
     urls:
     - https://zekker6.github.io/helm-charts/apps/docuseal-1.0.0.tgz
     version: 1.0.0
+  endlessh-go:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: initial chart release
+    apiVersion: v2
+    appVersion: 2024.1106.0
+    created: "2024-11-08T11:38:37.41829965Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: endlessh-go helm chart
+    digest: 9257df161f38705b2b0f8b8c3c17f99a58416d122e4b29ce5e1a515b3d6c51ce
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    keywords:
+    - ssh
+    - honeypot
+    - endlessh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: endlessh-go
+    sources:
+    - https://github.com/shizunge/endlessh-go
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/endlessh-go
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.1.0/endlessh-go-0.1.0.tgz
+    version: 0.1.0
   healthchecks:
   - annotations:
       artifacthub.io/changes: |-
@@ -11185,4 +11216,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-04T22:23:54.158323397Z"
+generated: "2024-11-08T11:38:37.418790268Z"
