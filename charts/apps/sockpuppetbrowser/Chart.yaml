@@ -1,0 +1,27 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial chart release
+apiVersion: v2
+appVersion: "latest"
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.5.2
+description: A Helm chart for sockpuppetbrowser - a headless browser service
+home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser"
+keywords:
+  - headless
+  - browser
+  - chrome
+  - puppeteer
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - name: robinvalk
+    url: https://github.com/robinvalk
+name: sockpuppetbrowser
+sources:
+  - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser"
+  - "https://github.com/dgtlmoon/sockpuppetbrowser"
+type: application
+version: 0.1.0
