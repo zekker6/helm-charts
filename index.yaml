@@ -11216,4 +11216,36 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/readeck-0.1.0/readeck-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-08T11:38:37.418790268Z"
+  sockpuppetbrowser:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: initial chart release
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-11-09T17:55:56.576286051Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A Helm chart for sockpuppetbrowser - a headless browser service
+    digest: 18cdf861caa9dffc15e3b6b339742678953840a3401e9d1362cd62b39fce452f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser
+    keywords:
+    - headless
+    - browser
+    - chrome
+    - puppeteer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: robinvalk
+      url: https://github.com/robinvalk
+    name: sockpuppetbrowser
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser
+    - https://github.com/dgtlmoon/sockpuppetbrowser
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-11-09T17:55:56.576731894Z"
