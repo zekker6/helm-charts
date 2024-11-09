@@ -1,3 +1,7 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial chart release
 apiVersion: v2
 appVersion: "latest"
 dependencies:
@@ -6,7 +10,6 @@ dependencies:
     version: 0.5.2
 description: A Helm chart for sockpuppetbrowser - a headless browser service
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser"
-type: application
 keywords:
   - headless
   - browser
@@ -20,4 +23,5 @@ name: sockpuppetbrowser
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/sockpuppetbrowser"
   - "https://github.com/dgtlmoon/sockpuppetbrowser"
+type: application
 version: 0.1.0

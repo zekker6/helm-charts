@@ -1,12 +1,9 @@
 {{- define "custom.custom.notes" -}}
-{{- end -}}
+This chart is useful a dependency for the changedetection.io chart. Unfortunately the sockpuppetbrowser is not released using container tags so we are forced to use the `latest` tag. There's an issue with a request to address this [here](https://github.com/dgtlmoon/sockpuppetbrowser/issues/17).
 
-{{- define "custom.custom.configuration.header" -}}
-## Custom configuration
+This the container is configured to have `SYS_ADMIN` capabilities! You can use `seccomp` instead to limit the capabilities of the container. See https://github.com/jlandure/alpine-chrome?tab=readme-ov-file#-the-best-with-seccomp for more information on how to configure this.
 {{- end -}}
 
 {{- define "custom.custom.configuration" -}}
-{{ template "custom.custom.configuration.header" . }}
-
 N/A
 {{- end -}}
