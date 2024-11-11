@@ -894,6 +894,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.7.9
+    apiVersion: v2
+    appVersion: v1.7.9
+    created: "2024-11-11T17:33:26.400026416Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: fb4b4ddfc3faed4d7dd4e7e52a491467ee6316755db1a02967772d61c8f8d05e
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.49.0/docuseal-1.49.0.tgz
+    version: 1.49.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update docuseal/docuseal docker tag to v1.7.8
     apiVersion: v2
     appVersion: v1.7.8
@@ -7954,6 +7985,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.13.5
+    apiVersion: v2
+    appVersion: v2.13.5
+    created: "2024-11-11T17:33:26.588013205Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.2.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: dc0762015761229aee4f2f0c2417563dd8c5f177c0f2cdcb97e8d040c6a1afaa
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.66.0/paperless-9.66.0.tgz
+    version: 9.66.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update zekker6/common chart version to 0.5.2
     apiVersion: v2
     appVersion: v2.13.4
@@ -11279,4 +11347,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-09T18:06:54.045455536Z"
+generated: "2024-11-11T17:33:26.589019312Z"
