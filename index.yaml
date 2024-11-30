@@ -894,6 +894,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.8.0
+    apiVersion: v2
+    appVersion: v1.8.0
+    created: "2024-11-30T14:56:46.182067354Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 359d7d932dbeac3c0ea547f7780705a70d069843e966bccd610e22bfc124dc4c
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.50.0/docuseal-1.50.0.tgz
+    version: 1.50.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update docuseal/docuseal docker tag to v1.7.9
     apiVersion: v2
     appVersion: v1.7.9
@@ -3985,6 +4016,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.120.0
+    apiVersion: v2
+    appVersion: v1.120.0
+    created: "2024-11-30T14:56:46.295792757Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: ac26f89e03d6f2102625ad282547945d935291754e17d5153bb107a6d529507b
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.64.0/matrix-2.64.0.tgz
+    version: 2.64.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.119.0
     apiVersion: v2
     appVersion: v1.119.0
@@ -6523,6 +6580,38 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/memos-0.1.0.tgz
     version: 0.1.0
   nocodb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update nocodb/nocodb docker tag to v0.258.3
+    apiVersion: v2
+    appVersion: v0.258.3
+    created: "2024-11-30T14:56:46.4055889Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 7b7c1817ad9ac2af1bc73f3223659533efd40c18d25f53f3392e137ea7fee9fd
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.48.0/nocodb-0.48.0.tgz
+    version: 0.48.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -11496,4 +11585,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-23T16:43:45.370667305Z"
+generated: "2024-11-30T14:56:46.406229498Z"
