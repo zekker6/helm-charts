@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.48.01
+    apiVersion: v2
+    appVersion: v0.48.01
+    created: "2024-12-04T14:46:47.66691959Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: c87820c7e62a0e5eaff0e4355e42c24d2ecaf886a214f353a219b3d1a9d49482
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.28.0/changedetection-io-1.28.0.tgz
+    version: 1.28.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.47.06
     apiVersion: v2
     appVersion: v0.47.06
@@ -4071,6 +4102,32 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.120.2
+    apiVersion: v2
+    appVersion: v1.120.2
+    created: "2024-12-04T14:46:47.796668072Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: fc5571c70062410bc24a03bf7163cb20992a9df29e844a6b722eae4d563f0bd3
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.65.0/matrix-2.65.0.tgz
+    version: 2.65.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -11711,4 +11768,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-02T16:50:31.608104645Z"
+generated: "2024-12-04T14:46:47.797521098Z"
