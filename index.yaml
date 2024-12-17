@@ -4167,6 +4167,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.121.1
+    apiVersion: v2
+    appVersion: v1.121.1
+    created: "2024-12-17T07:44:37.433210938Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 15c275512c3708c93f9cba0506a19b6d9d29aeeeeb7822c4eb1f507e8e024815
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.66.0/matrix-2.66.0.tgz
+    version: 2.66.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.120.2
     apiVersion: v2
     appVersion: v1.120.2
@@ -8426,6 +8452,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update helm release redis to 20.6.0
+    apiVersion: v2
+    appVersion: v2.13.5
+    created: "2024-12-17T07:44:37.57001055Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.6.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 00d6fd92cd06d1a8bd25bd7ea8e72a752926e746270f7ed1c3231fc64609b426
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: zekker6@gmail.com
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.69.0/paperless-9.69.0.tgz
+    version: 9.69.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update helm release redis to 20.4.x
     apiVersion: v2
     appVersion: v2.13.5
@@ -11893,4 +11956,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-17T07:40:39.368398415Z"
+generated: "2024-12-17T07:44:37.57070759Z"
