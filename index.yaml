@@ -11378,6 +11378,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update helm release clickhouse to 3.14.0
+    apiVersion: v2
+    appVersion: v2.1.4
+    created: "2025-01-03T12:24:34.167406143Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.14.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: 69513dfd03b944332998f6f5c0760df051059a4ae8747b5fd32c3d319fd77bb3
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.9.0/plausible-analytics-0.9.0.tgz
+    version: 0.9.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update helm release clickhouse to 3.13.
         - kind: changed
           description: update bitnami/postgresql chart tag to 16.x
@@ -12144,4 +12181,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-02T06:03:43.284751725Z"
+generated: "2025-01-03T12:24:34.284103638Z"
