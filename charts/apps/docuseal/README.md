@@ -1,6 +1,6 @@
 # docuseal
 
-![Version: 1.56.0](https://img.shields.io/badge/Version-1.56.0-informational?style=flat-square) ![AppVersion: v1.8.6](https://img.shields.io/badge/AppVersion-v1.8.6-informational?style=flat-square)
+![Version: 1.57.0](https://img.shields.io/badge/Version-1.57.0-informational?style=flat-square) ![AppVersion: v1.8.7](https://img.shields.io/badge/AppVersion-v1.8.7-informational?style=flat-square)
 
 docuseal helm package
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. See more environment variables in the [docuseal documentation](https://github.com/docusealco/docuseal). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"docuseal/docuseal"` | image repository |
-| image.tag | string | `"1.8.6@sha256:f38521862cb2c05862a5d65ff9dde801a8bb7a52e2001d9cc00de55517a64099"` | image tag |
+| image.tag | string | `"1.8.7@sha256:c534e3a4c478c45eb72448dbd84514168a0058288a896bff76ee2c2b355184bc"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
