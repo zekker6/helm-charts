@@ -1,14 +1,14 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update helm release clickhouse to 3.14.0
+      description: update helm release clickhouse to 3.14.1
 apiVersion: v2
 appVersion: v2.1.4
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
-    version: 3.14.0
+    version: 3.14.1
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
@@ -29,4 +29,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.9.0
+version: 0.10.0
