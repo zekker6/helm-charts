@@ -187,7 +187,7 @@ N/A
 | mail.relay.enabled | bool | `true` |  |
 | mail.relay.image.pullPolicy | string | `"IfNotPresent"` |  |
 | mail.relay.image.repository | string | `"devture/exim-relay"` |  |
-| mail.relay.image.tag | string | `"4.95-r0-4"` |  |
+| mail.relay.image.tag | string | `"4.98-r0-4"` |  |
 | mail.relay.labels.component | string | `"mail"` |  |
 | mail.relay.probes.liveness | object | `{}` |  |
 | mail.relay.probes.readiness | object | `{}` |  |
