@@ -4597,6 +4597,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.124.0
+    apiVersion: v2
+    appVersion: v1.124.0
+    created: "2025-02-11T16:17:54.933194848Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 8723819c2d54456024d50066fe50cee9b929793bdf7afbcec9526c23909a5001
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.69.0/matrix-2.69.0.tgz
+    version: 2.69.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.123.0
     apiVersion: v2
     appVersion: v1.123.0
@@ -13225,4 +13251,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-10T17:39:39.579735807Z"
+generated: "2025-02-11T16:17:54.934302442Z"
