@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.3
+    apiVersion: v2
+    appVersion: v0.49.3
+    created: "2025-02-24T06:13:34.933384586Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: eacee68d24b74cd5b613ced3ae79b5899e3d6e9e5c19e603c633224044f01f55
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.35.0/changedetection-io-1.35.0.tgz
+    version: 1.35.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.2
     apiVersion: v2
     appVersion: v0.49.2
@@ -7449,6 +7480,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update nocodb/nocodb docker tag to v0.262.0
+    apiVersion: v2
+    appVersion: v0.262.0
+    created: "2025-02-24T06:13:35.048380672Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 9e8bd7aebcc751e855b878cca3571edd643dba8b10ec3248503ae71d09cc95ac
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.59.0/nocodb-0.59.0.tgz
+    version: 0.59.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update nocodb/nocodb docker tag to v0.260.7
     apiVersion: v2
     appVersion: v0.260.7
@@ -13382,4 +13445,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-24T06:08:09.945759055Z"
+generated: "2025-02-24T06:13:35.049309538Z"
