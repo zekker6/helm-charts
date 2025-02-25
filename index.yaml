@@ -9435,6 +9435,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update bitnami/redis chart to 20.9.x
+    apiVersion: v2
+    appVersion: v2.14.7
+    created: "2025-02-25T08:29:18.412710338Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.9.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 129ed355febb9973e32624bb792c0f1293667aadd9d8f5f9e77183c5097fb0e6
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.79.0/paperless-9.79.0.tgz
+    version: 9.79.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update bitnami/redis chart to 20.8.x
     apiVersion: v2
     appVersion: v2.14.7
@@ -13445,4 +13482,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-24T06:13:35.049309538Z"
+generated: "2025-02-25T08:29:18.413879938Z"
