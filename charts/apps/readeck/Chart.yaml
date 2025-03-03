@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update codeberg.org/readeck/readeck docker tag to v0.17.1
 apiVersion: v2
+# renovate: image=codeberg.org/readeck/readeck
 appVersion: "v0.17.1"
 dependencies:
   - name: common

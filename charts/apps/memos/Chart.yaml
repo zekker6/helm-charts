@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update neosmemo/memos docker tag to v0.24.0
 apiVersion: v2
+# renovate: image=neosmemo/memos
 appVersion: v0.24.0
 dependencies:
   - name: common

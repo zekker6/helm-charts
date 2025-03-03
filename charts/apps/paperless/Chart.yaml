@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update bitnami/redis chart to 20.10.x
 apiVersion: v2
+# renovate: image=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: v2.14.7
 dependencies:
   - name: common

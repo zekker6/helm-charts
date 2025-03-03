@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update nocodb/nocodb docker tag to v0.262.1
 apiVersion: v2
+# renovate: image=nocodb/nocodb
 appVersion: v0.262.1
 dependencies:
   - name: common

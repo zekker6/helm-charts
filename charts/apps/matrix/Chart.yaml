@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update matrixdotorg/synapse docker tag to v1.125.0
 apiVersion: v2
+# renovate: image=matrixdotorg/synapse
 appVersion: v1.125.0
 dependencies:
   - name: postgresql

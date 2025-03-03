@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
+# renovate: image=ghcr.io/prymitive/karma
 appVersion: v0.119
 dependencies:
   - name: common

@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
+# renovate: image=erikvl87/languagetool
 appVersion: "v6.5"
 dependencies:
   - name: common

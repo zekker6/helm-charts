@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update zekker6/common chart version to 0.5.2
 apiVersion: v2
+# renovate: image=linuxserver/healthchecks
 appVersion: "2.7"
 dependencies:
   - name: common

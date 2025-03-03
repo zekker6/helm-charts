@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update docuseal/docuseal docker tag to v1.9.3
 apiVersion: v2
+# renovate: image=docuseal/docuseal
 appVersion: "v1.9.3"
 dependencies:
   - name: common
