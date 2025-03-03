@@ -3,6 +3,18 @@
     "github>zekker6/renovate-config",
     "github>zekker6/renovate-config:automerge-github-actions"
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "docker",
+      "fileMatch": [
+        "(^|/)Chart\\.yaml$"
+      ],
+      "matchStrings": [
+        "#\\s*renovate: image=(?<depName>.*?)\\s+appVersion:\\s*[\"']?(?<currentValue>[\\w+\\.\\-]*)"
+      ]
+    }
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -11,7 +23,7 @@
         "pin",
         "digest"
       ],
-      "automerge": true
+      "automerge": false
     }
   ]
 }

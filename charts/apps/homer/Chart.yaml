@@ -3,6 +3,7 @@ annotations:
     - kind: changed
       description: update b4bz/homer docker tag to v25.02.2
 apiVersion: v2
+# renovate: image=b4bz/homer
 appVersion: v25.02.2
 dependencies:
   - name: common
