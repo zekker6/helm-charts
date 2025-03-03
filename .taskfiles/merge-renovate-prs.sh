@@ -15,8 +15,9 @@ for ref in $refs; do
   # if contains changes to library charts then skip
   files_diff=$(git diff --name-only origin/main...origin/$ref | tr ' ' '\n')
   files_changed=$(git diff --name-only origin/main...origin/$ref | tr ' ' '\n' | wc -l)
-  if [[ $files_changed != "1" ]]; then
-    echo "Skipping $ref as it contains more than one file"
+  if [[ $files_changed != "2" ]]; then
+    # It is expected to have only Chart.yaml and values.yaml changed
+    echo "Skipping $ref as it contains more than two files"
     continue
   fi
 
