@@ -34,7 +34,7 @@ for ref in $refs; do
   # get commit message
   commit_message=$(git log --format=%B -n 1 origin/$ref | awk -F ': ' '{print $2}')
 
-  chart_file=$(echo $files_diff | sed 's/values.yaml/Chart.yaml/')
+  chart_file=$(echo $files_diff | sed 's/values.yaml/Chart.yaml/' | awk -F ' ' '{print $1}')
 
   changes=$(cat << EOF
 - kind: changed
