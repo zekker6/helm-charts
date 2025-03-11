@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update ghcr.io/plausible/community-edition docker tag to v2.1.5
+      description: allow specifying .Values.ingress.hosts[].paths as strings or objects in Kubernetes native format
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
 appVersion: v2.1.5
@@ -30,4 +30,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.11.0
+version: 0.11.1

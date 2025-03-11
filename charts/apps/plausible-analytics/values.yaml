@@ -151,11 +151,13 @@ ingress:
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  # You can specfy an ingressClassName
-  # className:
+  # You can specify an ingressClassName
+  # className: ""
   hosts:
     - host: chart-example.local
       paths: []
+      #  - path: /
+      #    pathType: Prefix
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

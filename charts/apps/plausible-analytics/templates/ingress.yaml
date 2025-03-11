@@ -40,13 +40,23 @@ spec:
       http:
         paths:
           {{- range .paths }}
-          - path: {{ . }}
+          - {{- if (kindIs "string" .) }}
+            path: {{ . }}
             backend:
               service:
                 name: {{ $fullName }}
                 port:
                   number: {{ $svcPort }}
             pathType: Prefix
+            {{- else }}
+            path: {{ .path }}
+            backend:
+              service:
+                name: {{ $fullName }}
+                port:
+                  number: {{ $svcPort }}
+            pathType: {{ .pathType | default "Prefix" }}
           {{- end }}
+        {{- end }}
     {{- end }}
   {{- end }}
