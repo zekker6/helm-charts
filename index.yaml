@@ -12847,6 +12847,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: allow specifying .Values.ingress.hosts[].paths as strings or objects in Kubernetes native format
+    apiVersion: v2
+    appVersion: v2.1.5
+    created: "2025-03-11T06:58:27.233886491Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 3.14.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: e417be64724309fc07a53ea0d7cca1c6e620d1d30fb9243289e865b678820fb7
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-0.11.1/plausible-analytics-0.11.1.tgz
+    version: 0.11.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/plausible/community-edition docker tag to v2.1.5
     apiVersion: v2
     appVersion: v2.1.5
@@ -13786,4 +13823,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-05T09:13:33.480066052Z"
+generated: "2025-03-11T06:58:27.234479667Z"
