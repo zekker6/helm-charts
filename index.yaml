@@ -7853,6 +7853,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update nocodb/nocodb docker tag to v0.262.3
+    apiVersion: v2
+    appVersion: 0.262.3
+    created: "2025-03-21T08:46:39.206652288Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: nocodb - Open Source Airtable Alternative
+    digest: 1cb613bae4364ccc4c14d8679a248bd03ab4c214e34f41638047b0483b88b95c
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-0.62.0/nocodb-0.62.0.tgz
+    version: 0.62.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update nocodb/nocodb docker tag to v0.262.2
     apiVersion: v2
     appVersion: 0.262.2
@@ -14030,4 +14062,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-20T09:47:48.034889585Z"
+generated: "2025-03-21T08:46:39.207680138Z"
