@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update matrixdotorg/synapse docker tag to v1.127.0
+      description: update matrixdotorg/synapse docker tag to v1.127.1
 apiVersion: v2
 # renovate: image=matrixdotorg/synapse
 appVersion: v1.127.1
@@ -20,4 +20,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 2.72.0
+version: 2.73.0
