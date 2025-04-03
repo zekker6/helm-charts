@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.10
+    apiVersion: v2
+    appVersion: 0.49.10
+    created: "2025-04-03T11:32:03.784281474Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 2cef082a516fd96628618d4c18e3546a0194510022b54da6e605fddc3fd035e2
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.40.0/changedetection-io-1.40.0.tgz
+    version: 1.40.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.9
     apiVersion: v2
     appVersion: 0.49.9
@@ -14364,4 +14395,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-31T12:56:14.257874299Z"
+generated: "2025-04-03T11:32:03.785151617Z"
