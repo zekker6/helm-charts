@@ -3616,6 +3616,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update b4bz/homer docker tag to v25.04.1
+    apiVersion: v2
+    appVersion: v25.04.1
+    created: "2025-04-07T05:42:45.7524977Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: fbc8d421b6d325fab840d7e59e08935f21236569c9cf3ebb76fb53ebc375ec54
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.25.0/homer-8.25.0.tgz
+    version: 8.25.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update b4bz/homer docker tag to v25.03.3
     apiVersion: v2
     appVersion: v25.03.3
@@ -14457,4 +14484,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-04T09:38:26.907373733Z"
+generated: "2025-04-07T05:42:45.75328208Z"
