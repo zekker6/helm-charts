@@ -1359,6 +1359,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update docuseal/docuseal docker tag to v1.9.8
+    apiVersion: v2
+    appVersion: 1.9.8
+    created: "2025-04-08T06:17:38.974940267Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: ab7836921d1f80f74d8d1308d44180ca3a02432d962d8af7f6386ad9fc4e8741
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.68.0/docuseal-1.68.0.tgz
+    version: 1.68.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update docuseal/docuseal docker tag to v1.9.7
     apiVersion: v2
     appVersion: 1.9.7
@@ -14484,4 +14515,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-07T05:42:45.75328208Z"
+generated: "2025-04-08T06:17:38.975699872Z"
