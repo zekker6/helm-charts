@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update codeberg.org/readeck/readeck docker tag to v0.17.1
+      description: update codeberg.org/readeck/readeck docker tag to v0.18.0
 apiVersion: v2
 # renovate: image=codeberg.org/readeck/readeck
 appVersion: "0.18.0"
@@ -24,4 +24,4 @@ name: readeck
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck"
   - "https://codeberg.org/readeck/readeck"
-version: 0.10.0
+version: 0.11.0
