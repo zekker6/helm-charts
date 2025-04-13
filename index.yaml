@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.13
+    apiVersion: v2
+    appVersion: 0.49.13
+    created: "2025-04-13T09:15:27.18106595Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 26db85f79d3616a6731cbcd8f911688c2cf20ada6ed4eb27c2b6bcdc82550fd0
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.43.0/changedetection-io-1.43.0.tgz
+    version: 1.43.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.49.12
     apiVersion: v2
     appVersion: 0.49.12
@@ -5286,6 +5317,32 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update matrixdotorg/synapse docker tag to v1.128.0
+    apiVersion: v2
+    appVersion: v1.128.0
+    created: "2025-04-13T09:15:27.287524219Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 3072e646d22316d77a303903c516a5aab0068ac713128cc1f547bfe5373589c7
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-2.74.0/matrix-2.74.0.tgz
+    version: 2.74.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update matrixdotorg/synapse docker tag to v1.127.1
     apiVersion: v2
     appVersion: v1.127.1
@@ -10357,6 +10414,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.15.1
+    apiVersion: v2
+    appVersion: 2.15.1
+    created: "2025-04-13T09:15:27.407432436Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.11.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 7ca608df0a5b15e392fe13b586a4f523d944e290ab23fa8c2b3f825ced97f400
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.82.0/paperless-9.82.0.tgz
+    version: 9.82.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update bitnami/redis chart to 20.11.x
     apiVersion: v2
     appVersion: v2.14.7
@@ -14176,6 +14270,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update codeberg.org/readeck/readeck docker tag to v0.18.0
+    apiVersion: v2
+    appVersion: 0.18.0
+    created: "2025-04-13T09:15:27.501061931Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: 304b8624964c1ba9884bccba866b1031b5056d03df72aa578f6447e7fbdaea84
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/favicon.ico
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.11.0/readeck-0.11.0.tgz
+    version: 0.11.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update codeberg.org/readeck/readeck docker tag to v0.17.1
     apiVersion: v2
     appVersion: v0.17.1
@@ -14515,4 +14640,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-08T06:17:38.975699872Z"
+generated: "2025-04-13T09:15:27.502098275Z"
