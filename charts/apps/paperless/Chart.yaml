@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.15.3
+      description: Update bitnami/redis chart to 20.13.x
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: 2.15.3
@@ -16,7 +16,7 @@ dependencies:
   - condition: redis.enabled
     name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 20.12.x
+    version: 20.13.x
 description: Paperless - Index and archive all of your scanned paper documents
 home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
 icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
@@ -31,4 +31,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.85.0
+version: 9.86.0
