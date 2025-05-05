@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.49.16
+    apiVersion: v2
+    appVersion: 0.49.16
+    created: "2025-05-05T07:23:13.523267136Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 0b1cf3a65c4bfb80184499305943bae5feadb6c482c23e4e6ece121487697cb8
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.46.0/changedetection-io-1.46.0.tgz
+    version: 1.46.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.49.15
     apiVersion: v2
     appVersion: 0.49.15
@@ -1449,6 +1480,37 @@ entries:
     - https://zekker6.github.io/helm-charts/library/common-0.4.0.tgz
     version: 0.4.0
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update docuseal/docuseal:1.9.9 Docker digest to 2882852
+    apiVersion: v2
+    appVersion: 1.9.9
+    created: "2025-05-05T07:23:13.64427409Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 6176030a0e1c45a6f4ec71c9fed09b24c4642b1c03f1255361e21c8d08196741
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.69.1/docuseal-1.69.1.tgz
+    version: 1.69.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -3768,6 +3830,33 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/healthchecks-0.1.0.tgz
     version: 0.1.0
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update b4bz/homer Docker tag to v25.05.1
+    apiVersion: v2
+    appVersion: v25.05.1
+    created: "2025-05-05T07:23:13.72132169Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 4c8b50deb361735b8cbe666aa7790ce6f9b7fa987a6848b6ab070d4475c203c5
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.26.0/homer-8.26.0.tgz
+    version: 8.26.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -14981,4 +15070,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-01T11:24:46.489712568Z"
+generated: "2025-05-05T07:23:13.722476284Z"
