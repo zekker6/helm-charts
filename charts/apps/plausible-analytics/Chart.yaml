@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/plausible/community-edition Docker tag to v3
+      description: Update Helm release clickhouse to 4.0.0
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
 appVersion: v3.0.1
@@ -30,4 +30,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.12.1
+version: 0.13.0
