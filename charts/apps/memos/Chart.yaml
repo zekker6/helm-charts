@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update neosmemo/memos docker tag to v0.24.2
+      description: Update neosmemo/memos Docker tag to v0.24.3
 apiVersion: v2
 # renovate: image=neosmemo/memos
-appVersion: 0.24.2
+appVersion: 0.24.3
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -24,4 +24,4 @@ name: memos
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos"
   - "https://github.com/usememos/memos"
-version: 0.42.0
+version: 0.43.0
