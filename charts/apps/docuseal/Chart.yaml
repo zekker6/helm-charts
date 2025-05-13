@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update docuseal/docuseal:1.9.9 Docker digest to 2882852
+      description: Update docuseal/docuseal Docker tag to v1.9.10
 apiVersion: v2
 # renovate: image=docuseal/docuseal
-appVersion: "1.9.9"
+appVersion: "1.9.10"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -25,4 +25,4 @@ name: docuseal
 sources:
   - https://github.com/docusealco/docuseal
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
-version: 1.69.1
+version: 1.70.0
