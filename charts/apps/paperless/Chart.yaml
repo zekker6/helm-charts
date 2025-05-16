@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update bitnami/redis chart to 21.0.x
+      description: Update bitnami/redis chart to 21.1.x
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: 2.15.3
@@ -31,4 +31,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.87.0
+version: 9.87.1
