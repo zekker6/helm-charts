@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update bitnami/redis chart to 21.1.x
+      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.16.1
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 2.15.3
+appVersion: 2.16.1
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -31,4 +31,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.87.1
+version: 9.88.0
