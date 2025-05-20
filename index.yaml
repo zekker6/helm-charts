@@ -1514,6 +1514,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v2
+    apiVersion: v2
+    appVersion: 2.0.0
+    created: "2025-05-20T05:22:52.939506426Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: efd6b6a7e800ccdff81edc71ef0a2505c98f0dda5a1f32140c62fe6512bac495
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.71.0/docuseal-1.71.0.tgz
+    version: 1.71.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v1.9.10
     apiVersion: v2
     appVersion: 1.9.10
@@ -10898,6 +10929,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.16.1
+    apiVersion: v2
+    appVersion: 2.16.1
+    created: "2025-05-20T05:22:53.0867883Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 21.1.x
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 056a85d4bcca09d287d3cfc1690f2015252c7eb899f20bf9c90bd5d9279d6944
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-9.88.0/paperless-9.88.0.tgz
+    version: 9.88.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update bitnami/redis chart to 21.1.x
     apiVersion: v2
     appVersion: 2.15.3
@@ -15519,4 +15587,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-20T05:19:45.925771269Z"
+generated: "2025-05-20T05:22:53.087969495Z"
