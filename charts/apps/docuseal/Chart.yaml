@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update docuseal/docuseal Docker tag to v1.9.10
+      description: Update docuseal/docuseal Docker tag to v2
 apiVersion: v2
 # renovate: image=docuseal/docuseal
-appVersion: "1.9.10"
+appVersion: "2.0.0"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -25,4 +25,4 @@ name: docuseal
 sources:
   - https://github.com/docusealco/docuseal
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
-version: 1.70.0
+version: 1.71.0
