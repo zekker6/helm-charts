@@ -25,6 +25,13 @@
         "digest"
       ],
       "automerge": false
+    },
+    {
+      "description": "Disable lookups for NEW_APP_REPLACE_ME",
+      "matchPackageNames": [
+        "/^NEW_APP_REPLACE_ME$/"
+      ],
+      "enabled": false
     }
   ]
 }
