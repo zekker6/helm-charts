@@ -12,7 +12,7 @@ image:
   pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
-  tag: 2.16.1
+  tag: 2.16.2
 
 # -- See the following files for additional environment variables:
 # https://github.com/paperless-ngx/paperless-ngx/tree/main/docker/compose/
@@ -31,7 +31,7 @@ env:
   # -- Database host to use
   PAPERLESS_DBHOST:
   # -- Port to use
-  PAPERLESS_PORT: 8000
+  PAPERLESS_PORT: "8000"
   # -- Username for the root user
   # PAPERLESS_ADMIN_USER: admin
   # -- Password for the root user
