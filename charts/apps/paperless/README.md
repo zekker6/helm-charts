@@ -84,7 +84,7 @@ N/A
 | env.COMPOSE_PROJECT_NAME | string | `"paperless"` | Project name |
 | env.PAPERLESS_DBHOST | string | `nil` | Database host to use |
 | env.PAPERLESS_OCR_LANGUAGE | string | `"eng"` | OCR languages to install |
-| env.PAPERLESS_PORT | int | `8000` | Port to use |
+| env.PAPERLESS_PORT | string | `"8000"` | Port to use |
 | env.PAPERLESS_REDIS | string | `nil` | Redis to use |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` | image repository |
