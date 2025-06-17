@@ -4,7 +4,7 @@ annotations:
       description: Fix disabling postgresql chart dependency via values.
 apiVersion: v2
 # renovate: image=matrixdotorg/synapse
-appVersion: v1.131.0
+appVersion: v1.132.0
 dependencies:
   - name: postgresql
     version: "16.x"
