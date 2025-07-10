@@ -3,7 +3,8 @@
     "github>zekker6/renovate-config",
     "github>zekker6/renovate-config:automerge-github-actions"
   ],
-  "commitMessagePrefix": "{{packageFileDir}}:",
+  "commitMessagePrefix": "{{#if packageFileDir}}{{packageFileDir}}{{else}}root{{/if}}:",
+  "additionalBranchPrefix": "{{#if packageFileDir}}{{packageFileDir}}{{else}}root{{/if}}-",
   "customManagers": [
     {
       "customType": "regex",
