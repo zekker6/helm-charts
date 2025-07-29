@@ -27,6 +27,9 @@ for ref in $refs; do
   fi
 
   echo "Merging $ref"
+  # Delete the branch if it exists locally before checking it out
+  # this is to ensure we are working with the latest changes
+  git branch -D $ref || true
   git checkout $ref
   git pull --rebase
 
