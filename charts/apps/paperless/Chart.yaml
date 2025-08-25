@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.18.1
+      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.18.2
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: 2.18.2
@@ -31,4 +31,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 9.93.0
+version: 9.94.0
