@@ -297,9 +297,6 @@ ingress:
 
 # PostgreSQL Database Configuration
 postgresql:
-  # Whether to deploy the stable/postgresql chart with this chart. If disabled, make sure PostgreSQL is available at the hostname below and credentials are configured below
-  enabled: true
-
   username: matrix
   password: matrix
   database: matrix
@@ -308,15 +305,8 @@ postgresql:
   hostname: ""
   port: 5432
 
-  # Storage to allocate for stable/postgresql
-  persistence:
-    size: 8Gi
-
-  primary:
-    initdb:
-      # If postgresql.enabled, stable/postgresql will run the scripts in templates/postgresql/initdb-configmap.yaml
-      # If using an external Postgres server, make sure to configure the database as specified at https://github.com/matrix-org/synapse/blob/master/docs/postgres.md
-      scriptsConfigMap: "{{ .Release.Name }}-postgresql-initdb"
+  ssl: false
+  sslMode: ""
 
 # Synapse Kubernetes resource settings
 synapse:

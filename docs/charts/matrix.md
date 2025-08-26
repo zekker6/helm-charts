@@ -1,6 +1,6 @@
 # matrix
 
-![Version: 2.82.0](https://img.shields.io/badge/Version-2.82.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.136.0](https://img.shields.io/badge/AppVersion-v1.136.0-informational?style=flat-square)
+![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.136.0](https://img.shields.io/badge/AppVersion-v1.136.0-informational?style=flat-square)
 
 A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 
@@ -14,12 +14,21 @@ Chart source: https://github.com/typokign/matrix-chart
 - (Optional) Latest version of Riot Web
 - (Optional) Choice of lightweight Exim relay or external mail server for email notifications
 - (Optional) Coturn TURN server for VoIP calls
-- (Optional) PostgreSQL cluster via stable/postgresql chart
 - (Optional) [matrix-org/matrix-appservice-irc](https://github.com/matrix-org/matrix-appservice-irc) IRC bridge
 - (Optional) [tulir/mautrix-whatsapp](https://github.com/tulir/mautrix-whatsapp) WhatsApp bridge
 - (Optional) [Half-Shot/matrix-appservice-discord](https://github.com/Half-Shot/matrix-appservice-discord) Discord bridge
 - Fully configurable via values.yaml
 - Ingress definition for federated Synapse and Riot
+
+# Breaking changes
+
+## 2.82.0 -> 3.0.0
+
+The chart no longer includes postgresql chart by default.
+Previously, it was using a bitnami/postgresql which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
 
 ## Source Code
 
@@ -31,7 +40,6 @@ Chart source: https://github.com/typokign/matrix-chart
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.x |
 
 ## TL;DR
 
@@ -255,12 +263,11 @@ N/A
 | nameOverride | string | `""` |  |
 | networkPolicies.enabled | bool | `false` |  |
 | postgresql.database | string | `"matrix"` |  |
-| postgresql.enabled | bool | `true` |  |
 | postgresql.hostname | string | `""` |  |
 | postgresql.password | string | `"matrix"` |  |
-| postgresql.persistence.size | string | `"8Gi"` |  |
 | postgresql.port | int | `5432` |  |
-| postgresql.primary.initdb.scriptsConfigMap | string | `"{{ .Release.Name }}-postgresql-initdb"` |  |
+| postgresql.ssl | bool | `false` |  |
+| postgresql.sslMode | string | `""` |  |
 | postgresql.username | string | `"matrix"` |  |
 | riot.branding.authFooterLinks | list | `[]` |  |
 | riot.branding.authHeaderLogoUrl | string | `""` |  |

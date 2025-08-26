@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 0.13.1](https://img.shields.io/badge/Version-0.13.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -10,6 +10,14 @@ Chart was originally created and maintained by [Varac](https://varac.net) [here]
 
 This chart uses v2.1.0 version of Plausible Analytics.
 See release notes to learn more about upgrade steps: https://github.com/plausible/analytics/releases/tag/v2.1.0
+
+## 0.13.1 -> 1.0.0
+
+The chart no longer includes postgresql chart by default.
+Previously, it was using a bitnami/postgresql which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
 
 ## Source Code
 
@@ -23,7 +31,6 @@ See release notes to learn more about upgrade steps: https://github.com/plausibl
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.x |
 | https://sentry-kubernetes.github.io/charts | clickhouse | 4.0.1 |
 
 ## TL;DR
@@ -116,8 +123,7 @@ N/A
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| postgresql | object | `{"auth":{"database":"plausible","postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"},"enabled":true}` | Postgres Database |
-| postgresql.auth | object | `{"database":"plausible","postgresPassword":"b8f1ad468e00b344b2c6bf495c4ffc28"}` | Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING |
+| postgresql | object | `{"url":"postgress://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"}` | Postgres Database |
 | postmark | object | `{"apiKey":null}` | Alternatively, you can use Postmark to send transactional emails |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |

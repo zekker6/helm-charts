@@ -19,16 +19,8 @@ externalSecret:
 
 # -- Postgres Database
 postgresql:
-  enabled: true
   # Replace the default values with your own
-  # url: "postgress://postgres:b8f1ad468e00b344b2c6bf495c4ffc28@plausible-postgresql:5432/plausible"
-
-  # -- Sub-chart values, see https://artifacthub.io/packages/helm/bitnami/postgresql
-  # The URL to the Postgres Database Connection String see -> https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
-  auth:
-    # Change this for real use. Password is left in chart to be used in CI
-    postgresPassword: "b8f1ad468e00b344b2c6bf495c4ffc28"
-    database: "plausible"
+  url: "postgress://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"
 
 # -- Clickhouse Database
 clickhouse:

@@ -3,6 +3,15 @@ Chart was originally created and maintained by [Varac](https://varac.net) [here]
 
 This chart uses v2.1.0 version of Plausible Analytics.
 See release notes to learn more about upgrade steps: https://github.com/plausible/analytics/releases/tag/v2.1.0
+
+## 0.13.1 -> 1.0.0
+
+The chart no longer includes postgresql chart by default.
+Previously, it was using a bitnami/postgresql which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
+
 {{- end -}}
 
 {{- define "custom.custom.notes" -}}
