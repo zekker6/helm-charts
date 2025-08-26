@@ -20,7 +20,7 @@ externalSecret:
 # -- Postgres Database
 postgresql:
   # Replace the default values with your own
-  url: "postgress://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"
+  url: "postgresql://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"
 
 # -- Clickhouse Database
 clickhouse:
