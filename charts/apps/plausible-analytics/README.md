@@ -123,7 +123,7 @@ N/A
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| postgresql | object | `{"url":"postgress://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"}` | Postgres Database |
+| postgresql | object | `{"url":"postgresql://postgres:84a075c6b5e74bd2e8f0f9bf98d669f0@plausible-postgresql:5432/plausible"}` | Postgres Database |
 | postmark | object | `{"apiKey":null}` | Alternatively, you can use Postmark to send transactional emails |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
