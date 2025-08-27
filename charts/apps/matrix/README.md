@@ -262,6 +262,7 @@ N/A
 | matrix.urlPreviews.rules.url | object | `{}` |  |
 | nameOverride | string | `""` |  |
 | networkPolicies.enabled | bool | `false` |  |
+| postgresql.allowUnsafeLocale | bool | `false` |  |
 | postgresql.database | string | `"matrix"` |  |
 | postgresql.hostname | string | `""` |  |
 | postgresql.password | string | `"matrix"` |  |
