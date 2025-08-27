@@ -1,10 +1,20 @@
 # nocodb
 
-![Version: 0.76.0](https://img.shields.io/badge/Version-0.76.0-informational?style=flat-square) ![AppVersion: 0.264.6](https://img.shields.io/badge/AppVersion-0.264.6-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 0.264.6](https://img.shields.io/badge/AppVersion-0.264.6-informational?style=flat-square)
 
 nocodb - Open Source Airtable Alternative
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**
+
+# Breaking changes
+
+## 0.76.0 -> 1.0.0
+
+The chart no longer includes postgresql chart by default.
+Previously, it was using a bitnami/postgresql which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
 
 ## Source Code
 
@@ -18,7 +28,6 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.x |
 | https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR

@@ -1,5 +1,6 @@
 env:
-  nocodb_REDIS: redis://nocodb-redis-headless:6379
+  nocodb_REDIS: redis://redis:6379
+  NC_DB: 'pg://postgresql:5432?u=app&p=apppassword&d=app'
 
 persistence:
   data:
@@ -14,13 +15,3 @@ persistence:
   export:
     enabled: true
     type: emptyDir
-
-redis:
-  enabled: true
-  architecture: standalone
-  auth:
-    enabled: false
-  master:
-    persistence:
-      enabled: false
-  fullnameOverride: nocodb-redis
