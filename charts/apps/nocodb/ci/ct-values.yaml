@@ -1,6 +1,6 @@
 env:
-  nocodb_REDIS: redis://redis.databases.svc.cluster.local:6379
-  NC_DB: 'pg://postgres.databases.svc.cluster.local:5432?u=app&p=apppassword&d=app'
+  nocodb_REDIS: redis://redis-0.redis.databases.svc.cluster.local:6379
+  NC_DB: 'pg://postgres-0.postgres.databases.svc.cluster.local:5432?u=app&p=apppassword&d=app'
 
 persistence:
   data:
