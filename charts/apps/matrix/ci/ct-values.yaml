@@ -4,5 +4,5 @@ postgresql:
   password: apppassword
   database: app
 
-  hostname: "postgres"
+  hostname: "postgres.databases.svc.cluster.local"
   port: 5432

@@ -66,7 +66,9 @@ jobs:
 
       - name: Setup redis and postgres for testing
         run: |
-          kubectl apply -f .ci/deps/redis -f .ci/deps/postgres
+          kubectl create namespace databases
+          kubectl apply --namespace databases -f .ci/deps/redis -f .ci/deps/postgres
+          kubectl wait --for=condition=Ready --timeout=120s pod -n databases --all
 
       - name: Override chart dependencies
         uses: ./.github/actions/override-chart-deps

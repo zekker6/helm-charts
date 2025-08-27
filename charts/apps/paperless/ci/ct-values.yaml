@@ -1,6 +1,6 @@
 env:
-  PAPERLESS_REDIS: redis://redis:6379
-  PAPERLESS_DBHOST: postgres
+  PAPERLESS_REDIS: redis://redis.databases.svc.cluster.local:6379
+  PAPERLESS_DBHOST: postgres.databases.svc.cluster.local
   PAPERLESS_DBPORT: 5432
   PAPERLESS_DBNAME: app
   PAPERLESS_DBUSER: app
