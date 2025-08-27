@@ -7,12 +7,21 @@ Chart source: https://github.com/typokign/matrix-chart
 - (Optional) Latest version of Riot Web
 - (Optional) Choice of lightweight Exim relay or external mail server for email notifications
 - (Optional) Coturn TURN server for VoIP calls
-- (Optional) PostgreSQL cluster via stable/postgresql chart
 - (Optional) [matrix-org/matrix-appservice-irc](https://github.com/matrix-org/matrix-appservice-irc) IRC bridge
 - (Optional) [tulir/mautrix-whatsapp](https://github.com/tulir/mautrix-whatsapp) WhatsApp bridge
 - (Optional) [Half-Shot/matrix-appservice-discord](https://github.com/Half-Shot/matrix-appservice-discord) Discord bridge
 - Fully configurable via values.yaml
 - Ingress definition for federated Synapse and Riot
+
+# Breaking changes
+
+## 2.82.0 -> 3.0.0
+
+The chart no longer includes postgresql chart by default.
+Previously, it was using a bitnami/postgresql which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
 
 {{- end -}}
 

@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update Helm release clickhouse to 4.0.1
+      description: Remove built-in bitnami/postgres chart
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
 appVersion: v3.0.1
@@ -10,10 +10,6 @@ dependencies:
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
     version: 4.0.1
-  - condition: postgresql.enabled
-    name: postgresql
-    repository: https://charts.bitnami.com/bitnami
-    version: "16.x"
 description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 home: https://plausible.io/
 icon: https://plausible.io/docs/img/favicon.png
@@ -30,4 +26,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 0.13.1
+version: 1.0.0

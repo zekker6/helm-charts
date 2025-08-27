@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: "databases"
+spec:
+  serviceName: "postgres"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:17
+          env:
+            - name: POSTGRES_DB
+              value: "app"
+            - name: POSTGRES_USER
+              value: "app"
+            - name: POSTGRES_PASSWORD
+              value: "apppassword"
+          ports:
+            - containerPort: 5432

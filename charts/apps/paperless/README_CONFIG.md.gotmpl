@@ -1,5 +1,16 @@
 {{- define "custom.custom.notes" -}}
 Chart taken from k8s-at-home repo [here](https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless).
+
+# Breaking changes
+
+## 9.94.0 -> 10.0.0
+
+The chart no longer includes postgresql and redis charts by default.
+Previously, it was using a bitnami/postgresql and bitnami/redis which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
+
 {{- end -}}
 
 {{- define "custom.custom.configuration.header" -}}

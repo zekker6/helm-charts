@@ -1,0 +1,10 @@
+# PostgreSQL Database Configuration
+postgresql:
+  username: app
+  password: apppassword
+  database: app
+
+  hostname: "postgres-0.postgres.databases.svc.cluster.local"
+  port: 5432
+
+  allowUnsafeLocale: true

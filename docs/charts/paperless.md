@@ -1,12 +1,22 @@
 # paperless
 
-![Version: 9.94.0](https://img.shields.io/badge/Version-9.94.0-informational?style=flat-square) ![AppVersion: 2.18.2](https://img.shields.io/badge/AppVersion-2.18.2-informational?style=flat-square)
+![Version: 10.0.0](https://img.shields.io/badge/Version-10.0.0-informational?style=flat-square) ![AppVersion: 2.18.2](https://img.shields.io/badge/AppVersion-2.18.2-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/zekker6/helm-charts/issues/new)**
 
 Chart taken from k8s-at-home repo [here](https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless).
+
+# Breaking changes
+
+## 9.94.0 -> 10.0.0
+
+The chart no longer includes postgresql and redis charts by default.
+Previously, it was using a bitnami/postgresql and bitnami/redis which became obsolete after introducing a paid subscription for bitnami docker images.
+See these issues for more details:
+- https://github.com/bitnami/charts/issues/35164
+- https://github.com/zekker6/helm-charts/issues/825
 
 ## Source Code
 
@@ -21,8 +31,6 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.x |
-| https://charts.bitnami.com/bitnami | redis | 21.2.x |
 | https://zekker6.github.io/helm-charts | common | 0.5.2 |
 
 ## TL;DR
