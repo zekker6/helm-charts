@@ -6,3 +6,5 @@ postgresql:
 
   hostname: "postgres-0.postgres.databases.svc.cluster.local"
   port: 5432
+
+  allowUnsafeLocale: true

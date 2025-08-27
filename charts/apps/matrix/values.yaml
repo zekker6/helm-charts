@@ -307,6 +307,8 @@ postgresql:
   ssl: false
   sslMode: ""
 
+  allowUnsafeLocale: false
+
 # Synapse Kubernetes resource settings
 synapse:
   image:

@@ -236,19 +236,17 @@ redaction_retention_period: {{ .Values.matrix.retentionPeriod }}
 database:
     # The database engine name
     name: "psycopg2"
+    {{- if .Values.postgresql.allowUnsafeLocale }}
+    allow_unsafe_locale: {{ .Values.postgresql.allowUnsafeLocale }}
+    {{- end }}
     # Arguments to pass to the engine
     args:
         user: "{{ .Values.postgresql.username }}"
         password: "{{ .Values.postgresql.password }}"
         database: "{{ .Values.postgresql.database }}"
 
-        {{- if .Values.postgresql.enabled }}
-        host: "{{ include "matrix.fullname" . }}-postgresql"
-        port: "5432"
-        {{- else }}
         host: "{{ .Values.postgresql.hostname }}"
         port: "{{ .Values.postgresql.port }}"
-        {{- end }}
         sslmode: {{ .Values.postgresql.sslMode }}
         cp_min: 5
         cp_max: 10
