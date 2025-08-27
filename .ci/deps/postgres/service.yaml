@@ -8,5 +8,7 @@ metadata:
 spec:
   type: ClusterIP
   clusterIP: None
+  selector:
+    app: postgres
   ports:
     - port: 5432

@@ -7,6 +7,8 @@ metadata:
     app: redis
 spec:
   type: ClusterIP
+  selector:
+    app: redis
   clusterIP: None
   ports:
     - port: 6379
