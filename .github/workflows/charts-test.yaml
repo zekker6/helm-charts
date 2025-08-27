@@ -64,6 +64,10 @@ jobs:
         run: |
           kubectl taint --all=true nodes node.cloudprovider.kubernetes.io/uninitialized- || true
 
+      - name: Setup redis and postgres for testing
+        run: |
+          kubectl apply -f .ci/deps/redis -f .ci/deps/postgres
+
       - name: Override chart dependencies
         uses: ./.github/actions/override-chart-deps
         if: ${{ inputs.overrideDeps != '[]' }}

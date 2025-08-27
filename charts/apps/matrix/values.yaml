@@ -295,13 +295,12 @@ ingress:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       proxy_intercept_errors off;
 
-# PostgreSQL Database Configuration
+# PostgreSQL connection configuration
 postgresql:
   username: matrix
   password: matrix
   database: matrix
 
-  # Set this if postgresql.enabled = false
   hostname: ""
   port: 5432
 

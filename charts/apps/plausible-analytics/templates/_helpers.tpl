@@ -73,13 +73,16 @@ env:
 {{- end }}
 {{- else }}
 env:
-{{- if (or .Values.postgresql.enabled .Values.postgresql.url) }}
+{{- if (.Values.postgresql.url) }}
 - name: DATABASE_URL
   valueFrom:
     secretKeyRef:
       key: DATABASE_URL
       name: {{ include "plausible-analytics.fullname" . }}
+{{- else }}
+  {{ fail "DATABASE_URL is required. Properly set .Values.postgres.url for the connection configuration." }}
 {{- end }}
+
 - name: SECRET_KEY_BASE
   valueFrom:
     secretKeyRef:
