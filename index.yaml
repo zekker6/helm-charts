@@ -15910,6 +15910,39 @@ entries:
   plausible-analytics:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: do not enforce presence of PostgreSQL DSN in values as it can be passed via external secret.
+    apiVersion: v2
+    appVersion: v3.0.1
+    created: "2025-08-28T11:53:44.975815542Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 4.0.1
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: 6f6eaff4e362b50263b46791909d215f5e7122cc5bf6aa183e1dfa21b15c3468
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-1.0.1/plausible-analytics-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Remove built-in bitnami/postgres chart
     apiVersion: v2
@@ -17155,4 +17188,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-27T07:11:50.029065979Z"
+generated: "2025-08-28T11:53:44.97684027Z"
