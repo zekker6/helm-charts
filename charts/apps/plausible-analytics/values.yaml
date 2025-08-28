@@ -21,6 +21,7 @@ externalSecret:
 postgresql:
   # -- URL format example:
   # url: "postgresql://user:password@host:5432/database_name"
+  # Use `extraEnv` in order to pass the DATABASE_URL via external secret
   url: ""
 
 # -- Clickhouse Database
@@ -99,6 +100,12 @@ twitter:
 labels: {}
 # -- Extra Env Variables that are passed down to plausible 1:1
 extraEnv: []
+#    - name: DATABASE_URL
+#      valueFrom:
+#        secretKeyRef:
+#          name: plausible-postgresql
+#          key: postgres-dsn
+
 
 replicaCount: 1
 

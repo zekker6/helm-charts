@@ -79,8 +79,6 @@ env:
     secretKeyRef:
       key: DATABASE_URL
       name: {{ include "plausible-analytics.fullname" . }}
-{{- else }}
-  {{ fail "DATABASE_URL is required. Properly set .Values.postgres.url for the connection configuration." }}
 {{- end }}
 
 - name: SECRET_KEY_BASE

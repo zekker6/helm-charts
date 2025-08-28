@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -124,7 +124,7 @@ N/A
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
 | postgresql | object | `{"url":""}` | Postgres Database |
-| postgresql.url | string | `""` | URL format example: url: "postgresql://user:password@host:5432/database_name" |
+| postgresql.url | string | `""` | URL format example: url: "postgresql://user:password@host:5432/database_name" Use `extraEnv` in order to pass the DATABASE_URL via external secret |
 | postmark | object | `{"apiKey":null}` | Alternatively, you can use Postmark to send transactional emails |
 | replicaCount | int | `1` |  |
 | resources | object | `{}` |  |
