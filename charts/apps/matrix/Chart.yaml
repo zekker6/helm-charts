@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update matrixdotorg/synapse Docker tag to v1.137.0
+      description: Update matrixdotorg/synapse Docker tag to v1.138.0
 apiVersion: v2
 # renovate: image=matrixdotorg/synapse
-appVersion: v1.137.0
+appVersion: v1.138.0
 dependencies: []
 description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
 home: "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
@@ -17,4 +17,4 @@ name: matrix
 sources:
   - "https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix"
 type: application
-version: 3.1.0
+version: 3.2.0
