@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: initial chart release
+    - kind: changed
+      description: upgrade ghcr.io/shizunge/endlessh-go to 2025.0914.0
 apiVersion: v2
 # renovate: image=ghcr.io/shizunge/endlessh-go
 appVersion: "2025.0914.0"
@@ -24,4 +24,4 @@ name: endlessh-go
 sources:
   - https://github.com/shizunge/endlessh-go
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/endlessh-go
-version: 0.1.0
+version: 0.2.0

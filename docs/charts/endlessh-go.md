@@ -1,6 +1,6 @@
 # endlessh-go
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 2024.1106.0](https://img.shields.io/badge/AppVersion-2024.1106.0-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: 2025.0914.0](https://img.shields.io/badge/AppVersion-2025.0914.0-informational?style=flat-square)
 
 endlessh-go helm chart
 
@@ -79,7 +79,7 @@ N/A
 | args | list | See values.yaml | See full list of command-line flags here: https://github.com/shizunge/endlessh-go/pkgs/container/endlessh-go#usage |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/shizunge/endlessh-go"` | image repository |
-| image.tag | string | `"2024.1106.0"` | image tag |
+| image.tag | string | `"2025.0914.0"` | image tag |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ### Older versions
