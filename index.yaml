@@ -4521,6 +4521,36 @@ entries:
   endlessh-go:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: upgrade ghcr.io/shizunge/endlessh-go to 2025.0914.0
+    apiVersion: v2
+    appVersion: 2025.0914.0
+    created: "2025-09-15T05:09:04.996809933Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: endlessh-go helm chart
+    digest: 986c9c94d4a4051289a1e367b1345c46aae7e8b8f45c6b1bf768a8dee561aace
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    keywords:
+    - ssh
+    - honeypot
+    - endlessh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: endlessh-go
+    sources:
+    - https://github.com/shizunge/endlessh-go
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/endlessh-go
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.2.0/endlessh-go-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: initial chart release
     apiVersion: v2
@@ -17454,4 +17484,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-10T05:35:23.701379629Z"
+generated: "2025-09-15T05:09:04.997603558Z"
