@@ -8526,6 +8526,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update neosmemo/memos Docker tag to v0.25.1
+    apiVersion: v2
+    appVersion: 0.25.1
+    created: "2025-09-16T04:29:05.398746776Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: f1c21f1e1559760331f2060614205d383d9ed95f2e7e4c6fad2f1d7ecbbbd447
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.46.0/memos-0.46.0.tgz
+    version: 0.46.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update neosmemo/memos Docker tag to v0.25.0
     apiVersion: v2
     appVersion: 0.25.0
@@ -17484,4 +17515,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-15T05:09:04.997603558Z"
+generated: "2025-09-16T04:29:05.399618295Z"
