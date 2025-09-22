@@ -1,6 +1,6 @@
 # plausible-analytics
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
+![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.0.1](https://img.shields.io/badge/AppVersion-v3.0.1-informational?style=flat-square)
 
 A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 
@@ -31,7 +31,7 @@ See these issues for more details:
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://sentry-kubernetes.github.io/charts | clickhouse | 4.0.1 |
+| https://sentry-kubernetes.github.io/charts | clickhouse | 4.1.0 |
 
 ## TL;DR
 
