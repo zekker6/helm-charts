@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.14
+    apiVersion: v2
+    appVersion: 0.50.14
+    created: "2025-09-22T15:55:59.073699325Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 30719116eefcc7b9ca124082ba0ddddb123522339f41bfb29e16c1b1ce79997c
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.60.0/changedetection-io-1.60.0.tgz
+    version: 1.60.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.13
     apiVersion: v2
     appVersion: 0.50.13
@@ -9922,6 +9953,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update nocodb/nocodb Docker tag to v0.264.9
+    apiVersion: v2
+    appVersion: 0.264.9
+    created: "2025-09-22T15:55:59.324333367Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: nocodb - Open Source Airtable Alternative
+    digest: 96a345770ec5cca642bf54c9ceab16c843bbd04d545c90db02789d1c5d6e5fa2
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-1.3.0/nocodb-1.3.0.tgz
+    version: 1.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update nocodb/nocodb Docker tag to v0.264.7
     apiVersion: v2
     appVersion: 0.264.7
@@ -16265,6 +16324,39 @@ entries:
   plausible-analytics:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: Update https://sentry-kubernetes.github.io/charts clickhouse chart from v4.0.1 to v4.1.0
+    apiVersion: v2
+    appVersion: v3.0.1
+    created: "2025-09-22T15:55:59.549667966Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 4.1.0
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: bf524c0e35e6cf559ab74133e6c18115c820e05d15fbd64faa8ec56d22d13304
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-1.1.0/plausible-analytics-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: fixed
           description: do not enforce presence of PostgreSQL DSN in values as it can be passed via external secret.
     apiVersion: v2
@@ -17636,4 +17728,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-17T07:15:47.770331796Z"
+generated: "2025-09-22T15:55:59.550618987Z"
