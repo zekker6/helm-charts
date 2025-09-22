@@ -7,7 +7,7 @@ refs=$(curl \
 
 echo $refs
 
-git fetch --all
+git fetch --all --prune
 set -ex
 for ref in $refs; do
   echo checking $ref
