@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.17
+      description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.19
 apiVersion: v2
 # renovate: image=ghcr.io/dgtlmoon/changedetection.io
-appVersion: "0.50.17"
+appVersion: "0.50.19"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -25,4 +25,4 @@ name: changedetection-io
 sources:
   - https://github.com/dgtlmoon/changedetection.io
   - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
-version: 1.63.0
+version: 1.64.0
