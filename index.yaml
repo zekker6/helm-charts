@@ -6936,6 +6936,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.141.0
+    apiVersion: v2
+    appVersion: v1.141.0
+    created: "2025-10-30T07:05:31.598890058Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: a3c6210d2ca4491e4749332302adc7231fbe64e3b807a0b55fc5c92a9c15743e
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.7.0/matrix-3.7.0.tgz
+    version: 3.7.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update matrixdotorg/synapse Docker tag to v1.140.0
     apiVersion: v2
     appVersion: v1.140.0
@@ -18388,4 +18410,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-30T07:04:28.829190561Z"
+generated: "2025-10-30T07:05:31.599982032Z"
