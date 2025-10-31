@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.38
+    apiVersion: v2
+    appVersion: 0.50.38
+    created: "2025-10-31T12:56:44.049900188Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: b4f3211117c7d7883d1c9267acacc90ab9676fd53b132133dcebb1cdad98df06
+    home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/master/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.71.0/changedetection-io-1.71.0.tgz
+    version: 1.71.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.50.30
     apiVersion: v2
     appVersion: 0.50.30
@@ -6077,6 +6108,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/homer-8.1.0.tgz
     version: 8.1.0
   karma:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/prymitive/karma Docker tag to v0.122
+    apiVersion: v2
+    appVersion: v0.122
+    created: "2025-10-31T12:56:44.200442431Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: 8e1380336e51a78d17ee1251c26bfdd541f2eb2f2cb1cc8bd650f1b2215a0ae8
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.14.0/karma-0.14.0.tgz
+    version: 0.14.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -18410,4 +18470,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-30T07:05:31.599982032Z"
+generated: "2025-10-31T12:56:44.201405043Z"
