@@ -4,7 +4,7 @@ annotations:
       description: Update https://sentry-kubernetes.github.io/charts clickhouse chart from v4.0.1 to v4.1.0
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
-appVersion: v3.0.1
+appVersion: v3.1.0
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
