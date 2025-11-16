@@ -17329,6 +17329,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/plausible/community-edition Docker tag to v3.1.0
+        - kind: changed
+          description: Update https://sentry-kubernetes.github.io/charts clickhouse chart to v4.1.1
+    apiVersion: v2
+    appVersion: v3.1.0
+    created: "2025-11-16T10:36:54.077244504Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://sentry-kubernetes.github.io/charts
+      version: 4.1.1
+    description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly
+      alternative to Google Analytics
+    digest: e61bc5079b314314d6014193409435ac4165aab3a7000cbac3a9a6ecc82dc8b3
+    home: https://plausible.io/
+    icon: https://plausible.io/docs/img/favicon.png
+    keywords:
+    - plausible analytics
+    - analytics
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: plausible-analytics
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/plausible-analytics
+    - https://hub.docker.com/r/plausible/analytics
+    - https://github.com/plausible/analytics
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/plausible-analytics-1.2.0/plausible-analytics-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update https://sentry-kubernetes.github.io/charts clickhouse chart from v4.0.1 to v4.1.0
     apiVersion: v2
     appVersion: v3.0.1
@@ -18763,4 +18798,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-16T10:25:33.067717278Z"
+generated: "2025-11-16T10:36:54.078134878Z"
