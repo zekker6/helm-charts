@@ -1,15 +1,17 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update https://sentry-kubernetes.github.io/charts clickhouse chart from v4.0.1 to v4.1.0
+      description: Update ghcr.io/plausible/community-edition Docker tag to v3.1.0
+    - kind: changed
+      description: Update https://sentry-kubernetes.github.io/charts clickhouse chart to v4.1.1
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
-appVersion: v3.0.1
+appVersion: v3.1.0
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
     repository: https://sentry-kubernetes.github.io/charts
-    version: 4.1.0
+    version: 4.1.1
 description: A Helm Chart for Plausible Analytics - a simple and privacy-friendly alternative to Google Analytics
 home: https://plausible.io/
 icon: https://plausible.io/docs/img/favicon.png
@@ -26,4 +28,4 @@ sources:
   - https://hub.docker.com/r/plausible/analytics
   - https://github.com/plausible/analytics
 type: application
-version: 1.1.0
+version: 1.2.0
