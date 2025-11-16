@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 10.7.0](https://img.shields.io/badge/Version-10.7.0-informational?style=flat-square) ![AppVersion: 2.19.5](https://img.shields.io/badge/AppVersion-2.19.5-informational?style=flat-square)
+![Version: 10.7.1](https://img.shields.io/badge/Version-10.7.1-informational?style=flat-square) ![AppVersion: 2.19.5](https://img.shields.io/badge/AppVersion-2.19.5-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -102,8 +102,6 @@ N/A
 | persistence.data | object | See values.yaml | Configure persistence for data. |
 | persistence.export | object | See values.yaml | Configure export volume. |
 | persistence.media | object | See values.yaml | Configure persistence for media. |
-| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ### Older versions
