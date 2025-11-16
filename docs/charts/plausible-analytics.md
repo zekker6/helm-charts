@@ -31,7 +31,7 @@ See these issues for more details:
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://sentry-kubernetes.github.io/charts | clickhouse | 4.1.0 |
+| https://sentry-kubernetes.github.io/charts | clickhouse | 4.1.1 |
 
 ## TL;DR
 
