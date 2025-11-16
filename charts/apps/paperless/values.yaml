@@ -85,23 +85,3 @@ persistence:
     accessMode: ReadWriteOnce
     emptyDir:
       enabled: false
-
-# -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
-# @default -- See values.yaml
-postgresql:
-  enabled: false
-  postgresqlUsername: paperless
-  postgresqlPassword: paperless
-  postgresqlDatabase: paperless
-  persistence:
-    enabled: false
-    # storageClass: ""
-
-# -- Enable and configure redis subchart under this key.
-#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
-# @default -- See values.yaml
-redis:
-  enabled: false
-  auth:
-    enabled: false
