@@ -13625,6 +13625,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.1
+    apiVersion: v2
+    appVersion: 2.20.1
+    created: "2025-12-03T06:12:23.865564689Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 13f895efb42d411ecf812e4a2624861464232677738936732d7f4f1cb5fa23e3
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-10.10.0/paperless-10.10.0.tgz
+    version: 10.10.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.0
     apiVersion: v2
     appVersion: 2.20.0
@@ -18528,6 +18557,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update codeberg.org/readeck/readeck Docker tag to v0.21.3
+    apiVersion: v2
+    appVersion: 0.21.3
+    created: "2025-12-03T06:12:24.095591291Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: ad752ebfccf74c5fc333b0eafaa044af0f3e5dcef55090df6f5b2c5c28724884
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/android-chrome-192x192.png
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.21.0/readeck-0.21.0.tgz
+    version: 0.21.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update codeberg.org/readeck/readeck Docker tag to v0.21.2
     apiVersion: v2
     appVersion: 0.21.2
@@ -19177,4 +19237,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-12-01T12:23:33.922677902Z"
+generated: "2025-12-03T06:12:24.096729222Z"
