@@ -30,7 +30,7 @@ jobs:
       matrix:
         chart: ${{ fromJSON(inputs.chartsToTest) }}
         # Versions here: https://github.com/k3s-io/k3s/releases
-        k8s_version: [ "v1.29.15", "v1.30.14", "v1.31.10", "v1.32.6", "v1.33.2"]
+        k8s_version: [ "v1.30.14", "v1.31.14", "v1.32.11", "v1.33.7", "v1.34.3" ]
       fail-fast: false
     steps:
       - name: Checkout
