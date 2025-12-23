@@ -1,0 +1,78 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from k8s common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/theduffman85/crowdsec-web-ui
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  # Note: the application does not yet provide a versioned image
+  # https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui
+  # TODO: update to a fixed version when available
+  tag: "dev"
+
+# -- See the following files for additional environment variables:
+# @default -- See below
+env:
+  - name: "CROWDSEC_URL"
+    value: ""
+  - name: "CROWDSEC_LOOKBACK_PERIOD"
+    value: "168h"
+
+envFrom: []
+#  - secretRef:
+#      name: cs-web-ui-env
+
+service:
+  main:
+    ports:
+      http:
+        port: 3000
+
+ingress:
+  main:
+    enabled: false
+    hosts:
+      - host: "example.local"
+        paths:
+          - pathType: "Prefix"
+            path: /
+    tls: []
+
+persistence:
+  # -- Configure persistence for data to use sqlite backend.
+  # @default -- See values.yaml
+  data:
+    enabled: false
+    mountPath: /app/config
+    accessMode: ReadWriteOnce
+    size: 350Mi
+    emptyDir:
+      enabled: false
+
+controller:
+  strategy: Recreate
+  replicas: 1
+
+resources:
+  limits:
+    memory: 256Mi
+  requests:
+    cpu: 10m
+    memory: 20Mi
+
+#additionalContainers:
+#  - name: oauth2-proxy
+#    image: quay.io/oauth2-proxy/oauth2-proxy:v7.13.0
+#    imagePullPolicy: IfNotPresent
+#    envFrom:
+#      - secretRef:
+#          name: oauth2-proxy
+#    args:
+#      - --http-address=0.0.0.0:8081
+#      - --upstream=http://localhost:3000

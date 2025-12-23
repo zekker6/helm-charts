@@ -1,0 +1,26 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: initial release
+apiVersion: v2
+# renovate: image=ghcr.io/theduffman85/crowdsec-web-ui
+appVersion: "dev"
+dependencies:
+  - name: common
+    repository: https://zekker6.github.io/helm-charts
+    version: 0.5.2
+description: crowdsec-web-ui helm package
+home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/crowdsec-web-ui
+keywords:
+  - crowdsec
+  - security
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - name: "zekker6"
+    email: "me@zekker.dev"
+    url: "https://github.com/zekker6/"
+name: crowdsec-web-ui
+sources:
+  - https://github.com/TheDuffman85/crowdsec-web-ui
+  - https://github.com/zekker6/helm-charts/tree/master/charts/apps/crowdsec-web-ui
+version: 0.0.1

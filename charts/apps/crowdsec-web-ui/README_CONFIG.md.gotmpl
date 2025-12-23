@@ -1,0 +1,35 @@
+{{- define "custom.custom.notes" -}}
+{{- end -}}
+
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+
+### How to use with oauth2-proxy
+
+Example values to configure crowdsec-web-ui with oauth2-proxy:
+```yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8081
+
+additionalContainers:
+  - name: oauth2-proxy
+    image: quay.io/oauth2-proxy/oauth2-proxy:v7.13.0
+    imagePullPolicy: IfNotPresent
+    envFrom:
+      - secretRef:
+          name: oauth2-proxy
+    args:
+      - --http-address=0.0.0.0:8081
+      - --upstream=http://localhost:3000
+```
+
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+N/A
+{{- end -}}
