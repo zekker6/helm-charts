@@ -9,7 +9,7 @@ crowdsec-web-ui helm package
 ## Source Code
 
 * <https://github.com/TheDuffman85/crowdsec-web-ui>
-* <https://github.com/zekker6/helm-charts/tree/master/charts/apps/crowdsec-web-ui>
+* <https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui>
 
 ## Requirements
 

@@ -9,7 +9,7 @@ docuseal helm package
 ## Source Code
 
 * <https://github.com/docusealco/docuseal>
-* <https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal>
+* <https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal>
 
 ## Requirements
 

@@ -9,7 +9,7 @@ endlessh-go helm chart
 ## Source Code
 
 * <https://github.com/shizunge/endlessh-go>
-* <https://github.com/zekker6/helm-charts/tree/master/charts/apps/endlessh-go>
+* <https://github.com/zekker6/helm-charts/tree/main/charts/apps/endlessh-go>
 
 ## Requirements
 
