@@ -2,6 +2,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: properly pin sha
+    - kind: fixed
+      description: properly mount persistence volume for sqlite cache
 apiVersion: v2
 # renovate: image=ghcr.io/theduffman85/crowdsec-web-ui
 appVersion: "dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f"

@@ -23,6 +23,8 @@ env:
     value: ""
   - name: "CROWDSEC_LOOKBACK_PERIOD"
     value: "168h"
+  - name: "DB_DIR"
+    value: "/data"
 
 envFrom: []
 #  - secretRef:
@@ -49,11 +51,15 @@ persistence:
   # @default -- See values.yaml
   data:
     enabled: false
-    mountPath: /app/config
+    mountPath: /data
     accessMode: ReadWriteOnce
     size: 350Mi
     emptyDir:
       enabled: false
+
+podSecurityContext:
+  fsGroup: 1000
+  fsGroupChangePolicy: "OnRootMismatch"
 
 controller:
   strategy: Recreate
