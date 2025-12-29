@@ -111,6 +111,8 @@ N/A
 | ingress.main.hosts[0].paths[0].pathType | string | `"Prefix"` |  |
 | ingress.main.tls | list | `[]` |  |
 | persistence.data | object | See values.yaml | Configure persistence for data to use sqlite backend. |
+| podSecurityContext.fsGroup | int | `1000` |  |
+| podSecurityContext.fsGroupChangePolicy | string | `"OnRootMismatch"` |  |
 | resources.limits.memory | string | `"256Mi"` |  |
 | resources.requests.cpu | string | `"10m"` |  |
 | resources.requests.memory | string | `"20Mi"` |  |
