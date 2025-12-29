@@ -1,6 +1,6 @@
 # crowdsec-web-ui
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
 
 crowdsec-web-ui helm package
 
@@ -104,13 +104,15 @@ N/A
 | envFrom | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/theduffman85/crowdsec-web-ui"` | image repository |
-| image.tag | string | `"dev"` | image tag Note: the application does not yet provide a versioned image https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui TODO: update to a fixed version when available |
+| image.tag | string | `"dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f"` | image tag Note: the application does not yet provide a versioned image https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui TODO: update to a fixed version when available |
 | ingress.main.enabled | bool | `false` |  |
 | ingress.main.hosts[0].host | string | `"example.local"` |  |
 | ingress.main.hosts[0].paths[0].path | string | `"/"` |  |
 | ingress.main.hosts[0].paths[0].pathType | string | `"Prefix"` |  |
 | ingress.main.tls | list | `[]` |  |
 | persistence.data | object | See values.yaml | Configure persistence for data to use sqlite backend. |
+| podSecurityContext.fsGroup | int | `1000` |  |
+| podSecurityContext.fsGroupChangePolicy | string | `"OnRootMismatch"` |  |
 | resources.limits.memory | string | `"256Mi"` |  |
 | resources.requests.cpu | string | `"10m"` |  |
 | resources.requests.memory | string | `"20Mi"` |  |

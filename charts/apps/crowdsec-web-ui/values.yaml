@@ -14,7 +14,7 @@ image:
   # Note: the application does not yet provide a versioned image
   # https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui
   # TODO: update to a fixed version when available
-  tag: "dev"
+  tag: "dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f"
 
 # -- See the following files for additional environment variables:
 # @default -- See below
@@ -23,6 +23,8 @@ env:
     value: ""
   - name: "CROWDSEC_LOOKBACK_PERIOD"
     value: "168h"
+  - name: "DB_DIR"
+    value: "/data"
 
 envFrom: []
 #  - secretRef:
@@ -48,12 +50,16 @@ persistence:
   # -- Configure persistence for data to use sqlite backend.
   # @default -- See values.yaml
   data:
-    enabled: false
-    mountPath: /app/config
+    enabled: true
+    mountPath: /data
     accessMode: ReadWriteOnce
     size: 350Mi
     emptyDir:
       enabled: false
+
+podSecurityContext:
+  fsGroup: 1000
+  fsGroupChangePolicy: "OnRootMismatch"
 
 controller:
   strategy: Recreate
@@ -66,7 +72,7 @@ resources:
     cpu: 10m
     memory: 20Mi
 
-#additionalContainers:
+# additionalContainers:
 #  - name: oauth2-proxy
 #    image: quay.io/oauth2-proxy/oauth2-proxy:v7.13.0
 #    imagePullPolicy: IfNotPresent
