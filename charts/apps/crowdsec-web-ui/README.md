@@ -1,6 +1,6 @@
 # crowdsec-web-ui
 
-![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f](https://img.shields.io/badge/AppVersion-dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
 
 crowdsec-web-ui helm package
 

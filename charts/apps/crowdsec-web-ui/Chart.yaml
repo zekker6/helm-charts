@@ -6,7 +6,7 @@ annotations:
       description: properly mount persistence volume for sqlite cache
 apiVersion: v2
 # renovate: image=ghcr.io/theduffman85/crowdsec-web-ui
-appVersion: "dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f"
+appVersion: "dev"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
