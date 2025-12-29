@@ -2382,6 +2382,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: properly pin sha
+        - kind: fixed
+          description: properly mount persistence volume for sqlite cache
+    apiVersion: v2
+    appVersion: dev
+    created: "2025-12-29T06:50:32.161412708Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 5d9abc0204a7677aab86926bad333c5a1997dc1aa3018d33f5d09292963b9b8e
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.0.3/crowdsec-web-ui-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: use SHA pinning for image
     apiVersion: v2
     appVersion: 'dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f '
@@ -19559,4 +19590,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2025-12-29T06:05:57.903033593Z"
+generated: "2025-12-29T06:50:32.162221704Z"
