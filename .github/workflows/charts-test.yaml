@@ -25,6 +25,8 @@ jobs:
   install-chart:
     name: Install chart
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
     if: ${{ inputs.chartsToTest != '[]' && inputs.chartsToTest != '' }}
     strategy:
       matrix:
@@ -58,6 +60,7 @@ jobs:
         uses: nolar/setup-k3d-k3s@v1
         with:
           version: ${{ matrix.k8s_version }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Remove node taints
         run: |
