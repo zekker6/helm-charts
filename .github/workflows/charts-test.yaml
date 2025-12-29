@@ -30,7 +30,7 @@ jobs:
       matrix:
         chart: ${{ fromJSON(inputs.chartsToTest) }}
         # Versions here: https://github.com/k3s-io/k3s/releases
-        k8s_version: [ "v1.30.14", "v1.31.14", "v1.32.11", "v1.33.7", "v1.34.3" ]
+        k8s_version: [ "v1.30", "v1.31", "v1.32", "v1.33", "v1.34" ]
       fail-fast: false
     steps:
       - name: Checkout
@@ -44,7 +44,6 @@ jobs:
         with:
           setup-tools: |
             helmv3
-            kubectl
           helm: "${{ env.HELM_VERSION }}"
           kubectl: "${{ matrix.k8s_version }}"
 
