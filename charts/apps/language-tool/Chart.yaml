@@ -1,7 +1,7 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update erikvl87/languagetool Docker tag to v6.6-dockerupdate-1
+      description: Update erikvl87/languagetool Docker tag to v6.7
 apiVersion: v2
 # renovate: image=erikvl87/languagetool
 appVersion: "6.7-dockerupdate-1"
@@ -22,4 +22,4 @@ maintainers:
 name: language-tool
 sources:
   - https://github.com/language-tool/language-tool-docker
-version: 1.11.0
+version: 1.12.0
