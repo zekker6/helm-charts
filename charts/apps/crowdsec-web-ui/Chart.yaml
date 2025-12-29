@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: use SHA pinning for image
+      description: properly pin sha
 apiVersion: v2
 # renovate: image=ghcr.io/theduffman85/crowdsec-web-ui
-appVersion: "dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f "
+appVersion: "dev@sha256:b5785723e99764c45415571c444fe3b9c2d749dcbcf091203317a583cffbd35f"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -23,4 +23,4 @@ name: crowdsec-web-ui
 sources:
   - https://github.com/TheDuffman85/crowdsec-web-ui
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
-version: 0.0.2
+version: 0.0.3
