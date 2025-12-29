@@ -1,6 +1,6 @@
 # language-tool
 
-![Version: 1.11.0](https://img.shields.io/badge/Version-1.11.0-informational?style=flat-square) ![AppVersion: 6.6-dockerupdate-1](https://img.shields.io/badge/AppVersion-6.6--dockerupdate--1-informational?style=flat-square)
+![Version: 1.12.0](https://img.shields.io/badge/Version-1.12.0-informational?style=flat-square) ![AppVersion: 6.7-dockerupdate-1](https://img.shields.io/badge/AppVersion-6.7--dockerupdate--1-informational?style=flat-square)
 
 language-tool helm package
 
@@ -82,7 +82,7 @@ N/A
 | env.langtool_languageModel | string | `"/ngrams"` | Make sure this matches `.Values.persistence.config.mountPath` |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"erikvl87/languagetool"` | image repository |
-| image.tag | string | `"6.6-dockerupdate-1"` | image tag |
+| image.tag | string | `"6.7-dockerupdate-1"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | initContainers.download-ngrams | object | See values.yaml | Init container to set up ngram files. For other languages check for archives [here](https://languagetool.org/download/ngram-data/) Archive download disabled by default, please enable it when deploying |
 | initContainers.download-ngrams.volumeMounts[0].mountPath | string | `"/ngrams"` | Make sure this matches `.Values.persistence.config.mountPath` |
