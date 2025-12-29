@@ -50,7 +50,7 @@ persistence:
   # -- Configure persistence for data to use sqlite backend.
   # @default -- See values.yaml
   data:
-    enabled: false
+    enabled: true
     mountPath: /data
     accessMode: ReadWriteOnce
     size: 350Mi
