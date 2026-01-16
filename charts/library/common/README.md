@@ -82,7 +82,7 @@ N/A
 | addons.codeserver.git.deployKeySecret | string | `""` | Existing secret containing SSH private key The chart expects it to be present under the `id_rsa` key. |
 | addons.codeserver.image.pullPolicy | string | `"IfNotPresent"` | Specify the code-server image pull policy |
 | addons.codeserver.image.repository | string | `"ghcr.io/coder/code-server"` | Specify the code-server image |
-| addons.codeserver.image.tag | string | `"4.107.0"` | Specify the code-server image tag |
+| addons.codeserver.image.tag | string | `"4.108.0"` | Specify the code-server image tag |
 | addons.codeserver.ingress.enabled | bool | `false` | Enable an ingress for the code-server add-on. |
 | addons.codeserver.ingress.ingressClassName | string | `nil` | Set the ingressClass that is used for this ingress. Requires Kubernetes >=1.19 |
 | addons.codeserver.service.enabled | bool | `true` | Enable a service for the code-server add-on. |
@@ -93,7 +93,7 @@ N/A
 | addons.netshoot.env | object | `{}` | Set any environment variables for netshoot here |
 | addons.netshoot.image.pullPolicy | string | `"IfNotPresent"` | Specify the netshoot image pull policy |
 | addons.netshoot.image.repository | string | `"ghcr.io/nicolaka/netshoot"` | Specify the netshoot image |
-| addons.netshoot.image.tag | string | `"v0.14"` | Specify the netshoot image tag |
+| addons.netshoot.image.tag | string | `"v0.15"` | Specify the netshoot image tag |
 | addons.promtail | object | See values.yaml | The common library supports adding a promtail add-on to to access logs and ship them to loki. It can be configured under this key. |
 | addons.promtail.args | list | `[]` | Set promtail command line arguments |
 | addons.promtail.enabled | bool | `false` | Enable running a promtail container in the pod |
