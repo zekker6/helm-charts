@@ -2654,6 +2654,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v2.3.1
+    apiVersion: v2
+    appVersion: 2.3.1
+    created: "2026-01-29T10:03:32.463056369Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 96de02ee6221d2935d5a7846bd0583c7e6405c1040a3558cc6f37e495f2c22e8
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.99.0/docuseal-1.99.0.tgz
+    version: 1.99.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v2.3.0
     apiVersion: v2
     appVersion: 2.3.0
@@ -7816,6 +7847,28 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.146.0
+    apiVersion: v2
+    appVersion: v1.146.0
+    created: "2026-01-29T10:03:32.711794569Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 440e50254434cf543e4d8f5194f0855ae57f7faf09ef3743618b45f31a5a38d9
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.13.0/matrix-3.13.0.tgz
+    version: 3.13.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -20062,4 +20115,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-26T06:33:21.564332317Z"
+generated: "2026-01-29T10:03:32.712943358Z"
