@@ -1,6 +1,6 @@
 # crowdsec-web-ui
 
-![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
 
 crowdsec-web-ui helm package
 
@@ -104,7 +104,7 @@ N/A
 | envFrom | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/theduffman85/crowdsec-web-ui"` | image repository |
-| image.tag | string | `"dev@sha256:f9f346984333fc8381f455438eac902607d262678b26adff95f91f25f5b48fcc"` | image tag Note: the application does not yet provide a versioned image https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui TODO: update to a fixed version when available |
+| image.tag | string | `"dev@sha256:e69248ae2a97f64812e45326cd06ad802d9825dfa8b2d6638cc88f27c63da96a"` | image tag Note: the application does not yet provide a versioned image https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui TODO: update to a fixed version when available |
 | ingress.main.enabled | bool | `false` |  |
 | ingress.main.hosts[0].host | string | `"example.local"` |  |
 | ingress.main.hosts[0].paths[0].path | string | `"/"` |  |
