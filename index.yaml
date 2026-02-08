@@ -2506,6 +2506,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update image pin to sha256:e69248ae2a97f64812e45326cd06ad802d9825dfa8b2d6638cc88f27c63da96a
+    apiVersion: v2
+    appVersion: dev
+    created: "2026-02-08T15:24:10.221199418Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: e64c77e234be81cd6ce8b236e267aeab34214764deab6df201a69b87737b9297
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.1.0/crowdsec-web-ui-0.1.0.tgz
+    version: 0.1.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update image pin to sha256:f9f346984333fc8381f455438eac902607d262678b26adff95f91f25f5b48fcc
     apiVersion: v2
     appVersion: dev
@@ -10198,6 +10227,37 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
   memos:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update neosmemo/memos Docker tag to v0.26.1
+    apiVersion: v2
+    appVersion: 0.26.1
+    created: "2026-02-08T15:24:10.417521092Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: 0cd58c28920f77955168d849259bf39f1c72ad2e3c5627d23c4bf0e5641d5554
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.50.0/memos-0.50.0.tgz
+    version: 0.50.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -20206,4 +20266,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-04T04:25:14.604587036Z"
+generated: "2026-02-08T15:24:10.419113674Z"
