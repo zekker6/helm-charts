@@ -13,8 +13,7 @@ image:
   # -- image tag
   # Note: the application does not yet provide a versioned image
   # https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui
-  # TODO: update to a fixed version when available
-  tag: "dev@sha256:e69248ae2a97f64812e45326cd06ad802d9825dfa8b2d6638cc88f27c63da96a"
+  tag: "2026.2.1"
 
 # -- See the following files for additional environment variables:
 # @default -- See below
@@ -71,7 +70,6 @@ resources:
   requests:
     cpu: 10m
     memory: 20Mi
-
 # additionalContainers:
 #  - name: oauth2-proxy
 #    image: quay.io/oauth2-proxy/oauth2-proxy:v7.13.0
