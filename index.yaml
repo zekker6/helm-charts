@@ -2506,6 +2506,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: update image ghcr.io/TheDuffman85/crowdsec-web-ui to 2026.2.1
+    apiVersion: v2
+    appVersion: dev
+    created: "2026-02-15T14:19:28.911296913Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 5bb475c529c5ab891ee76def700822bb87ab3c7dc11fafce70e6b5d72098d6fb
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.2.0/crowdsec-web-ui-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: update image pin to sha256:e69248ae2a97f64812e45326cd06ad802d9825dfa8b2d6638cc88f27c63da96a
     apiVersion: v2
     appVersion: dev
@@ -20266,4 +20295,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-08T15:24:10.419113674Z"
+generated: "2026-02-15T14:19:28.912151507Z"
