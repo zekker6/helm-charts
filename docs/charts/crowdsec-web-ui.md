@@ -1,6 +1,6 @@
 # crowdsec-web-ui
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: dev](https://img.shields.io/badge/AppVersion-dev-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: 2026.2.3](https://img.shields.io/badge/AppVersion-2026.2.3-informational?style=flat-square)
 
 crowdsec-web-ui helm package
 
@@ -104,7 +104,7 @@ N/A
 | envFrom | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/theduffman85/crowdsec-web-ui"` | image repository |
-| image.tag | string | `"2026.2.1"` | image tag Note: the application does not yet provide a versioned image https://github.com/TheDuffman85/crowdsec-web-ui/pkgs/container/crowdsec-web-ui |
+| image.tag | string | `"2026.2.3"` | image tag |
 | ingress.main.enabled | bool | `false` |  |
 | ingress.main.hosts[0].host | string | `"example.local"` |  |
 | ingress.main.hosts[0].paths[0].path | string | `"/"` |  |
