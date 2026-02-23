@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.53.6
+    apiVersion: v2
+    appVersion: 0.53.6
+    created: "2026-02-23T05:53:57.111887786Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: b8c83c0d6b52f3af6b0fdb52770f4c024c5334d99cb2b9f0f6e0d88797669da1
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.83.0/changedetection-io-1.83.0.tgz
+    version: 1.83.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.53.3
     apiVersion: v2
     appVersion: 0.53.3
@@ -14496,6 +14527,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.8
+    apiVersion: v2
+    appVersion: 2.20.8
+    created: "2026-02-23T05:53:57.452510103Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 95c582e8725b6bcd470398df32e61843ebd2278569f793856ec131170be42997
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-10.17.0/paperless-10.17.0.tgz
+    version: 10.17.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.7
     apiVersion: v2
     appVersion: 2.20.7
@@ -20408,4 +20468,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-17T09:25:33.449695425Z"
+generated: "2026-02-23T05:53:57.453556617Z"
