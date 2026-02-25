@@ -7239,6 +7239,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/prymitive/karma Docker tag to v0.125
+    apiVersion: v2
+    appVersion: v0.125
+    created: "2026-02-25T04:58:07.296459336Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: 6953f511c99ee5bfc091073ac51e83ed5a1ec62c59a600cd3a83aac820a6e835
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.15.0/karma-0.15.0.tgz
+    version: 0.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/prymitive/karma Docker tag to v0.122
     apiVersion: v2
     appVersion: v0.122
@@ -8149,6 +8178,28 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.148.0
+    apiVersion: v2
+    appVersion: v1.148.0
+    created: "2026-02-25T04:58:07.447140032Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 6465f565057191f7bd86ca30119e00434dc03e10c05db99b4acaff6e5b1a852b
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.15.0/matrix-3.15.0.tgz
+    version: 3.15.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -20619,4 +20670,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-24T05:47:20.729648157Z"
+generated: "2026-02-25T04:58:07.448119307Z"
