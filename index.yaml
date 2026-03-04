@@ -2923,6 +2923,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v2.3.6
+    apiVersion: v2
+    appVersion: 2.3.6
+    created: "2026-03-04T06:49:44.690236439Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 2e3cc2ebf40793ebe757cdcca6159d53c6dcf94f91736afb52d8fb0d2adf6ff1
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.103.0/docuseal-1.103.0.tgz
+    version: 1.103.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v2.3.5
     apiVersion: v2
     appVersion: 2.3.5
@@ -7296,6 +7327,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/homer-8.1.0.tgz
     version: 8.1.0
   karma:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/prymitive/karma Docker tag to v0.126
+    apiVersion: v2
+    appVersion: v0.126
+    created: "2026-03-04T06:49:44.818932209Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: ee428cfcbe2276e99e6e8bb6149324416847e5d27e23a7f213c90e9d4233f686
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.16.0/karma-0.16.0.tgz
+    version: 0.16.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -20787,4 +20847,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-04T06:46:33.756152349Z"
+generated: "2026-03-04T06:49:44.820527492Z"
