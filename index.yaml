@@ -7884,6 +7884,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update erikvl87/languagetool Docker tag to 6.7-dockerupdate-3
+    apiVersion: v2
+    appVersion: 6.7-dockerupdate-3
+    created: "2026-03-11T11:52:43.580113887Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: language-tool helm package
+    digest: d8044a3f00838c26751d9aa3b90272c3e34e4d19c03f07632ab45cfa3aef7d9f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/language-tool
+    icon: https://languagetool.org/images/logo_color_with_background.svg?8dae54218b449e94603195c91016bc93
+    keywords:
+    - language-tool
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: language-tool
+    sources:
+    - https://github.com/language-tool/language-tool-docker
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/language-tool-1.12.1/language-tool-1.12.1.tgz
+    version: 1.12.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update erikvl87/languagetool Docker tag to v6.7
     apiVersion: v2
     appVersion: 6.7-dockerupdate-1
@@ -20967,4 +20995,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-07T12:11:51.440845949Z"
+generated: "2026-03-11T11:52:43.581134678Z"
