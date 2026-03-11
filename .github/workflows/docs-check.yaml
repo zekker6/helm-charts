@@ -1,0 +1,26 @@
+name: "Docs: Check"
+
+on:
+  workflow_call:
+
+jobs:
+  docs-check:
+    name: Verify docs are up to date
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Install tools
+        uses: jdx/mise-action@v2
+
+      - name: Run docs:sync
+        run: task docs:sync
+
+      - name: Check for uncommitted changes
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Docs are out of date. Run 'task docs:sync' and commit the changes."
+            git diff --stat
+            exit 1
+          fi

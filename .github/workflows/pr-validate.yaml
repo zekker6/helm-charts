@@ -27,6 +27,9 @@ jobs:
     with:
       modifiedFiles: ${{ needs.pr-metadata.outputs.addedOrModifiedFiles }}
 
+  docs-check:
+    uses: ./.github/workflows/docs-check.yaml
+
   charts-lint:
     uses: ./.github/workflows/charts-lint.yaml
     needs:
