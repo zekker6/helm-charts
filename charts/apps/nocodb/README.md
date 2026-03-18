@@ -1,6 +1,6 @@
 # nocodb
 
-![Version: 1.8.0](https://img.shields.io/badge/Version-1.8.0-informational?style=flat-square) ![AppVersion: 0.301.3](https://img.shields.io/badge/AppVersion-0.301.3-informational?style=flat-square)
+![Version: 1.9.0](https://img.shields.io/badge/Version-1.9.0-informational?style=flat-square) ![AppVersion: 0.301.4](https://img.shields.io/badge/AppVersion-0.301.4-informational?style=flat-square)
 
 nocodb - Open Source Airtable Alternative
 
