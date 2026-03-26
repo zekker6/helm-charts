@@ -2723,6 +2723,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.3.4
+    apiVersion: v2
+    appVersion: 2026.3.4
+    created: "2026-03-26T07:30:17.332473691Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: ff88dada7f311a08998a2706c16c25928575c0f80e5fcea8b859159a66a2bd82
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.7.0/crowdsec-web-ui-0.7.0.tgz
+    version: 0.7.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.3.1
     apiVersion: v2
     appVersion: 2026.3.1
@@ -3042,6 +3071,37 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.0.1/crowdsec-web-ui-0.0.1.tgz
     version: 0.0.1
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update docuseal/docuseal Docker tag to v2.4.1
+    apiVersion: v2
+    appVersion: 2.4.1
+    created: "2026-03-26T07:30:17.488841048Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 6f6be7f71e4ea5d8c9c0e97d3282faee9474b89b52f783c498e2f16abcd69ffa
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.106.0/docuseal-1.106.0.tgz
+    version: 1.106.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8542,6 +8602,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.150.0
+    apiVersion: v2
+    appVersion: v1.150.0
+    created: "2026-03-26T07:30:17.629803802Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 8b1cdad739fd242481ec088c231fc39b2d539ef4346cd62452a53e8f39930fc0
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.17.0/matrix-3.17.0.tgz
+    version: 3.17.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update matrixdotorg/synapse Docker tag to v1.149.1
     apiVersion: v2
     appVersion: v1.149.1
@@ -12417,6 +12499,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update nocodb/nocodb Docker tag to v0.301.5
+    apiVersion: v2
+    appVersion: 0.301.5
+    created: "2026-03-26T07:30:17.747457937Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: nocodb - Open Source Airtable Alternative
+    digest: 0ade8fdeb6491905eab777404204953bc547f1f3a788f594392a62f5fec38d27
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    icon: https://github.com/nocodb/nocodb/blob/develop/packages/nc-gui/assets/img/icons/64x64.png?raw=true
+    keywords:
+    - nocodb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: nocodb
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/nocodb
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/nocodb-1.10.0/nocodb-1.10.0.tgz
+    version: 1.10.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update nocodb/nocodb Docker tag to v0.301.4
     apiVersion: v2
     appVersion: 0.301.4
@@ -15165,6 +15275,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.13
+    apiVersion: v2
+    appVersion: 2.20.13
+    created: "2026-03-26T07:30:18.057345383Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 3594278d7969453bce9edcebba97d653aa5bbfad50b7edb799b2b11a0183f427
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-10.21.0/paperless-10.21.0.tgz
+    version: 10.21.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -21258,4 +21397,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-18T09:55:52.001516116Z"
+generated: "2026-03-26T07:30:18.058709009Z"
