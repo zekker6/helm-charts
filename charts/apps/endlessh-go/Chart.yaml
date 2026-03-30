@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: upgrade ghcr.io/shizunge/endlessh-go to 2025.0914.0
+      description: Update ghcr.io/shizunge/endlessh-go Docker tag to v2026
 apiVersion: v2
 # renovate: image=ghcr.io/shizunge/endlessh-go
-appVersion: "2025.0914.0"
+appVersion: "2026.0328.0"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -24,4 +24,4 @@ name: endlessh-go
 sources:
   - https://github.com/shizunge/endlessh-go
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/endlessh-go
-version: 0.2.0
+version: 0.3.0
