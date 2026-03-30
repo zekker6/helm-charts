@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.7
+    apiVersion: v2
+    appVersion: 0.54.7
+    created: "2026-03-30T10:38:41.266026334Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 75ed7289e25b71dab7bc41a6ee16724d74cce48106c6768f730ea2a1ed0d086a
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.89.0/changedetection-io-1.89.0.tgz
+    version: 1.89.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.6
     apiVersion: v2
     appVersion: 0.54.6
@@ -2720,6 +2751,35 @@ entries:
     - https://zekker6.github.io/helm-charts/library/common-0.4.0.tgz
     version: 0.4.0
   crowdsec-web-ui:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.3.5
+    apiVersion: v2
+    appVersion: 2026.3.5
+    created: "2026-03-30T10:38:41.413485224Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 57dedc549ff0e3e5e36c773e49d5d99b8558a2e9c11e979d56b8d84355ee062c
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.8.0/crowdsec-web-ui-0.8.0.tgz
+    version: 0.8.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -6420,6 +6480,36 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/docuseal-1.0.0.tgz
     version: 1.0.0
   endlessh-go:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/shizunge/endlessh-go Docker tag to v2026
+    apiVersion: v2
+    appVersion: 2026.0328.0
+    created: "2026-03-30T10:38:41.592119919Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: endlessh-go helm chart
+    digest: eb9ba74032a4231f43d508f3fdefab0d97bebd06c3e6687378b81f3a58af0c18
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    keywords:
+    - ssh
+    - honeypot
+    - endlessh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: endlessh-go
+    sources:
+    - https://github.com/shizunge/endlessh-go
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/endlessh-go
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.3.0/endlessh-go-0.3.0.tgz
+    version: 0.3.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -21397,4 +21487,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-26T07:30:18.058709009Z"
+generated: "2026-03-30T10:38:41.593914418Z"
