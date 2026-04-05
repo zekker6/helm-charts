@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.8
+    apiVersion: v2
+    appVersion: 0.54.8
+    created: "2026-04-05T15:40:41.857194246Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 24e3af4cd3599edc7a06336668e200275af6244c758744ae1c5400f9f32e1a54
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.90.0/changedetection-io-1.90.0.tgz
+    version: 1.90.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.7
     apiVersion: v2
     appVersion: 0.54.7
@@ -6777,6 +6808,33 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/healthchecks-0.1.0.tgz
     version: 0.1.0
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update b4bz/homer Docker tag to v26
+    apiVersion: v2
+    appVersion: v26.4.1
+    created: "2026-04-05T15:40:41.987586794Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: eeb7e176bfaf41f2479576e73c084ebbfcae6ceaf635618d999888abf7019dd0
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/logo.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: homer
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/homer-8.32.0/homer-8.32.0.tgz
+    version: 8.32.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -21576,4 +21634,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-03T04:50:08.880176589Z"
+generated: "2026-04-05T15:40:41.988630095Z"
