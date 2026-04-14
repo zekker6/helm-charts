@@ -35,7 +35,7 @@ jobs:
     steps:
       - name: Get branch name
         id: branch-name
-        uses: tj-actions/branch-names@v9
+        uses: tj-actions/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
 
       - name: Save PR data to file
         env:
@@ -44,7 +44,7 @@ jobs:
           echo $PR_NUMBER > pr_number.txt
 
       - name: Store pr data in artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: pr_metadata
           path: ./pr_number.txt
@@ -68,7 +68,7 @@ jobs:
           fetch-depth: 0
 
       - name: Collect changed files
-        uses: dorny/paths-filter@v4
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4
         id: changed-files
         with:
           list-files: json
@@ -77,5 +77,5 @@ jobs:
               - added|modified: '**'
 
       - name: Collect changed charts
-        uses: bjw-s/helm-charts-actions/collect-charts@2025.2.0
+        uses: bjw-s/helm-charts-actions/collect-charts@2c2cffee4b36c3b2b17f8404fd565400c0a98104 # 2025.2.0
         id: changed-charts
