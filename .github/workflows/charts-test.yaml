@@ -16,7 +16,7 @@ on:
           A JSON encoded array of dependencies to override before testing
         type: string
         required: false
-        default: '[]'
+        default: "[]"
 
 env:
   HELM_VERSION: 3.19.4
@@ -32,7 +32,7 @@ jobs:
       matrix:
         chart: ${{ fromJSON(inputs.chartsToTest) }}
         # Versions here: https://github.com/k3s-io/k3s/releases
-        k8s_version: [ "v1.30", "v1.31", "v1.32", "v1.33", "v1.34" ]
+        k8s_version: ["v1.30", "v1.31", "v1.32", "v1.33", "v1.34", "v1.35"]
       fail-fast: false
     steps:
       - name: Checkout
