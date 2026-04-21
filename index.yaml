@@ -33,6 +33,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.10
+    apiVersion: v2
+    appVersion: 0.54.10
+    created: "2026-04-21T07:44:47.022029468Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: changedetection-io helm package
+    digest: 92c9c37d2c542511fdf9e30b098c0ad33904a7e9500abaddb8117e4c3b0da1a0
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    icon: https://github.com/dgtlmoon/changedetection.io/blob/master/changedetectionio/static/favicons/favicon-32x32.png?raw=true
+    keywords:
+    - changedetection.io
+    - urlmonitor
+    - website-monitoring
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/changedetection-io
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/changedetection-io-1.92.0/changedetection-io-1.92.0.tgz
+    version: 1.92.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.54.9
     apiVersion: v2
     appVersion: 0.54.9
@@ -3338,6 +3369,37 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.0.1/crowdsec-web-ui-0.0.1.tgz
     version: 0.0.1
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update docuseal/docuseal Docker tag to v2.5.0
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2026-04-21T07:44:47.156764111Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 102ec5aac6b5e2f43e14e56b6a260c6e946f65a13259faaaaa062edfc69909c1
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.110.0/docuseal-1.110.0.tgz
+    version: 1.110.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -21983,4 +22045,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-20T05:21:32.983828576Z"
+generated: "2026-04-21T07:44:47.158215692Z"
