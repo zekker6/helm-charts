@@ -1,4 +1,31 @@
 {{- define "custom.custom.notes" -}}
+# Breaking changes
+
+## 0.3.0 -> 1.0.0
+
+The image tag was bumped from the 2021-era `version-v1.20.0` to `4.1.1`. This crosses the upstream Django 4.0 upgrade, which tightened `CSRF_TRUSTED_ORIGINS` validation (check `4_0.E001`). Entries must now start with a URL scheme (`https://`).
+
+If you had a healthchecks instance running on the old image, its config PVC contains a `local_settings.py` that was auto-generated with a scheme-less value like `CSRF_TRUSTED_ORIGINS = ["hc.example.com"]`. The new image will fail to start with:
+
+```
+SystemCheckError: System check identified some issues:
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme ...
+```
+
+Setting the `CSRF_TRUSTED_ORIGINS` env var does **not** fix this — the linuxserver init script only writes it to `local_settings.py` when the key is absent, and the stale line blocks that branch. You must edit the file on the PVC directly, e.g.:
+
+```sh
+kubectl -n <ns> exec deploy/healthchecks -- sed -i \
+  's|CSRF_TRUSTED_ORIGINS.*|CSRF_TRUSTED_ORIGINS = ["https://hc.example.com"]|' \
+  /config/local_settings.py
+kubectl -n <ns> rollout restart deploy/healthchecks
+```
+
+If the pod is crashlooping and `exec` isn't available, mount the config PVC into a one-shot busybox pod and run the same `sed`.
+
+The `REGENERATE_SETTINGS` env var is no longer honored by the upstream image and should be removed from your values — if you previously set `REGENERATE_SETTINGS: "True"` to force `local_settings.py` regeneration, drop it. The new image manages `local_settings.py` unconditionally on boot (only writing keys that are absent), so the old flag has no effect.
+
 {{- end -}}
 
 {{- define "custom.custom.configuration.header" -}}
