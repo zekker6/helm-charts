@@ -1,10 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update zekker6/common chart version to 0.5.2
+      description: Update linuxserver/healthchecks Docker tag to v4.1.1
 apiVersion: v2
 # renovate: image=linuxserver/healthchecks
-appVersion: "2.7"
+appVersion: "4.1.1"
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -23,4 +23,4 @@ name: healthchecks
 sources:
   - https://github.com/linuxserver/docker-healthchecks
   - https://github.com/healthchecks/healthchecks
-version: 0.3.0
+version: 1.0.0

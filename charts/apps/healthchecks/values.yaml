@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: linuxserver/healthchecks
   # -- image tag
-  tag: version-v1.20.0
+  tag: "4.1.1"
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -26,12 +26,10 @@ service:
 env:
   # -- Set the container timezone
   TZ: UTC
-  # -- Set to true to always override the local_settings.py file with values from environment variables. Do not set to True if you have made manual modifications to this file.
-  REGENERATE_SETTINGS: "True"
   # -- The site's top-level URL and the port it listens to
   SITE_ROOT: https://healthchecks.domain
   # -- The site's name (e.g., "Example Corp HealthChecks")
-  SITE_NAME: 8265
+  SITE_NAME: "Example Corp HealthChecks"
   # -- Superuser email
   SUPERUSER_EMAIL: email@healthchecks.io
   # -- Superuser password
