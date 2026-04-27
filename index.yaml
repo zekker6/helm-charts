@@ -2847,6 +2847,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.4.12
+    apiVersion: v2
+    appVersion: 2026.4.12
+    created: "2026-04-27T06:44:09.018806985Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 7c21a812db83028fdfab85d6371787e390e29373b0055b42ee2e7cf9772a1322
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.15.0/crowdsec-web-ui-0.15.0.tgz
+    version: 0.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.4.11
     apiVersion: v2
     appVersion: 2026.4.11
@@ -11654,6 +11683,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update neosmemo/memos Docker tag to v0.28.0
+    apiVersion: v2
+    appVersion: 0.28.0
+    created: "2026-04-27T06:44:09.220038144Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: a4857ce0512ee17fa431588f10864c97b364eebba62683c8057fb8e17e2c82df
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.53.0/memos-0.53.0.tgz
+    version: 0.53.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update neosmemo/memos Docker tag to v0.27.1
     apiVersion: v2
     appVersion: 0.27.1
@@ -15950,6 +16010,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.15
+    apiVersion: v2
+    appVersion: 2.20.15
+    created: "2026-04-27T06:44:09.429690652Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: d83e3e7bd77a6bfedd14c23172a7ce108327e81f0c65ce88de6b10cabecda038
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-10.23.0/paperless-10.23.0.tgz
+    version: 10.23.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -22132,4 +22221,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-24T07:49:47.790401438Z"
+generated: "2026-04-27T06:44:09.431368154Z"
