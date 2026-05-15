@@ -4,7 +4,7 @@ annotations:
       description: Update ghcr.io/plausible/community-edition Docker tag to v3.2.0
 apiVersion: v2
 # renovate: image=ghcr.io/plausible/community-edition
-appVersion: v3.2.0
+appVersion: v3.2.1
 dependencies:
   - condition: clickhouse.enabled
     name: clickhouse
