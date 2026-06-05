@@ -2940,6 +2940,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.6.1
+    apiVersion: v2
+    appVersion: 2026.6.1
+    created: "2026-06-05T07:08:03.941981195Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 0661887904ab6c2ad8f90ea66db76057074564c508962d0169136a1aaeef77fe
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.20.0/crowdsec-web-ui-0.20.0.tgz
+    version: 0.20.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.5.6
     apiVersion: v2
     appVersion: 2026.5.6
@@ -3636,6 +3665,37 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.0.1/crowdsec-web-ui-0.0.1.tgz
     version: 0.0.1
   docuseal:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update docuseal/docuseal Docker tag to v3.0.2
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2026-06-05T07:08:04.156208914Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: fbabb386b544f5b1c456fae72c7a77ff7bfdd242f51d5ce138b9ec6e10b90c8d
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.116.0/docuseal-1.116.0.tgz
+    version: 1.116.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -9820,6 +9880,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.154.0
+    apiVersion: v2
+    appVersion: v1.154.0
+    created: "2026-06-05T07:08:04.362392868Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: d8bf62205e92a8ff9f89e0e199fe85a1ff880d6becba5bfc2e57e539eefe329d
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.22.0/matrix-3.22.0.tgz
+    version: 3.22.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update matrixdotorg/synapse Docker tag to v1.153.0
     apiVersion: v2
     appVersion: v1.153.0
@@ -12313,6 +12395,37 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
   memos:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update neosmemo/memos Docker tag to v0.29.1
+    apiVersion: v2
+    appVersion: 0.29.1
+    created: "2026-06-05T07:08:04.591999771Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: b9cd96ac7df79838bd78dd3aa8603260066df2a582bc42cb59cfadb878e4479f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.54.0/memos-0.54.0.tgz
+    version: 0.54.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -22887,4 +23000,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-01T05:57:31.475648578Z"
+generated: "2026-06-05T07:08:04.594483042Z"
