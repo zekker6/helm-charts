@@ -3697,6 +3697,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v3.1.0
+    apiVersion: v2
+    appVersion: 3.1.0
+    created: "2026-06-17T07:29:34.604619436Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: df692799534c244b14048c78e745f124fe73f1f2965d8732655352fd5798880d
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.118.0/docuseal-1.118.0.tgz
+    version: 1.118.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v3.0.3
     apiVersion: v2
     appVersion: 3.0.3
@@ -7478,6 +7509,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.2.20260615
+    apiVersion: v2
+    appVersion: 4.2.20260615
+    created: "2026-06-17T07:29:34.803213467Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: 6c444e02a33bc05c5162261e7239c8bd85dd8048d637066bf3e3b7dfb714ff74
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.8.0/healthchecks-1.8.0.tgz
+    version: 1.8.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update linuxserver/healthchecks Docker tag to v4.2.20260608
     apiVersion: v2
     appVersion: 4.2.20260608
@@ -9966,6 +10026,28 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.155.0
+    apiVersion: v2
+    appVersion: v1.155.0
+    created: "2026-06-17T07:29:35.035852966Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 03d9a0884f39d2eb243e6ab2782ef31e74043d0afa450656d99a0169a48e04ae
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.23.0/matrix-3.23.0.tgz
+    version: 3.23.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -23089,4 +23171,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-09T15:23:11.08044168Z"
+generated: "2026-06-17T07:29:35.037979717Z"
