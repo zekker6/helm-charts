@@ -56,6 +56,13 @@ jobs:
           mapfile -t changed < <(git diff --name-only "origin/${BASE_REF}...HEAD")
           echo "Changed files: ${changed[*]}"
 
+          # Skip cleanly when Renovate touched no app chart (e.g. a GitHub Actions
+          # or library-chart bump). There is no app-chart version to bump.
+          if ! printf '%s\n' "${changed[@]}" | grep -qE '^charts/apps/[^/]+/'; then
+            echo "No app chart files changed; nothing to bump"
+            exit 0
+          fi
+
           chart_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/Chart\.yaml$' | head -1 || true)
           values_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/values\.yaml$' | head -1 || true)
           if [[ -z "$chart_file" || -z "$values_file" ]]; then
