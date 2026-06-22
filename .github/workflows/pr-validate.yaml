@@ -56,11 +56,6 @@ jobs:
           mapfile -t changed < <(git diff --name-only "origin/${BASE_REF}...HEAD")
           echo "Changed files: ${changed[*]}"
 
-          if [[ "${#changed[@]}" -ne 2 ]]; then
-            echo "::error::Renovate auto-bump only supports exactly 2 changed files (Chart.yaml + values.yaml), got ${#changed[@]}"
-            exit 1
-          fi
-
           chart_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/Chart\.yaml$' | head -1 || true)
           values_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/values\.yaml$' | head -1 || true)
           if [[ -z "$chart_file" || -z "$values_file" ]]; then
@@ -74,12 +69,37 @@ jobs:
             exit 1
           fi
 
-          # Skip if already bumped (e.g. a re-run) to avoid double-bumping.
+          chart_name=${chart_dir##*/}
+
+          # Files a proper bump produces: Renovate's Chart.yaml + values.yaml, plus
+          # the README.md and docs/charts copy synced by `task charts:bump`.
+          allowed=(
+            "$chart_file"
+            "$values_file"
+            "$chart_dir/README.md"
+            "docs/charts/${chart_name}.md"
+          )
+          for f in "${changed[@]}"; do
+            if ! printf '%s\n' "${allowed[@]}" | grep -qxF -- "$f"; then
+              echo "::error::Unexpected file changed for Renovate auto-bump: $f"
+              exit 1
+            fi
+          done
+
           base_version=$(git show "origin/${BASE_REF}:$chart_file" | yq -r '.version')
           pr_version=$(yq -r '.version' "$chart_file")
+
+          # Re-run after a successful bump: version already changed and only the
+          # expected files differ, so the bump is complete. Pass instead of failing.
           if [[ "$pr_version" != "$base_version" ]]; then
-            echo "Skipping: chart version already bumped (PR=$pr_version, base=$base_version)"
+            echo "Chart version already bumped (PR=$pr_version, base=$base_version); nothing to do"
             exit 0
+          fi
+
+          # Before the bump only Renovate's two files should differ.
+          if [[ "${#changed[@]}" -ne 2 ]]; then
+            echo "::error::Expected only Chart.yaml + values.yaml before bumping, got ${#changed[@]}: ${changed[*]}"
+            exit 1
           fi
 
           subject=$(git log -1 --format=%s)
