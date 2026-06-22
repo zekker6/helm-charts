@@ -49,3 +49,17 @@ tasks:
         done
       - helm-docs --template-files charts/README.md.gotmpl --template-files=README_CONFIG.md.gotmpl
     silent: true
+
+  bump:
+    desc: Set a chart's changelog annotation, bump its minor version, and sync docs
+    requires:
+      vars: [CHART_FILE, DESCRIPTION]
+    env:
+      CHART_FILE: "{{.CHART_FILE}}"
+      DESCRIPTION: "{{.DESCRIPTION}}"
+    cmds:
+      - |
+        yq -i '.annotations["artifacthub.io/changes"] = "- kind: changed" + "\n  description: " + strenv(DESCRIPTION)' "$CHART_FILE"
+      - |
+        yq -i '.version = (.version | split(".") | .[1] = (.[1] | tonumber + 1 | tostring) | join("."))' "$CHART_FILE"
+      - task docs:sync

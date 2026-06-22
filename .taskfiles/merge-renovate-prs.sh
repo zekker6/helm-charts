@@ -39,17 +39,7 @@ for ref in $refs; do
 
   chart_file=$(echo $files_diff | sed 's/values.yaml/Chart.yaml/' | awk -F ' ' '{print $1}')
 
-  changes=$(cat << EOF
-- kind: changed
-  description: $commit_message
-EOF
-)
-  yq -i ".annotations[\"artifacthub.io/changes\"] = \"$changes\"" $chart_file
-
-  version=$(yq -r .version $chart_file | awk -F '.' '{ a = $1; b = $2; c = $3; printf "%d.%d.%d", a,++b,c }')
-  yq -i '.version = "'$version'"' $chart_file
-  task charts:docs
-  task docs:charts
+  task charts:bump CHART_FILE="$chart_file" DESCRIPTION="$commit_message"
 
   git diff
   git commit -am "chore: bump chart version"

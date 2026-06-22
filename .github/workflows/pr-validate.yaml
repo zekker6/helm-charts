@@ -16,9 +16,86 @@ concurrency:
   group: ${{ github.head_ref }}-pr-validate
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   pr-metadata:
     uses: ./.github/workflows/pr-metadata.yaml
+
+  renovate-bump:
+    name: Auto-bump chart version
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    # Author identity gates the write token; branch name and commit author are forgeable.
+    if: >-
+      github.event.pull_request.user.login == 'renovate[bot]' &&
+      github.event.pull_request.user.type == 'Bot' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.head_ref, 'renovate/')
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Install tools
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925 # v4
+
+      - name: Bump version and sync docs
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+
+          git fetch --no-tags origin "+refs/heads/${BASE_REF}:refs/remotes/origin/${BASE_REF}"
+
+          mapfile -t changed < <(git diff --name-only "origin/${BASE_REF}...HEAD")
+          echo "Changed files: ${changed[*]}"
+
+          if [[ "${#changed[@]}" -ne 2 ]]; then
+            echo "::error::Renovate auto-bump only supports exactly 2 changed files (Chart.yaml + values.yaml), got ${#changed[@]}"
+            exit 1
+          fi
+
+          chart_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/Chart\.yaml$' | head -1 || true)
+          values_file=$(printf '%s\n' "${changed[@]}" | grep -E '^charts/apps/[^/]+/values\.yaml$' | head -1 || true)
+          if [[ -z "$chart_file" || -z "$values_file" ]]; then
+            echo "::error::Renovate auto-bump only supports changes to exactly one app chart's Chart.yaml and values.yaml"
+            exit 1
+          fi
+
+          chart_dir=${chart_file%/Chart.yaml}
+          if [[ "$values_file" != "$chart_dir/values.yaml" ]]; then
+            echo "::error::Chart.yaml and values.yaml are not in the same app chart"
+            exit 1
+          fi
+
+          # Skip if already bumped (e.g. a re-run) to avoid double-bumping.
+          base_version=$(git show "origin/${BASE_REF}:$chart_file" | yq -r '.version')
+          pr_version=$(yq -r '.version' "$chart_file")
+          if [[ "$pr_version" != "$base_version" ]]; then
+            echo "Skipping: chart version already bumped (PR=$pr_version, base=$base_version)"
+            exit 0
+          fi
+
+          subject=$(git log -1 --format=%s)
+          description=${subject#*: }
+
+          task charts:bump CHART_FILE="$chart_file" DESCRIPTION="$description"
+
+          if git diff --quiet; then
+            echo "No changes produced; nothing to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: bump chart version"
+          git push origin "HEAD:refs/heads/${HEAD_REF}"
 
   pre-commit-check:
     uses: ./.github/workflows/pre-commit-check.yaml
@@ -29,22 +106,33 @@ jobs:
 
   docs-check:
     uses: ./.github/workflows/docs-check.yaml
+    needs:
+      - pr-metadata
+      - renovate-bump
+    # Skipped renovate-bump (non-Renovate PRs) must not skip validation.
+    if: ${{ !cancelled() && needs.pr-metadata.result == 'success' && needs.renovate-bump.result != 'failure' }}
+    with:
+      checkoutCommit: ${{ needs.pr-metadata.outputs.isTrustedRenovatePR == 'true' && github.head_ref || github.sha }}
 
   charts-lint:
     uses: ./.github/workflows/charts-lint.yaml
     needs:
       - pr-metadata
+      - renovate-bump
+    if: ${{ !cancelled() && needs.pr-metadata.result == 'success' && needs.renovate-bump.result != 'failure' }}
     with:
-      checkoutCommit: ${{ github.sha }}
+      checkoutCommit: ${{ needs.pr-metadata.outputs.isTrustedRenovatePR == 'true' && github.head_ref || github.sha }}
       chartsToLint: ${{ needs.pr-metadata.outputs.chartsToLint }}
-      isRenovatePR: ${{ needs.pr-metadata.outputs.isRenovatePR }}
+      isRenovatePR: ${{ needs.pr-metadata.outputs.isTrustedRenovatePR }}
 
   charts-test:
     uses: ./.github/workflows/charts-test.yaml
     needs:
       - pr-metadata
+      - renovate-bump
+    if: ${{ !cancelled() && needs.pr-metadata.result == 'success' && needs.renovate-bump.result != 'failure' }}
     with:
-      checkoutCommit: ${{ github.sha }}
+      checkoutCommit: ${{ needs.pr-metadata.outputs.isTrustedRenovatePR == 'true' && github.head_ref || github.sha }}
       chartsToTest: |-
         ${{
            needs.pr-metadata.outputs.chartsToInstall

@@ -4,8 +4,11 @@ on:
   workflow_call:
     outputs:
       isRenovatePR:
-        description: "Is the PR coming from Renovate?"
+        description: "Does the PR branch look like Renovate?"
         value: ${{ jobs.pr-metadata.outputs.isRenovatePR }}
+      isTrustedRenovatePR:
+        description: "Is the PR authored by Renovate from a same-repository renovate/* branch?"
+        value: ${{ jobs.pr-metadata.outputs.isTrustedRenovatePR }}
       isFork:
         description: "Is the PR coming from a forked repo?"
         value: ${{ jobs.pr-metadata.outputs.isFork }}
@@ -31,6 +34,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       isRenovatePR: ${{ startsWith(steps.branch-name.outputs.current_branch, 'renovate/') }}
+      isTrustedRenovatePR: ${{ github.event.pull_request.user.login == 'renovate[bot]' && github.event.pull_request.user.type == 'Bot' && github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.head_ref, 'renovate/') }}
       isFork: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
     steps:
       - name: Get branch name

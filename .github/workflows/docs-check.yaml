@@ -2,6 +2,12 @@ name: "Docs: Check"
 
 on:
   workflow_call:
+    inputs:
+      checkoutCommit:
+        description: "Git ref to check out; empty uses the triggering ref."
+        type: string
+        required: false
+        default: ""
 
 jobs:
   docs-check:
@@ -10,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        with:
+          ref: ${{ inputs.checkoutCommit || github.ref }}
 
       - name: Install tools
         uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4
