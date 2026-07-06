@@ -2940,6 +2940,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.4
+    apiVersion: v2
+    appVersion: 2026.7.4
+    created: "2026-07-06T09:44:53.863396697Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 90ad0088c4a58903f8e9ca0d6a860985c984d3d1f8308942ce6269e264e475e7
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.31.0/crowdsec-web-ui-0.31.0.tgz
+    version: 0.31.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.3
     apiVersion: v2
     appVersion: 2026.7.3
@@ -23552,4 +23581,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-06T05:50:09.830844332Z"
+generated: "2026-07-06T09:44:53.864663568Z"
