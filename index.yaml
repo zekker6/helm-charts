@@ -2971,6 +2971,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.11
+    apiVersion: v2
+    appVersion: 2026.7.11
+    created: "2026-07-16T11:10:16.680666225Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: da109c28ee8be61e99d4f1f78407cd6c59cadd9a73d05237673014229262c873
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.37.0/crowdsec-web-ui-0.37.0.tgz
+    version: 0.37.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.10
     apiVersion: v2
     appVersion: 2026.7.10
@@ -8096,6 +8125,35 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.1.0/endlessh-go-0.1.0.tgz
     version: 0.1.0
   healthchecks:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.3.20260714
+    apiVersion: v2
+    appVersion: 4.3.20260714
+    created: "2026-07-16T11:10:16.875495175Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: 231bbb7e464a3e7fb5070129e411f73758658899ecdc176dbe0571b753b75944
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.13.0/healthchecks-1.13.0.tgz
+    version: 1.13.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -23899,4 +23957,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-14T05:59:09.290797573Z"
+generated: "2026-07-16T11:10:16.87665985Z"
