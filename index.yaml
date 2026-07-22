@@ -4279,6 +4279,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v3.1.5
+    apiVersion: v2
+    appVersion: 3.1.5
+    created: "2026-07-22T06:55:49.5436952Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: d3a9fbc1f3a3727f7b3cd7503cd0fe33a3efd17a75e7a92e070c84c77edc47d9
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.123.0/docuseal-1.123.0.tgz
+    version: 1.123.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v3.1.4
     apiVersion: v2
     appVersion: 3.1.4
@@ -8212,6 +8243,35 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.1.0/endlessh-go-0.1.0.tgz
     version: 0.1.0
   healthchecks:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.3.20260720
+    apiVersion: v2
+    appVersion: 4.3.20260720
+    created: "2026-07-22T06:55:49.705360516Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: e700af0d8353d6b86abba2f562f314b8212457ae1fe9661a6632fac535819b03
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.14.0/healthchecks-1.14.0.tgz
+    version: 1.14.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -24044,4 +24104,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-20T05:42:15.788074008Z"
+generated: "2026-07-22T06:55:49.706553027Z"
