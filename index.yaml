@@ -17965,6 +17965,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: "BREAKING: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3. Upgrade is only supported from appVersion 2.20.15."
+          links:
+            - name: Paperless-ngx v3 migration guide
+              url: https://docs.paperless-ngx.com/migration-v3/
+        - kind: changed
+          description: "BREAKING: env.PAPERLESS_SECRET_KEY is now required. Paperless-ngx v3 refuses to start without it. Set it to e11fl1oa-*ytql8p)(06fbj4ukrlo+n7k&q5+$1md7i+mge=ee (the v2 built-in default) to keep existing sessions valid, or to a new random value."
+        - kind: changed
+          description: "BREAKING: env.PAPERLESS_DBENGINE must be set to postgresql or mariadb when not using SQLite."
+    apiVersion: v2
+    appVersion: 3.0.0
+    created: "2026-07-23T12:20:23.054788282Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: f9f5c717f6bcbcd91eb6172c7c8f5b3a69036bf8356ed5f55bedd7f36ef18d87
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-11.0.0/paperless-11.0.0.tgz
+    version: 11.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v2.20.15
     apiVersion: v2
     appVersion: 2.20.15
@@ -24206,4 +24242,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-23T07:26:28.836133963Z"
+generated: "2026-07-23T12:20:23.055863742Z"
