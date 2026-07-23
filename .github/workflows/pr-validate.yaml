@@ -78,6 +78,19 @@ jobs:
 
           chart_name=${chart_dir##*/}
 
+          base_version=$(git show "origin/${BASE_REF}:$chart_file" | yq -r '.version')
+          pr_version=$(yq -r '.version' "$chart_file")
+
+          # Nothing left to bump once the version differs from base: either a previous
+          # run of this job bumped it, or a maintainer took the PR over and bumped it
+          # by hand. Checked before the file allowlist so manual follow-up commits do
+          # not fail this job and skip the rest of CI. ct lint enforces the version
+          # increment, so nothing is lost by exiting early here.
+          if [[ "$pr_version" != "$base_version" ]]; then
+            echo "Chart version already bumped (PR=$pr_version, base=$base_version); nothing to do"
+            exit 0
+          fi
+
           # Files a proper bump produces: Renovate's Chart.yaml + values.yaml, plus
           # the README.md and docs/charts copy synced by `task charts:bump`.
           allowed=(
@@ -92,16 +105,6 @@ jobs:
               exit 1
             fi
           done
-
-          base_version=$(git show "origin/${BASE_REF}:$chart_file" | yq -r '.version')
-          pr_version=$(yq -r '.version' "$chart_file")
-
-          # Re-run after a successful bump: version already changed and only the
-          # expected files differ, so the bump is complete. Pass instead of failing.
-          if [[ "$pr_version" != "$base_version" ]]; then
-            echo "Chart version already bumped (PR=$pr_version, base=$base_version); nothing to do"
-            exit 0
-          fi
 
           # Before the bump only Renovate's two files should differ.
           if [[ "${#changed[@]}" -ne 2 ]]; then

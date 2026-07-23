@@ -12,7 +12,7 @@ image:
   pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
-  tag: 2.20.15
+  tag: 3.0.0
 
 # -- See the following files for additional environment variables:
 # https://github.com/paperless-ngx/paperless-ngx/tree/main/docker/compose/
@@ -21,6 +21,13 @@ image:
 env:
   # -- Project name
   COMPOSE_PROJECT_NAME: paperless
+  # -- **Required since appVersion 3.0.0.** Paperless refuses to start when this is unset.
+  # Generate one with: `python3 -c "import secrets; print(secrets.token_urlsafe(64))"`
+  # Upgrading from a chart version older than 11.0.0? Set this to
+  # `e11fl1oa-*ytql8p)(06fbj4ukrlo+n7k&q5+$1md7i+mge=ee` (the built-in default of
+  # appVersion 2.x) to keep existing sessions and tokens valid, or pick a new value
+  # and accept that they are invalidated.
+  PAPERLESS_SECRET_KEY:
   # -- Redis to use
   PAPERLESS_REDIS:
   # -- OCR languages to install
@@ -28,6 +35,9 @@ env:
   # USERMAP_UID: 1000
   # USERMAP_GID: 1000
   # PAPERLESS_TIME_ZONE: Europe/London
+  # -- Database engine to use: `sqlite`, `postgresql` or `mariadb`.
+  # Must be set explicitly when using PostgreSQL or MariaDB since appVersion 3.0.0.
+  PAPERLESS_DBENGINE:
   # -- Database host to use
   PAPERLESS_DBHOST:
   # -- Port to use

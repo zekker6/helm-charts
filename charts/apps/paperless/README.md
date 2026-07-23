@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 10.23.0](https://img.shields.io/badge/Version-10.23.0-informational?style=flat-square) ![AppVersion: 2.20.15](https://img.shields.io/badge/AppVersion-2.20.15-informational?style=flat-square)
+![Version: 11.0.0](https://img.shields.io/badge/Version-11.0.0-informational?style=flat-square) ![AppVersion: 3.0.0](https://img.shields.io/badge/AppVersion-3.0.0-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -9,6 +9,63 @@ Paperless - Index and archive all of your scanned paper documents
 Chart taken from k8s-at-home repo [here](https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless).
 
 # Breaking changes
+
+## 10.23.0 -> 11.0.0
+
+Upgrades paperless-ngx from 2.20.15 to 3.0.0. Read the [v3 migration guide](https://docs.paperless-ngx.com/migration-v3/) before upgrading.
+
+Upstream only supports upgrading to v3 from appVersion `2.20.15`. If you are on an older
+appVersion, upgrade to chart `10.23.0` first.
+
+### `PAPERLESS_SECRET_KEY` is now required
+
+Paperless-ngx v3 refuses to start when `PAPERLESS_SECRET_KEY` is unset. The chart does not
+provide a default, so you must set `env.PAPERLESS_SECRET_KEY` yourself:
+
+```yaml
+env:
+  PAPERLESS_SECRET_KEY: "<your key>"
+```
+
+Existing installations were implicitly running with the built-in default of appVersion 2.x.
+To keep sessions and signed tokens valid, set it to that value:
+
+```yaml
+env:
+  PAPERLESS_SECRET_KEY: "e11fl1oa-*ytql8p)(06fbj4ukrlo+n7k&q5+$1md7i+mge=ee"
+```
+
+Otherwise generate a new one with `python3 -c "import secrets; print(secrets.token_urlsafe(64))"`
+and accept that existing sessions and tokens are invalidated. The literal value `change-me` is
+rejected by paperless-ngx.
+
+### `PAPERLESS_DBENGINE` must be explicit
+
+PostgreSQL and MariaDB users must now set the engine instead of relying on it being inferred
+from `PAPERLESS_DBHOST`:
+
+```yaml
+env:
+  PAPERLESS_DBENGINE: postgresql
+  PAPERLESS_DBHOST: postgres
+```
+
+### Other upstream changes to check before upgrading
+
+- Document and thumbnail encryption is removed. Run `decrypt_documents` **before** upgrading.
+- `PAPERLESS_OCR_MODE=skip` / `skip_noarchive` and `PAPERLESS_OCR_SKIP_ARCHIVE_FILE` are removed,
+  replaced by `PAPERLESS_OCR_MODE` plus `PAPERLESS_ARCHIVE_FILE_GENERATION`.
+- Consumer settings renamed: `PAPERLESS_CONSUMER_POLLING` -> `PAPERLESS_CONSUMER_POLLING_INTERVAL`,
+  `PAPERLESS_CONSUMER_INOTIFY_DELAY` -> `PAPERLESS_CONSUMER_STABILITY_DELAY`.
+  `PAPERLESS_CONSUMER_IGNORE_PATTERNS` is now regex instead of fnmatch.
+- `PAPERLESS_CONSUMER_BARCODE_SCANNER` is removed, zxing-cpp is the only backend.
+- Advanced database options (`PAPERLESS_DBSSLMODE`, `PAPERLESS_DB_POOLSIZE`, etc.) are deprecated
+  in favour of a single `PAPERLESS_DB_OPTIONS` string.
+- Duplicate documents are no longer rejected by default. Set
+  `PAPERLESS_CONSUMER_DELETE_DUPLICATES: "true"` to restore the old behaviour.
+- Pre/post consume scripts no longer receive positional arguments, only environment variables.
+- The search index is rebuilt from scratch on first start (Whoosh replaced by Tantivy) and task
+  history is cleared.
 
 ## 9.94.0 -> 10.0.0
 
@@ -90,10 +147,12 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | See the following files for additional environment variables: https://github.com/paperless-ngx/paperless-ngx/tree/main/docker/compose/ https://github.com/paperless-ngx/paperless-ngx/blob/main/paperless.conf.example |
 | env.COMPOSE_PROJECT_NAME | string | `"paperless"` | Project name |
+| env.PAPERLESS_DBENGINE | string | `nil` | Database engine to use: `sqlite`, `postgresql` or `mariadb`. Must be set explicitly when using PostgreSQL or MariaDB since appVersion 3.0.0. |
 | env.PAPERLESS_DBHOST | string | `nil` | Database host to use |
 | env.PAPERLESS_OCR_LANGUAGE | string | `"eng"` | OCR languages to install |
 | env.PAPERLESS_PORT | string | `"8000"` | Port to use |
 | env.PAPERLESS_REDIS | string | `nil` | Redis to use |
+| env.PAPERLESS_SECRET_KEY | string | `nil` | **Required since appVersion 3.0.0.** Paperless refuses to start when this is unset. Generate one with: `python3 -c "import secrets; print(secrets.token_urlsafe(64))"` Upgrading from a chart version older than 11.0.0? Set this to `e11fl1oa-*ytql8p)(06fbj4ukrlo+n7k&q5+$1md7i+mge=ee` (the built-in default of appVersion 2.x) to keep existing sessions and tokens valid, or pick a new value and accept that they are invalidated. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
