@@ -2971,6 +2971,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.18
+    apiVersion: v2
+    appVersion: 2026.7.18
+    created: "2026-07-23T07:26:28.611066279Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: cf22e92564bc8caadcf4d7286d75f8c00327dc5c9e80b4d5cfab2779fad1bec7
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.42.0/crowdsec-web-ui-0.42.0.tgz
+    version: 0.42.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.7.17
     apiVersion: v2
     appVersion: 2026.7.17
@@ -10966,6 +10995,28 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.157.1
+    apiVersion: v2
+    appVersion: v1.157.1
+    created: "2026-07-23T07:26:28.83479101Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: c7248c921e5c67b1239409e0f2f9d64f6dc40686f1178f196f4401bbc260c9e0
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.26.0/matrix-3.26.0.tgz
+    version: 3.26.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -24155,4 +24206,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-22T06:56:06.62098825Z"
+generated: "2026-07-23T07:26:28.836133963Z"
