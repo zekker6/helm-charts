@@ -1,17 +1,10 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: "BREAKING: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3. Upgrade is only supported from appVersion 2.20.15."
-      links:
-        - name: Paperless-ngx v3 migration guide
-          url: https://docs.paperless-ngx.com/migration-v3/
-    - kind: changed
-      description: "BREAKING: env.PAPERLESS_SECRET_KEY is now required. Paperless-ngx v3 refuses to start without it. Set it to e11fl1oa-*ytql8p)(06fbj4ukrlo+n7k&q5+$1md7i+mge=ee (the v2 built-in default) to keep existing sessions valid, or to a new random value."
-    - kind: changed
-      description: "BREAKING: env.PAPERLESS_DBENGINE must be set to postgresql or mariadb when not using SQLite."
+      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.0.1
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 3.0.0
+appVersion: 3.0.1
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
@@ -30,4 +23,4 @@ name: paperless
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
   - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
-version: 11.0.0
+version: 11.1.0
