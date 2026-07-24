@@ -11,7 +11,7 @@ annotations:
       description: "BREAKING: env.PAPERLESS_DBENGINE must be set to postgresql or mariadb when not using SQLite."
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 3.0.0
+appVersion: 3.0.1
 dependencies:
   - name: common
     repository: https://zekker6.github.io/helm-charts
