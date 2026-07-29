@@ -33,6 +33,16 @@
         "/^NEW_APP_REPLACE_ME$/"
       ],
       "enabled": false
+    },
+    {
+      "description": "Disable code-server add-on updates in the common library chart",
+      "matchFileNames": [
+        "charts/library/common/values.yaml"
+      ],
+      "matchPackageNames": [
+        "ghcr.io/coder/code-server"
+      ],
+      "enabled": false
     }
   ]
 }
