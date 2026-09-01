@@ -4598,6 +4598,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v3.2.3
+    apiVersion: v2
+    appVersion: 3.2.3
+    created: "2026-09-01T08:40:07.688896407Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 4c09ce551087cb3310d96f87a9be50d939c5cc5c51384b990e88b94cc2e06913
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.129.0/docuseal-1.129.0.tgz
+    version: 1.129.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v3.2.2
     apiVersion: v2
     appVersion: 3.2.2
@@ -8747,6 +8778,35 @@ entries:
     - https://github.com/zekker6/helm-charts/releases/download/endlessh-go-0.1.0/endlessh-go-0.1.0.tgz
     version: 0.1.0
   healthchecks:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.4.20260901
+    apiVersion: v2
+    appVersion: 4.4.20260901
+    created: "2026-09-01T08:40:07.832397418Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: 2a54f2f32284eb1989a24dcf6e945a58bc7839292e3ec6b0f018a4dd38822df2
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.18.0/healthchecks-1.18.0.tgz
+    version: 1.18.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -18678,6 +18738,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.1.1
+    apiVersion: v2
+    appVersion: 3.1.1
+    created: "2026-09-01T08:40:08.02107381Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: f2870c6c469351a538c18d2ece3eb74a63040881cd76300efa1de60e0ea14a87
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-11.6.0/paperless-11.6.0.tgz
+    version: 11.6.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.1.0
     apiVersion: v2
     appVersion: 3.1.0
@@ -24234,6 +24323,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update codeberg.org/readeck/readeck Docker tag to v0.23.2
+    apiVersion: v2
+    appVersion: 0.23.2
+    created: "2026-09-01T08:40:08.151627689Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Readeck is a simple web application that lets you save the precious
+      readable content of web pages you like and want to keep forever.
+    digest: d5a614006785fcadf35f60363c7cefec7d594269e1509df893559345587cd6dd
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    icon: https://codeberg.org/readeck/readeck/raw/branch/main/web/media/favicons/android-chrome-192x192.png
+    keywords:
+    - readeck
+    - bookmarks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: readeck
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/readeck
+    - https://codeberg.org/readeck/readeck
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/readeck-0.30.0/readeck-0.30.0.tgz
+    version: 0.30.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update codeberg.org/readeck/readeck Docker tag to v0.23.1
     apiVersion: v2
     appVersion: 0.23.1
@@ -25162,4 +25282,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-08-31T05:01:36.991956001Z"
+generated: "2026-09-01T08:40:08.153279737Z"
