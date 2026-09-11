@@ -1,4 +1,29 @@
 {{/* Make sure all variables are set properly */}}
 {{- include "common.values.setup" . }}
 
+{{- define "crowdsec-web-ui.hardcodedValues" -}}
+podAnnotations:
+  checksum/config: {{ .Values.config | toYaml | sha256sum | quote }}
+persistence:
+  configuration:
+    enabled: true
+    type: configMap
+    name: "{{ include "common.names.fullname" . }}-config"
+    mountPath: /app/data/config.yaml
+    subPath: config.yaml
+    readOnly: true
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "crowdsec-web-ui.hardcodedValues" . | fromYaml) -}}
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "common.names.fullname" . }}-config
+  labels:
+    {{- include "common.labels" . | nindent 4 }}
+data:
+  config.yaml: |
+    {{- .Values.config | toYaml | nindent 4 }}
+
 {{ include "common.all" . }}

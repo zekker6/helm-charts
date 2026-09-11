@@ -1,6 +1,6 @@
 # crowdsec-web-ui
 
-![Version: 0.51.0](https://img.shields.io/badge/Version-0.51.0-informational?style=flat-square) ![AppVersion: 2026.8.3](https://img.shields.io/badge/AppVersion-2026.8.3-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 2026.8.3](https://img.shields.io/badge/AppVersion-2026.8.3-informational?style=flat-square)
 
 crowdsec-web-ui helm package
 
@@ -66,7 +66,84 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 helm install crowdsec-web-ui zekker6/crowdsec-web-ui -f values.yaml
 ```
 
+## Migrating from 0.x
+
+Chart 1.0.0 replaces legacy application environment settings with a YAML file rendered from `config`. CrowdSec Web UI ignores deprecated configuration variables when this file exists.
+
+Before upgrading, represent each legacy setting under `config`:
+
+| Legacy environment variable | YAML setting |
+|-----------------------------|--------------|
+| `DB_DIR` | `config.storage.dataDir` |
+| `CROWDSEC_URL` | `config.instances[0].lapi.url` |
+| `CROWDSEC_USER` | `config.instances[0].lapi.auth.username` |
+| `CROWDSEC_PASSWORD` | `config.instances[0].lapi.auth.password.env` |
+| `CROWDSEC_PASSWORD_FILE` | `config.instances[0].lapi.auth.password.file` |
+| `CROWDSEC_LOOKBACK_PERIOD` | `config.crowdsec.sync.lookback` |
+
+A Secret-backed password can remain in `envFrom`, but the YAML must reference its environment variable:
+
+```yaml
+config:
+  instances:
+    - id: default
+      name: CrowdSec
+      lapi:
+        url: http://crowdsec:8080
+        auth:
+          type: password
+          username: crowdsec-web-ui
+          password:
+            env: CROWDSEC_PASSWORD
+
+envFrom:
+  - secretRef:
+      name: crowdsec-web-ui
+```
+
+Supported `CONFIG_*` variables remain available as in-memory overrides. Do not enable `CONFIG_PERSIST_OVERRIDES`, because the chart mounts the generated ConfigMap read-only.
+
+See the upstream [configuration guide](https://github.com/TheDuffman85/crowdsec-web-ui#configuration) and [complete YAML reference](https://github.com/TheDuffman85/crowdsec-web-ui/blob/main/config.example.yaml) for other settings.
+
 ## Custom configuration
+
+### Application configuration
+
+The chart renders `config` as `/app/data/config.yaml`. Configure CrowdSec Web UI with the [upstream YAML reference](https://github.com/TheDuffman85/crowdsec-web-ui/blob/main/config.example.yaml).
+
+```yaml
+config:
+  storage:
+    dataDir: /data
+  crowdsec:
+    sync:
+      lookback: 168h
+  instances:
+    - id: default
+      name: CrowdSec
+      lapi:
+        url: http://crowdsec:8080
+        auth:
+          type: password
+          username: crowdsec-web-ui
+          password:
+            env: CROWDSEC_PASSWORD
+
+envFrom:
+  - secretRef:
+      name: crowdsec-web-ui
+```
+
+To disable built-in authentication:
+
+```yaml
+config:
+  # Useful when an external proxy already protects access to the UI.
+  auth:
+    enabled: false
+```
+
+The ConfigMap is read-only. Use `config` as the source of truth instead of `CONFIG_PERSIST_OVERRIDES`.
 
 ### How to use with oauth2-proxy
 
@@ -90,17 +167,16 @@ additionalContainers:
       - --upstream=http://localhost:3000
 ```
 
-N/A
-
 ## Values
 
 **Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/zekker6/helm-charts/blob/main/charts/library/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| config | object | See values.yaml | CrowdSec Web UI configuration. See the upstream config.example.yaml file for the complete reference. |
 | controller.replicas | int | `1` |  |
 | controller.strategy | string | `"Recreate"` |  |
-| env | list | See below | See the following files for additional environment variables: |
+| env | list | `[]` | Environment variables for `CONFIG_*` overrides and secrets referenced by `config`. |
 | envFrom | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/theduffman85/crowdsec-web-ui"` | image repository |

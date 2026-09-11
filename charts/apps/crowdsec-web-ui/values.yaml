@@ -1,7 +1,8 @@
 #
 # IMPORTANT NOTE
 #
-# This chart inherits from k8s common library chart. You can check the default values/options here:
+# This chart inherits from the k8s common library chart.
+# Check its default values and options here:
 # https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
@@ -13,15 +14,28 @@ image:
   # -- image tag
   tag: "2026.8.3"
 
-# -- See the following files for additional environment variables:
-# @default -- See below
-env:
-  - name: "CROWDSEC_URL"
-    value: ""
-  - name: "CROWDSEC_LOOKBACK_PERIOD"
-    value: "168h"
-  - name: "DB_DIR"
-    value: "/data"
+# -- CrowdSec Web UI configuration.
+# See the upstream config.example.yaml file for the complete reference.
+# @default -- See values.yaml
+config:
+  # Disable built-in authentication if an external proxy already protects
+  # access to the UI.
+  # auth:
+  #   enabled: false
+  storage:
+    dataDir: /data
+  crowdsec:
+    sync:
+      lookback: 168h
+  instances:
+    - id: default
+      name: CrowdSec
+      lapi:
+        url: http://crowdsec:8080
+
+# -- Environment variables for `CONFIG_*` overrides and secrets referenced by
+# `config`.
+env: []
 
 envFrom: []
 #  - secretRef:
