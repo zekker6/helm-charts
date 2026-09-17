@@ -1,6 +1,6 @@
 # readeck
 
-![Version: 0.31.0](https://img.shields.io/badge/Version-0.31.0-informational?style=flat-square) ![AppVersion: 0.23.3](https://img.shields.io/badge/AppVersion-0.23.3-informational?style=flat-square)
+![Version: 0.32.0](https://img.shields.io/badge/Version-0.32.0-informational?style=flat-square) ![AppVersion: 0.23.4](https://img.shields.io/badge/AppVersion-0.23.4-informational?style=flat-square)
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
