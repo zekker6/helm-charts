@@ -14667,6 +14667,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update neosmemo/memos Docker tag to v0.31.0
+    apiVersion: v2
+    appVersion: 0.31.0
+    created: "2026-09-21T08:23:38.107403843Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: ddb5a1026d9c8f5484bda0183893babaef59d90b6c15bd2270785cbc60dff91f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.56.0/memos-0.56.0.tgz
+    version: 0.56.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update neosmemo/memos Docker tag to v0.30.0
     apiVersion: v2
     appVersion: 0.30.0
@@ -19056,6 +19087,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/nocodb-0.1.0.tgz
     version: 0.1.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.2.0
+    apiVersion: v2
+    appVersion: 3.2.0
+    created: "2026-09-21T08:23:38.257704047Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 25dae82158534ac9a6d951b5fe73cd363e15cac20aa8ae386a516dacfd930826
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-11.9.0/paperless-11.9.0.tgz
+    version: 11.9.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -25723,4 +25783,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-18T05:49:15.396888829Z"
+generated: "2026-09-21T08:23:38.258690432Z"
