@@ -4784,6 +4784,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update docuseal/docuseal Docker tag to v3.2.6
+    apiVersion: v2
+    appVersion: 3.2.6
+    created: "2026-09-22T08:55:33.111391004Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: docuseal helm package
+    digest: 72d5fa7b0e2f67b19a75333b1338a6054d4c2f07c69a80897cf0fe745da353b9
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    icon: https://www.docuseal.co/favicon-32x32.png
+    keywords:
+    - pdf-signature
+    - pdf-sign
+    - document-signing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: docuseal
+    sources:
+    - https://github.com/docusealco/docuseal
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/docuseal
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/docuseal-1.132.0/docuseal-1.132.0.tgz
+    version: 1.132.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update docuseal/docuseal Docker tag to v3.2.5
     apiVersion: v2
     appVersion: 3.2.5
@@ -9029,6 +9060,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.4.20260921
+    apiVersion: v2
+    appVersion: 4.4.20260921
+    created: "2026-09-22T08:55:33.3681206Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: 098562b4d554a3c3d429becf44efc5dd9c915e6bb252bd0d16a64c0788f603ab
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.20.0/healthchecks-1.20.0.tgz
+    version: 1.20.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update linuxserver/healthchecks Docker tag to v4.4.20260907
     apiVersion: v2
     appVersion: 4.4.20260907
@@ -10804,6 +10864,35 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/homer-8.1.0.tgz
     version: 8.1.0
   karma:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/prymitive/karma Docker tag to v0.133
+    apiVersion: v2
+    appVersion: v0.133
+    created: "2026-09-22T08:55:33.593322618Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: bad8c859439ce5b7cd8f6f03f7d14a0135d141a6f8c2173a40a628b6667e746f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.22.0/karma-0.22.0.tgz
+    version: 0.22.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -25812,4 +25901,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-21T09:25:01.385807154Z"
+generated: "2026-09-22T08:55:33.594662281Z"
