@@ -48,7 +48,7 @@ persistence:
   # @default -- See values.yaml
   data:
     enabled: true
-    mountPath: /data
+    mountPath: /app/data
     accessMode: ReadWriteOnce
     size: 350Mi
     emptyDir:
