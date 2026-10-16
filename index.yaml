@@ -9269,6 +9269,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update linuxserver/healthchecks Docker tag to v4.4.20261012
+    apiVersion: v2
+    appVersion: 4.4.20261012
+    created: "2026-10-16T16:30:29.111284767Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: healthchecks helm package
+    digest: 4015ca87412618aeb93cb695a148eb831edbf39ccb4c64d162be6f4f939b3ddb
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/healthchecks
+    icon: https://healthchecks.io/static/img/favicon.png
+    keywords:
+    - healthchecks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: healthchecks
+    sources:
+    - https://github.com/linuxserver/docker-healthchecks
+    - https://github.com/healthchecks/healthchecks
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/healthchecks-1.22.0/healthchecks-1.22.0.tgz
+    version: 1.22.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update linuxserver/healthchecks Docker tag to v4.4.20261005
     apiVersion: v2
     appVersion: 4.4.20261005
@@ -12275,6 +12304,28 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/language-tool-1.0.0.tgz
     version: 1.0.0
   matrix:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.163.0
+    apiVersion: v2
+    appVersion: v1.163.0
+    created: "2026-10-16T16:30:29.290501646Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 04b8a755489db7915fcccb481ca3e867815c310be5140cb2b98b123ee400c6f4
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.33.0/matrix-3.33.0.tgz
+    version: 3.33.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -19439,6 +19490,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.3.1
+    apiVersion: v2
+    appVersion: 3.3.1
+    created: "2026-10-16T16:30:29.444077578Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: cd334534a4a479ddc98cdded139e73bd9cf495ced34a5a9641c0438156285c79
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-11.12.0/paperless-11.12.0.tgz
+    version: 11.12.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.3.0
     apiVersion: v2
     appVersion: 3.3.0
@@ -26190,4 +26270,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-07T09:31:56.625955601Z"
+generated: "2026-10-16T16:30:29.445155775Z"
