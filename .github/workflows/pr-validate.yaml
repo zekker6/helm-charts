@@ -25,7 +25,7 @@ jobs:
 
   renovate-bump:
     name: Auto-bump chart version
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
     # Author identity gates the write token; branch name and commit author are forgeable.
