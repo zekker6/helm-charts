@@ -31,7 +31,7 @@ on:
 jobs:
   pr-metadata:
     name: Collect PR metadata
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       isRenovatePR: ${{ startsWith(steps.branch-name.outputs.current_branch, 'renovate/') }}
       isTrustedRenovatePR: ${{ github.event.pull_request.user.login == 'renovate[bot]' && github.event.pull_request.user.type == 'Bot' && github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.head_ref, 'renovate/') }}
@@ -56,7 +56,7 @@ jobs:
 
   pr-changes:
     name: Collect PR changes
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       addedOrModifiedFilesDetected: ${{ steps.changed-files.outputs.allAddedOrModified }}
       addedOrModifiedFiles: ${{ steps.changed-files.outputs.allAddedOrModified_files }}
