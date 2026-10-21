@@ -1,6 +1,6 @@
 # healthchecks
 
-![Version: 1.23.0](https://img.shields.io/badge/Version-1.23.0-informational?style=flat-square) ![AppVersion: 4.4.20261019](https://img.shields.io/badge/AppVersion-4.4.20261019-informational?style=flat-square)
+![Version: 1.24.0](https://img.shields.io/badge/Version-1.24.0-informational?style=flat-square) ![AppVersion: 5.0.20261020](https://img.shields.io/badge/AppVersion-5.0.20261020-informational?style=flat-square)
 
 healthchecks helm package
 
@@ -111,7 +111,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"linuxserver/healthchecks"` | image repository |
-| image.tag | string | `"4.4.20261019"` | image tag |
+| image.tag | string | `"5.0.20261020"` | image tag |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.config | object | `{"enabled":false,"mountpath":"/config"}` | Volume used for configuration |
 | service | object | See values.yaml | Configures service settings for the chart. |
