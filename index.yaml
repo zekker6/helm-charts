@@ -11372,6 +11372,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/prymitive/karma Docker tag to v0.134
+    apiVersion: v2
+    appVersion: v0.134
+    created: "2026-10-23T05:39:05.136430402Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: karma - Alert dashboard for Prometheus Alertmanager
+    digest: f9266d665585d482fc0f27c84bb417183511b76331f84117a77553e4b6d7c51f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    icon: https://raw.githubusercontent.com/prymitive/karma/main/ui/public/favicon.ico
+    keywords:
+    - karma
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: karma
+    sources:
+    - https://github.com/prymitive/karma
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/karma
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/karma-0.23.0/karma-0.23.0.tgz
+    version: 0.23.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/prymitive/karma Docker tag to v0.133
     apiVersion: v2
     appVersion: v0.133
@@ -26566,4 +26595,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-21T11:36:15.173594456Z"
+generated: "2026-10-23T05:39:05.138236721Z"
