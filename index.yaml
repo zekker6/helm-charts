@@ -12574,6 +12574,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.163.1
+    apiVersion: v2
+    appVersion: v1.163.1
+    created: "2026-10-23T05:41:31.09290804Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: 0bbae73cd5686a5bcef2510dd0719db819bf1bcd7b9d2218821a2743c743e661
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.34.0/matrix-3.34.0.tgz
+    version: 3.34.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update matrixdotorg/synapse Docker tag to v1.163.0
     apiVersion: v2
     appVersion: v1.163.0
@@ -19757,6 +19779,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.3.4
+    apiVersion: v2
+    appVersion: 3.3.4
+    created: "2026-10-23T05:41:31.333790183Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 278f0ffcef54d6fab6711ad1b1532dc3ddd4acd1f5b4b931152115e748f94e0f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    icon: https://raw.githubusercontent.com/the-paperless-project/paperless/master/src/paperless/static/paperless/img/logo-dark.png
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/paperless
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/paperless-11.15.0/paperless-11.15.0.tgz
+    version: 11.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v3.3.3
     apiVersion: v2
     appVersion: 3.3.3
@@ -26595,4 +26646,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-23T05:39:05.138236721Z"
+generated: "2026-10-23T05:41:31.335212975Z"
