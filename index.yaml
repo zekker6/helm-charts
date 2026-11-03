@@ -3250,6 +3250,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.11.2
+    apiVersion: v2
+    appVersion: 2026.11.2
+    created: "2026-11-03T14:23:48.219169552Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: ed2c599319e7a11224a5edc891fce0554ef0f4367e8939be8dc9717ea9a2312f
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.64.0/crowdsec-web-ui-0.64.0.tgz
+    version: 0.64.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.11.1
     apiVersion: v2
     appVersion: 2026.11.1
@@ -15653,6 +15682,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update neosmemo/memos Docker tag to v26.11.0
+    apiVersion: v2
+    appVersion: 26.11.0
+    created: "2026-11-03T14:23:48.445643333Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: 59c7b0dab22e9863dfc1c42f75efc793624a6d54bcd0e2983cf79463f9af11a1
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.58.0/memos-0.58.0.tgz
+    version: 0.58.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update neosmemo/memos Docker tag to v26
     apiVersion: v2
     appVersion: 26.10.0
@@ -27063,4 +27123,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-03T14:16:54.602864076Z"
+generated: "2026-11-03T14:23:48.446354267Z"
