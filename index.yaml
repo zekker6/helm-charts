@@ -3250,6 +3250,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.11.1
+    apiVersion: v2
+    appVersion: 2026.11.1
+    created: "2026-11-03T14:16:54.251884288Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: crowdsec-web-ui helm package
+    digest: 8e96e6688c9f1ba5bcdee0e632ebcf3b9e3349a76faab113bc70c14bb9c8a88d
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    keywords:
+    - crowdsec
+    - security
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: crowdsec-web-ui
+    sources:
+    - https://github.com/TheDuffman85/crowdsec-web-ui
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/crowdsec-web-ui
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/crowdsec-web-ui-0.63.0/crowdsec-web-ui-0.63.0.tgz
+    version: 0.63.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/theduffman85/crowdsec-web-ui Docker tag to v2026.10.13
     apiVersion: v2
     appVersion: 2026.10.13
@@ -12754,6 +12783,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update matrixdotorg/synapse Docker tag to v1.164.2
+    apiVersion: v2
+    appVersion: v1.164.2
+    created: "2026-11-03T14:16:54.446878594Z"
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: c9930672a0d8fa770ac80bd8d1a9d8ab695b3c709f6cd7632fe465645f50d8d7
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    icon: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: matrix
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/matrix
+    type: application
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/matrix-3.38.0/matrix-3.38.0.tgz
+    version: 3.38.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update matrixdotorg/synapse Docker tag to v1.164.1
     apiVersion: v2
     appVersion: v1.164.1
@@ -15599,6 +15650,37 @@ entries:
     - https://zekker6.github.io/helm-charts/apps/matrix-2.8.13.tgz
     version: 2.8.13
   memos:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update neosmemo/memos Docker tag to v26
+    apiVersion: v2
+    appVersion: 26.10.0
+    created: "2026-11-03T14:16:54.601767582Z"
+    dependencies:
+    - name: common
+      repository: https://zekker6.github.io/helm-charts
+      version: 0.5.2
+    description: memos - An open-source, self-hosted memo hub with knowledge management
+      and social networking.
+    digest: 2314fbba8dc90d8b923a50142ed0da64d9970967c1318ff0d88e4ecb7206bfaa
+    home: https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    icon: https://www.usememos.com/full-logo-landscape.png
+    keywords:
+    - memos
+    - notes
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@zekker.dev
+      name: zekker6
+      url: https://github.com/zekker6/
+    name: memos
+    sources:
+    - https://github.com/zekker6/helm-charts/tree/main/charts/apps/memos
+    - https://github.com/usememos/memos
+    urls:
+    - https://github.com/zekker6/helm-charts/releases/download/memos-0.57.0/memos-0.57.0.tgz
+    version: 0.57.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -26981,4 +27063,4 @@ entries:
     urls:
     - https://github.com/zekker6/helm-charts/releases/download/sockpuppetbrowser-0.1.0/sockpuppetbrowser-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-03T14:15:48.418614255Z"
+generated: "2026-11-03T14:16:54.602864076Z"
